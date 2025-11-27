@@ -1,0 +1,56 @@
+{
+  "id": "2026-subaru-solterra-touring-xt",
+  "year": 2026,
+  "make": "Subaru",
+  "model": "Solterra",
+  "trim": "Touring XT",
+  "slug": "2026-subaru-solterra-touring-xt",
+  "pricing": {
+    "msrpBase": 47000,
+    "msrpMax": 52000
+  },
+  "range": {
+    "epaRangeMiles": 260,
+    "batteryCapacityKwh": 72.8,
+    "efficiencyMPGe": 93,
+    "efficiencyKwhPer100Mi": 36.3
+  },
+  "performance": {
+    "horsepower": 215,
+    "torque": 249,
+    "zeroTo60": 7.5,
+    "topSpeed": 100,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 6.6,
+    "dcChargingMaxKw": 150,
+    "chargingTime10to80Minutes": 40
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 30.3,
+    "towingCapacityLbs": 2700,
+    "curbWeightLbs": 4300
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "EyeSight with Lane Centering"
+  },
+  "incentives": {
+    "federalTaxCreditEligible": false,
+    "federalCreditAmount": 0,
+    "notes": "Not eligible due to battery sourcing requirements"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
+    "manufacturerUrl": "https://www.subaru.com/solterra",
+    "availabilityStatus": "Available",
+    "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Co-developed with Toyota on e-TNGA platform. 2026 model features native NACS charging and improved range over previous years."
+  }
+}

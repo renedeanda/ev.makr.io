@@ -1,0 +1,21 @@
+{
+  "id": "subaru",
+  "name": "Subaru",
+  "slug": "subaru",
+  "parentCompany": "Subaru Corporation",
+  "countryOfOrigin": "Japan",
+  "chargingStrategy": {
+    "currentConnector": "NACS (2026+), CCS1 (2023-2025)",
+    "nacsAdoptionTimeline": "Native NACS starting with 2026 Solterra"
+  },
+  "networkPartnerships": [
+    "Working with Toyota on charging infrastructure",
+    "Compatible with all major U.S. networks"
+  ],
+  "content": {
+    "description": "Subaru entered the EV market with the Solterra, co-developed with Toyota on the e-TNGA platform. Known for Symmetrical All-Wheel Drive, Subaru brings their off-road capability heritage to the electric SUV segment.",
+    "evStrategySummary": "Focused on AWD electric SUVs with emphasis on safety, capability, and Subaru's signature EyeSight driver assistance. Partnership with Toyota allows shared development costs while maintaining Subaru's brand identity.",
+    "logoUrl": "/images/brands/subaru-logo.svg",
+    "websiteUrl": "https://www.subaru.com"
+  }
+}
