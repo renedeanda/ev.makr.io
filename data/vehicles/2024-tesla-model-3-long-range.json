@@ -1,0 +1,56 @@
+{
+  "id": "2024-tesla-model-3-long-range",
+  "year": 2024,
+  "make": "Tesla",
+  "model": "Model 3",
+  "trim": "Long Range",
+  "slug": "2024-tesla-model-3-long-range",
+  "pricing": {
+    "msrpBase": 47240,
+    "msrpMax": 47240
+  },
+  "range": {
+    "epaRangeMiles": 341,
+    "batteryCapacityKwh": 82,
+    "efficiencyMPGe": 132,
+    "efficiencyKwhPer100Mi": 25.6
+  },
+  "performance": {
+    "horsepower": 346,
+    "torque": 389,
+    "zeroTo60": 4.2,
+    "topSpeed": 145,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11,
+    "dcChargingMaxKw": 250,
+    "chargingTime10to80Minutes": 27
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 23,
+    "towingCapacityLbs": 0,
+    "curbWeightLbs": 4034
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Autopilot included, FSD available"
+  },
+  "incentives": {
+    "federalTaxCreditEligible": true,
+    "federalCreditAmount": 7500,
+    "notes": "Eligible for full $7,500 federal tax credit"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2024-tesla-model-3.jpg",
+    "manufacturerUrl": "https://www.tesla.com/model3",
+    "availabilityStatus": "Available",
+    "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Best-selling EV sedan. Native NACS with access to entire Supercharger network. Known for efficiency and tech features."
+  }
+}

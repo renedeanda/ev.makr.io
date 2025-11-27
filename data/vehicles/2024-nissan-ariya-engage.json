@@ -1,0 +1,56 @@
+{
+  "id": "2024-nissan-ariya-engage",
+  "year": 2024,
+  "make": "Nissan",
+  "model": "Ariya",
+  "trim": "Engage+ e-4ORCE",
+  "slug": "2024-nissan-ariya-engage",
+  "pricing": {
+    "msrpBase": 52550,
+    "msrpMax": 57550
+  },
+  "range": {
+    "epaRangeMiles": 265,
+    "batteryCapacityKwh": 87,
+    "efficiencyMPGe": 89,
+    "efficiencyKwhPer100Mi": 37.9
+  },
+  "performance": {
+    "horsepower": 389,
+    "torque": 442,
+    "zeroTo60": 4.8,
+    "topSpeed": 100,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "CCS1",
+    "acChargingMaxKw": 7.2,
+    "dcChargingMaxKw": 130,
+    "chargingTime10to80Minutes": 44
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 59.7,
+    "towingCapacityLbs": 1500,
+    "curbWeightLbs": 5150
+  },
+  "features": {
+    "hasHeatPump": false,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "ProPILOT Assist 2.0"
+  },
+  "incentives": {
+    "federalTaxCreditEligible": false,
+    "federalCreditAmount": 0,
+    "notes": "Not eligible due to battery sourcing requirements (built in Japan)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2024-nissan-ariya.jpg",
+    "manufacturerUrl": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",
+    "availabilityStatus": "Available",
+    "dataSource": "Nissan.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Nissan's first modern EV (replacing the Leaf). Premium interior with advanced driver assistance. NACS plans announced for future models."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "2026-kia-ev9-gt-line",
+  "year": 2026,
+  "make": "Kia",
+  "model": "EV9",
+  "trim": "GT-Line AWD",
+  "slug": "2026-kia-ev9-gt-line",
+  "pricing": {
+    "msrpBase": 65900,
+    "msrpMax": 71900
+  },
+  "range": {
+    "epaRangeMiles": 285,
+    "batteryCapacityKwh": 99.8,
+    "efficiencyMPGe": 90,
+    "efficiencyKwhPer100Mi": 37.5
+  },
+  "performance": {
+    "horsepower": 379,
+    "torque": 516,
+    "zeroTo60": 4.9,
+    "topSpeed": 115,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.0,
+    "dcChargingMaxKw": 240,
+    "chargingTime10to80Minutes": 24
+  },
+  "physical": {
+    "seatingCapacity": 7,
+    "cargoVolumeCuFt": 81.7,
+    "towingCapacityLbs": 5000,
+    "curbWeightLbs": 5850
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": true,
+    "hasV2H": false,
+    "autopilotLevel": "Highway Driving Assist 2"
+  },
+  "incentives": {
+    "federalTaxCreditEligible": false,
+    "federalCreditAmount": 0,
+    "notes": "Not eligible due to battery sourcing requirements (built in South Korea)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-kia-ev9.jpg",
+    "manufacturerUrl": "https://www.kia.com/us/en/ev9",
+    "availabilityStatus": "Available",
+    "dataSource": "Kia.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "2026 model features native NACS connector. Three-row electric SUV with spacious interior. 800V architecture for ultra-fast charging. V2L can power appliances. Premium features and build quality."
+  }
+}

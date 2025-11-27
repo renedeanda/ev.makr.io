@@ -1,0 +1,56 @@
+{
+  "id": "2024-kia-ev6-gt-line",
+  "year": 2024,
+  "make": "Kia",
+  "model": "EV6",
+  "trim": "GT-Line AWD",
+  "slug": "2024-kia-ev6-gt-line",
+  "pricing": {
+    "msrpBase": 51900,
+    "msrpMax": 56900
+  },
+  "range": {
+    "epaRangeMiles": 282,
+    "batteryCapacityKwh": 77.4,
+    "efficiencyMPGe": 105,
+    "efficiencyKwhPer100Mi": 32.1
+  },
+  "performance": {
+    "horsepower": 320,
+    "torque": 446,
+    "zeroTo60": 4.6,
+    "topSpeed": 115,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "CCS1",
+    "acChargingMaxKw": 10.9,
+    "dcChargingMaxKw": 240,
+    "chargingTime10to80Minutes": 18
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 50.2,
+    "towingCapacityLbs": 1650,
+    "curbWeightLbs": 4695
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": true,
+    "hasV2H": false,
+    "autopilotLevel": "Highway Driving Assist 2"
+  },
+  "incentives": {
+    "federalTaxCreditEligible": false,
+    "federalCreditAmount": 0,
+    "notes": "Not eligible due to battery sourcing requirements (built in South Korea)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2024-kia-ev6.jpg",
+    "manufacturerUrl": "https://www.kia.com/us/en/ev6",
+    "availabilityStatus": "Available",
+    "dataSource": "Kia.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "800V architecture enables ultra-fast charging (10-80% in 18 min). V2L can power devices and appliances. NACS adapter available 2025."
+  }
+}
