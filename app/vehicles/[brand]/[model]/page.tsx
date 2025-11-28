@@ -138,7 +138,10 @@ export default function VehicleModelPage({ params }: PageProps) {
                   <Calendar size={18} />
                   {year}
                   {year === years[0] && (
-                    <Badge variant="eco" size="sm">
+                    <Badge
+                      variant={selectedYear === year ? "outline-light" : "eco"}
+                      size="sm"
+                    >
                       Latest
                     </Badge>
                   )}
