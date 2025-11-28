@@ -82,7 +82,15 @@ export default function VehicleModelPage({ params }: PageProps) {
   };
   
   const currentYearChanges = getMajorChanges(selectedYear);
-  
+
+  // Calculate performance ranges for selected year
+  const getPerformanceRange = (key: 'horsepower' | 'torque' | 'zeroTo60') => {
+    const values = selectedYearVehicles.map(v => v.performance[key]);
+    const min = Math.min(...values);
+    const max = Math.max(...values);
+    return min === max ? `${min}` : `${min}-${max}`;
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -269,11 +277,11 @@ export default function VehicleModelPage({ params }: PageProps) {
               <h3 className="font-semibold text-slate">Performance</h3>
             </div>
             <p className="text-3xl font-bold text-slate mb-1">
-              {selectedYearVehicles[0].performance.horsepower}
+              {getPerformanceRange('horsepower')}
               <span className="text-lg font-normal text-slate-light"> hp</span>
             </p>
             <p className="text-sm text-slate-light">
-              0-60: {selectedYearVehicles[0].performance.zeroTo60}s
+              0-60: {getPerformanceRange('zeroTo60')}s
             </p>
           </Card>
         </div>
@@ -423,19 +431,19 @@ export default function VehicleModelPage({ params }: PageProps) {
                   <div className="flex justify-between">
                     <span className="text-slate-light">Horsepower</span>
                     <span className="font-semibold text-slate">
-                      {selectedYearVehicles[0].performance.horsepower} hp
+                      {getPerformanceRange('horsepower')} hp
                     </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-light">Torque</span>
                     <span className="font-semibold text-slate">
-                      {selectedYearVehicles[0].performance.torque} lb-ft
+                      {getPerformanceRange('torque')} lb-ft
                     </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-light">0-60 mph</span>
                     <span className="font-semibold text-slate">
-                      {selectedYearVehicles[0].performance.zeroTo60}s
+                      {getPerformanceRange('zeroTo60')}s
                     </span>
                   </div>
                   <div className="flex justify-between">
