@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BookOpen, Clock, ArrowRight, Zap, Battery, Wrench, Leaf } from "lucide-react";
-import { getAllGuides } from "@/lib/data";
+import { getAllGuides } from "@/lib/guides";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
@@ -207,7 +207,7 @@ export default function GuidesPage() {
             <Button href="/vehicles" variant="eco" size="lg">
               Explore Vehicles
             </Button>
-            <Button href="/about" variant="outline" size="lg">
+            <Button href="/about" variant="outline-light" size="lg">
               About This Site
             </Button>
           </div>

@@ -104,6 +104,81 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2025-ford-f150-lightning-pro",
+    "year": 2025,
+    "make": "Ford",
+    "model": "F-150 Lightning",
+    "trim": "Pro",
+    "slug": "2025-ford-f150-lightning-pro",
+    "pricing": { "msrpBase": 49875, "msrpMax": 49875 },
+    "range": { "epaRangeMiles": 240, "batteryCapacityKwh": 98, "efficiencyMPGe": 70, "efficiencyKwhPer100Mi": 48.2 },
+    "performance": { "horsepower": 452, "torque": 775, "zeroTo60": 4.5, "topSpeed": 110, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 19.2, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 44 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 52.8, "towingCapacityLbs": 7700, "curbWeightLbs": 6500 },
+    "features": { "hasHeatPump": false, "hasV2L": true, "hasV2H": true, "autopilotLevel": "BlueCruise 1.2 available" },
+    "meta": { "imageUrl": "/images/vehicles/2025-ford-f150-lightning-pro.jpg", "manufacturerUrl": "https://www.ford.com/trucks/f150/f150-lightning/", "availabilityStatus": "Available", "dataSource": "Ford.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Base F-150 Lightning. Commercial/fleet focus. 98 kWh battery, 240 mi range, 7,700 lb towing. NACS with adapter." }
+  },
+  {
+    "id": "2025-ford-f150-lightning-stx",
+    "year": 2025,
+    "make": "Ford",
+    "model": "F-150 Lightning",
+    "trim": "STX",
+    "slug": "2025-ford-f150-lightning-stx",
+    "pricing": { "msrpBase": 57000, "msrpMax": 57000 },
+    "range": { "epaRangeMiles": 240, "batteryCapacityKwh": 98, "efficiencyMPGe": 70, "efficiencyKwhPer100Mi": 48.2 },
+    "performance": { "horsepower": 452, "torque": 775, "zeroTo60": 4.5, "topSpeed": 110, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 19.2, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 44 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 52.8, "towingCapacityLbs": 7700, "curbWeightLbs": 6520 },
+    "features": { "hasHeatPump": false, "hasV2L": true, "hasV2H": true, "autopilotLevel": "BlueCruise 1.2 available" },
+    "meta": { "imageUrl": "/images/vehicles/2025-ford-f150-lightning-stx.jpg", "manufacturerUrl": "https://www.ford.com/trucks/f150/f150-lightning/", "availabilityStatus": "Available", "dataSource": "Ford.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "NEW 2025 STX trim replaces XLT. Sport appearance, 18\" wheels, standard battery. 7,700 lb towing." }
+  },
+  {
+    "id": "2025-ford-f150-lightning-flash",
+    "year": 2025,
+    "make": "Ford",
+    "model": "F-150 Lightning",
+    "trim": "Flash",
+    "slug": "2025-ford-f150-lightning-flash",
+    "pricing": { "msrpBase": 70090, "msrpMax": 70090 },
+    "range": { "epaRangeMiles": 300, "batteryCapacityKwh": 131, "efficiencyMPGe": 76, "efficiencyKwhPer100Mi": 44.3 },
+    "performance": { "horsepower": 580, "torque": 775, "zeroTo60": 4.0, "topSpeed": 110, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 19.2, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 44 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 52.8, "towingCapacityLbs": 10000, "curbWeightLbs": 6740 },
+    "features": { "hasHeatPump": false, "hasV2L": true, "hasV2H": true, "autopilotLevel": "BlueCruise 1.2 included" },
+    "meta": { "imageUrl": "/images/vehicles/2025-ford-f150-lightning-flash.jpg", "manufacturerUrl": "https://www.ford.com/trucks/f150/f150-lightning/", "availabilityStatus": "Available", "dataSource": "Ford.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Flash: extended range 131 kWh battery, 300 mi EPA. 580 hp, 10,000 lb towing with Max Trailer package." }
+  },
+  {
+    "id": "2025-ford-f150-lightning-lariat",
+    "year": 2025,
+    "make": "Ford",
+    "model": "F-150 Lightning",
+    "trim": "Lariat Extended Range",
+    "slug": "2025-ford-f150-lightning-lariat",
+    "pricing": { "msrpBase": 79090, "msrpMax": 79090 },
+    "range": { "epaRangeMiles": 320, "batteryCapacityKwh": 131, "efficiencyMPGe": 78, "efficiencyKwhPer100Mi": 43.2 },
+    "performance": { "horsepower": 580, "torque": 775, "zeroTo60": 4.0, "topSpeed": 110, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 19.2, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 44 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 52.8, "towingCapacityLbs": 10000, "curbWeightLbs": 6770 },
+    "features": { "hasHeatPump": false, "hasV2L": true, "hasV2H": true, "autopilotLevel": "BlueCruise 1.2 included" },
+    "meta": { "imageUrl": "/images/vehicles/2025-ford-f150-lightning-lariat.jpg", "manufacturerUrl": "https://www.ford.com/trucks/f150/f150-lightning/", "availabilityStatus": "Available", "dataSource": "Ford.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Lariat: Premium trim, 320 mi range (best F-150 Lightning range). Leather, heated/cooled seats, 10k lb towing." }
+  },
+  {
+    "id": "2025-ford-f150-lightning-platinum",
+    "year": 2025,
+    "make": "Ford",
+    "model": "F-150 Lightning",
+    "trim": "Platinum",
+    "slug": "2025-ford-f150-lightning-platinum",
+    "pricing": { "msrpBase": 87090, "msrpMax": 87090 },
+    "range": { "epaRangeMiles": 300, "batteryCapacityKwh": 131, "efficiencyMPGe": 76, "efficiencyKwhPer100Mi": 44.3 },
+    "performance": { "horsepower": 580, "torque": 775, "zeroTo60": 4.0, "topSpeed": 110, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 19.2, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 44 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 52.8, "towingCapacityLbs": 10000, "curbWeightLbs": 6800 },
+    "features": { "hasHeatPump": false, "hasV2L": true, "hasV2H": true, "autopilotLevel": "BlueCruise 1.2 included" },
+    "meta": { "imageUrl": "/images/vehicles/2025-ford-f150-lightning-platinum.jpg", "manufacturerUrl": "https://www.ford.com/trucks/f150/f150-lightning/", "availabilityStatus": "Available", "dataSource": "Ford.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Top Platinum trim: Luxury features, 22\" wheels, panoramic roof, Bang & Olufsen audio, 10k lb towing." }
+  },
+  {
     "id": "2024-ford-mustang-mach-e-premium",
     "year": 2024,
     "make": "Ford",
@@ -255,6 +330,126 @@ export const vehicles: Vehicle[] = [
       "lastVerified": "2025-11-27",
       "notes": "800V architecture enables ultra-fast charging (10-80% in 18 min). V2L can power devices and appliances. NACS adapter available 2025."
     }
+  },
+  {
+    "id": "2025-kia-ev6-light",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Light",
+    "slug": "2025-kia-ev6-light",
+    "pricing": { "msrpBase": 42900, "msrpMax": 42900 },
+    "range": { "epaRangeMiles": 237, "batteryCapacityKwh": 63, "efficiencyMPGe": 100, "efficiencyKwhPer100Mi": 33.6 },
+    "performance": { "horsepower": 167, "torque": 258, "zeroTo60": 8.3, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 1650, "curbWeightLbs": 3900 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Base EV6 trim. 63 kWh battery, RWD. 2025 adds NACS port and larger 84 kWh battery option." }
+  },
+  {
+    "id": "2025-kia-ev6-light-lr-rwd",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Light Long Range RWD",
+    "slug": "2025-kia-ev6-light-lr-rwd",
+    "pricing": { "msrpBase": 47900, "msrpMax": 47900 },
+    "range": { "epaRangeMiles": 319, "batteryCapacityKwh": 84, "efficiencyMPGe": 117, "efficiencyKwhPer100Mi": 28.8 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.3, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 1650, "curbWeightLbs": 4100 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "84 kWh long-range battery, 319 mi EPA range - best in EV6 lineup. RWD for efficiency." }
+  },
+  {
+    "id": "2025-kia-ev6-light-lr-awd",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Light Long Range AWD",
+    "slug": "2025-kia-ev6-light-lr-awd",
+    "pricing": { "msrpBase": 50900, "msrpMax": 50900 },
+    "range": { "epaRangeMiles": 295, "batteryCapacityKwh": 84, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 5.0, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 1650, "curbWeightLbs": 4500 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "84 kWh battery with dual motor AWD. 320 hp, 0-60 in 5.0s. Great balance of range and performance." }
+  },
+  {
+    "id": "2025-kia-ev6-wind-rwd",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Wind RWD",
+    "slug": "2025-kia-ev6-wind-rwd",
+    "pricing": { "msrpBase": 50000, "msrpMax": 50000 },
+    "range": { "epaRangeMiles": 319, "batteryCapacityKwh": 84, "efficiencyMPGe": 117, "efficiencyKwhPer100Mi": 28.8 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.3, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 1650, "curbWeightLbs": 4100 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Wind trim adds: 12.3\" digital cluster, heated/ventilated seats, smart cruise control, 319 mi range." }
+  },
+  {
+    "id": "2025-kia-ev6-wind-awd",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Wind AWD",
+    "slug": "2025-kia-ev6-wind-awd",
+    "pricing": { "msrpBase": 52900, "msrpMax": 52900 },
+    "range": { "epaRangeMiles": 295, "batteryCapacityKwh": 84, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.5, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 1650, "curbWeightLbs": 4500 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Wind AWD: 320 hp dual motor, premium features, 0-60 in 4.5s. Popular mid-range trim." }
+  },
+  {
+    "id": "2025-kia-ev6-gtline-rwd",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "GT-Line RWD",
+    "slug": "2025-kia-ev6-gtline-rwd",
+    "pricing": { "msrpBase": 55000, "msrpMax": 55000 },
+    "range": { "epaRangeMiles": 319, "batteryCapacityKwh": 84, "efficiencyMPGe": 117, "efficiencyKwhPer100Mi": 28.8 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.3, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 1650, "curbWeightLbs": 4200 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6-gtline.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "GT-Line adds sport styling, 20\" wheels, GT seats, Meridian audio. RWD for maximum range." }
+  },
+  {
+    "id": "2025-kia-ev6-gtline-awd",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "GT-Line AWD",
+    "slug": "2025-kia-ev6-gtline-awd",
+    "pricing": { "msrpBase": 58900, "msrpMax": 58900 },
+    "range": { "epaRangeMiles": 271, "batteryCapacityKwh": 84, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.5, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 1650, "curbWeightLbs": 4600 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6-gtline.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "GT-Line AWD: Sport styling, 320 hp, premium Meridian audio, HDA2. Fast 0-60 in 4.5s." }
+  },
+  {
+    "id": "2025-kia-ev6-gt",
+    "year": 2025,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "GT",
+    "slug": "2025-kia-ev6-gt",
+    "pricing": { "msrpBase": 63800, "msrpMax": 63800 },
+    "range": { "epaRangeMiles": 231, "batteryCapacityKwh": 84, "efficiencyMPGe": 85, "efficiencyKwhPer100Mi": 39.6 },
+    "performance": { "horsepower": 641, "torque": 545, "zeroTo60": 3.2, "topSpeed": 162, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 0, "curbWeightLbs": 4900 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2025-kia-ev6-gt.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "EV6 GT: 641 hp beast, 0-60 in 3.2s. GT mode, drift mode, track suspension. Still uses CCS1 connector." }
   },
   {
     "id": "2024-nissan-ariya-engage",
@@ -614,6 +809,66 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2025-chevrolet-equinox-ev-lt-fwd",
+    "year": 2025,
+    "make": "Chevrolet",
+    "model": "Equinox EV",
+    "trim": "LT FWD",
+    "slug": "2025-chevrolet-equinox-ev-lt-fwd",
+    "pricing": { "msrpBase": 33600, "msrpMax": 33600 },
+    "range": { "epaRangeMiles": 319, "batteryCapacityKwh": 85, "efficiencyMPGe": 102, "efficiencyKwhPer100Mi": 33.0 },
+    "performance": { "horsepower": 220, "torque": 242, "zeroTo60": 7.4, "topSpeed": 112, "drivetrain": "FWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11.5, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 42 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 57.2, "towingCapacityLbs": 0, "curbWeightLbs": 4460 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Chevy Safety Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-chevrolet-equinox-ev.jpg", "manufacturerUrl": "https://www.chevrolet.com/electric/equinox-ev", "availabilityStatus": "Available", "dataSource": "Chevrolet.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Most affordable EV in America at $33,600! Eligible for $7,500 federal tax credit. 319 mi range, Google Built-in." }
+  },
+  {
+    "id": "2025-chevrolet-equinox-ev-lt-awd",
+    "year": 2025,
+    "make": "Chevrolet",
+    "model": "Equinox EV",
+    "trim": "LT AWD",
+    "slug": "2025-chevrolet-equinox-ev-lt-awd",
+    "pricing": { "msrpBase": 39500, "msrpMax": 39500 },
+    "range": { "epaRangeMiles": 285, "batteryCapacityKwh": 85, "efficiencyMPGe": 93, "efficiencyKwhPer100Mi": 36.2 },
+    "performance": { "horsepower": 300, "torque": 332, "zeroTo60": 5.7, "topSpeed": 112, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11.5, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 42 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 57.2, "towingCapacityLbs": 1200, "curbWeightLbs": 4870 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Chevy Safety Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-chevrolet-equinox-ev.jpg", "manufacturerUrl": "https://www.chevrolet.com/electric/equinox-ev", "availabilityStatus": "Available", "dataSource": "Chevrolet.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "LT AWD: 300 hp dual motor, 0-60 in 5.7s. 285 mi range, 1,200 lb towing. Eligible for $7,500 tax credit." }
+  },
+  {
+    "id": "2025-chevrolet-equinox-ev-rs-fwd",
+    "year": 2025,
+    "make": "Chevrolet",
+    "model": "Equinox EV",
+    "trim": "RS FWD",
+    "slug": "2025-chevrolet-equinox-ev-rs-fwd",
+    "pricing": { "msrpBase": 43400, "msrpMax": 43400 },
+    "range": { "epaRangeMiles": 319, "batteryCapacityKwh": 85, "efficiencyMPGe": 102, "efficiencyKwhPer100Mi": 33.0 },
+    "performance": { "horsepower": 220, "torque": 242, "zeroTo60": 7.4, "topSpeed": 112, "drivetrain": "FWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11.5, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 42 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 57.2, "towingCapacityLbs": 0, "curbWeightLbs": 4500 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Super Cruise ready" },
+    "meta": { "imageUrl": "/images/vehicles/2025-chevrolet-equinox-ev-rs.jpg", "manufacturerUrl": "https://www.chevrolet.com/electric/equinox-ev", "availabilityStatus": "Available", "dataSource": "Chevrolet.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "RS sport trim: Black exterior trim, 19\" wheels, sport interior. 319 mi range. Super Cruise available." }
+  },
+  {
+    "id": "2025-chevrolet-equinox-ev-rs-awd",
+    "year": 2025,
+    "make": "Chevrolet",
+    "model": "Equinox EV",
+    "trim": "RS AWD",
+    "slug": "2025-chevrolet-equinox-ev-rs-awd",
+    "pricing": { "msrpBase": 47800, "msrpMax": 47800 },
+    "range": { "epaRangeMiles": 285, "batteryCapacityKwh": 85, "efficiencyMPGe": 93, "efficiencyKwhPer100Mi": 36.2 },
+    "performance": { "horsepower": 300, "torque": 332, "zeroTo60": 5.7, "topSpeed": 112, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11.5, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 42 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 57.2, "towingCapacityLbs": 1200, "curbWeightLbs": 4910 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Super Cruise ready" },
+    "meta": { "imageUrl": "/images/vehicles/2025-chevrolet-equinox-ev-rs.jpg", "manufacturerUrl": "https://www.chevrolet.com/electric/equinox-ev", "availabilityStatus": "Available", "dataSource": "Chevrolet.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Top RS AWD: Sport styling, 300 hp, 0-60 in 5.7s, 1,200 lb towing. Super Cruise hands-free available." }
+  },
+  {
     "id": "2026-chevrolet-equinox-ev-2lt",
     "year": 2026,
     "make": "Chevrolet",
@@ -869,6 +1124,147 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2026-hyundai-ioniq5-se-standard",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "SE Standard Range",
+    "slug": "2026-hyundai-ioniq5-se-standard",
+    "pricing": {
+      "msrpBase": 35000,
+      "msrpMax": 35000
+    },
+    "range": {
+      "epaRangeMiles": 245,
+      "batteryCapacityKwh": 63,
+      "efficiencyMPGe": 100,
+      "efficiencyKwhPer100Mi": 33.6
+    },
+    "performance": {
+      "horsepower": 168,
+      "torque": 258,
+      "zeroTo60": 7.3,
+      "topSpeed": 115,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 350,
+      "chargingTime10to80Minutes": 18
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 59.3,
+      "towingCapacityLbs": 1650,
+      "curbWeightLbs": 4200
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": true,
+      "hasV2H": false,
+      "autopilotLevel": "Highway Driving Assist 2"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg",
+      "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5",
+      "availabilityStatus": "Available",
+      "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Most affordable IONIQ 5 trim. 63 kWh battery, RWD only. 2026 includes NACS connector and $7,600 price cut from 2025."
+    }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-se-rwd",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "SE RWD",
+    "slug": "2026-hyundai-ioniq5-se-rwd",
+    "pricing": { "msrpBase": 37500, "msrpMax": 37500 },
+    "range": { "epaRangeMiles": 318, "batteryCapacityKwh": 84, "efficiencyMPGe": 114, "efficiencyKwhPer100Mi": 29.6 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.1, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 59.3, "towingCapacityLbs": 1650, "curbWeightLbs": 4200 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg", "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5", "availabilityStatus": "Available", "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "84 kWh long-range battery, best range in lineup at 318 miles EPA. RWD for efficiency." }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-se-awd",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "SE AWD",
+    "slug": "2026-hyundai-ioniq5-se-awd",
+    "pricing": { "msrpBase": 41000, "msrpMax": 41000 },
+    "range": { "epaRangeMiles": 290, "batteryCapacityKwh": 84, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.5, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 59.3, "towingCapacityLbs": 1650, "curbWeightLbs": 4600 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": true, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg", "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5", "availabilityStatus": "Available", "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "84 kWh battery with AWD. 320 hp dual motor system, 0-60 in 4.5s. V2H capable." }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-sel-rwd",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "SEL RWD",
+    "slug": "2026-hyundai-ioniq5-sel-rwd",
+    "pricing": { "msrpBase": 41000, "msrpMax": 41000 },
+    "range": { "epaRangeMiles": 318, "batteryCapacityKwh": 84, "efficiencyMPGe": 114, "efficiencyKwhPer100Mi": 29.6 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.1, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 59.3, "towingCapacityLbs": 1650, "curbWeightLbs": 4200 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": true, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg", "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5", "availabilityStatus": "Available", "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "SEL trim adds premium features: heated seats, smart cruise control, wireless charging. 318 mi range." }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-xrt-awd",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "XRT AWD",
+    "slug": "2026-hyundai-ioniq5-xrt-awd",
+    "pricing": { "msrpBase": 47000, "msrpMax": 47000 },
+    "range": { "epaRangeMiles": 259, "batteryCapacityKwh": 84, "efficiencyMPGe": 98, "efficiencyKwhPer100Mi": 34.4 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.5, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 59.3, "towingCapacityLbs": 2300, "curbWeightLbs": 4800 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": true, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-hyundai-ioniq5-xrt.jpg", "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5", "availabilityStatus": "Available", "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "NEW 2026 off-road trim. Raised suspension, all-terrain tires, skid plates. 2,300 lb towing capacity." }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-limited-rwd",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "Limited RWD",
+    "slug": "2026-hyundai-ioniq5-limited-rwd",
+    "pricing": { "msrpBase": 45000, "msrpMax": 45000 },
+    "range": { "epaRangeMiles": 318, "batteryCapacityKwh": 84, "efficiencyMPGe": 114, "efficiencyKwhPer100Mi": 29.6 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.1, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 59.3, "towingCapacityLbs": 1650, "curbWeightLbs": 4300 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": true, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg", "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5", "availabilityStatus": "Available", "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Top luxury trim. Adds: ventilated seats, Bose audio, surround-view camera, smart park assist." }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-limited-awd",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "Limited AWD",
+    "slug": "2026-hyundai-ioniq5-limited-awd",
+    "pricing": { "msrpBase": 48900, "msrpMax": 48900 },
+    "range": { "epaRangeMiles": 269, "batteryCapacityKwh": 84, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.5, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 350, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 59.3, "towingCapacityLbs": 1650, "curbWeightLbs": 4700 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": true, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg", "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5", "availabilityStatus": "Available", "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Top AWD luxury trim. 320 hp, full feature set: ventilated seats, Bose audio, HDA2, V2H/V2L." }
+  },
+  {
     "id": "2026-hyundai-ioniq5-sel-awd",
     "year": 2026,
     "make": "Hyundai",
@@ -876,11 +1272,11 @@ export const vehicles: Vehicle[] = [
     "trim": "SEL AWD",
     "slug": "2026-hyundai-ioniq5-sel-awd",
     "pricing": {
-      "msrpBase": 52500,
-      "msrpMax": 57500
+      "msrpBase": 44500,
+      "msrpMax": 44500
     },
     "range": {
-      "epaRangeMiles": 280,
+      "epaRangeMiles": 290,
       "batteryCapacityKwh": 84,
       "efficiencyMPGe": 107,
       "efficiencyKwhPer100Mi": 31.5
@@ -888,7 +1284,7 @@ export const vehicles: Vehicle[] = [
     "performance": {
       "horsepower": 320,
       "torque": 446,
-      "zeroTo60": 4.7,
+      "zeroTo60": 4.5,
       "topSpeed": 115,
       "drivetrain": "AWD"
     },
@@ -917,6 +1313,57 @@ export const vehicles: Vehicle[] = [
       "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
       "lastVerified": "2025-11-27",
       "notes": "2026 model features native NACS connector for direct Tesla Supercharger access without adapter. Award-winning design with 800V architecture. Enhanced battery capacity and range. V2L and V2H capabilities."
+    }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-n",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "N (Performance)",
+    "slug": "2026-hyundai-ioniq5-n",
+    "pricing": {
+      "msrpBase": 67000,
+      "msrpMax": 67000
+    },
+    "range": {
+      "epaRangeMiles": 221,
+      "batteryCapacityKwh": 84,
+      "efficiencyMPGe": 84,
+      "efficiencyKwhPer100Mi": 40.2
+    },
+    "performance": {
+      "horsepower": 641,
+      "torque": 545,
+      "zeroTo60": 3.4,
+      "topSpeed": 162,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 350,
+      "chargingTime10to80Minutes": 18
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 59.3,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4900
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": true,
+      "hasV2H": false,
+      "autopilotLevel": "N Active Sound+"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-hyundai-ioniq5-n.jpg",
+      "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5-n",
+      "availabilityStatus": "Available",
+      "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Hyundai N performance variant. 641 hp, 0-60 in 3.4s. Track-focused with N Grin Boost mode, drift optimizer, launch control. Enhanced suspension, brakes, and cooling systems."
     }
   },
   {
@@ -969,6 +1416,66 @@ export const vehicles: Vehicle[] = [
       "lastVerified": "2025-11-27",
       "notes": "2026 model features native NACS connector for direct Tesla Supercharger access. 800V architecture enables ultra-fast charging (10-80% in 18 min). Enhanced range over 2024-2025 models."
     }
+  },
+  {
+    "id": "2026-kia-ev9-light-rwd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Light RWD",
+    "slug": "2026-kia-ev9-light-rwd",
+    "pricing": { "msrpBase": 54900, "msrpMax": 54900 },
+    "range": { "epaRangeMiles": 230, "batteryCapacityKwh": 76.1, "efficiencyMPGe": 88, "efficiencyKwhPer100Mi": 38.3 },
+    "performance": { "horsepower": 201, "torque": 258, "zeroTo60": 8.5, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 210, "chargingTime10to80Minutes": 28 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 0, "curbWeightLbs": 5350 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Base EV9 trim. 76.1 kWh battery, RWD only, 7-seater. Most affordable 3-row electric SUV at $54,900. Native NACS charging." }
+  },
+  {
+    "id": "2026-kia-ev9-light-lr-rwd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Light Long Range RWD",
+    "slug": "2026-kia-ev9-light-lr-rwd",
+    "pricing": { "msrpBase": 57900, "msrpMax": 57900 },
+    "range": { "epaRangeMiles": 305, "batteryCapacityKwh": 99.8, "efficiencyMPGe": 95, "efficiencyKwhPer100Mi": 35.5 },
+    "performance": { "horsepower": 201, "torque": 258, "zeroTo60": 8.2, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 24 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 0, "curbWeightLbs": 5550 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Long range EV9 with 99.8 kWh battery. Best range in lineup at 305 miles EPA. RWD for maximum efficiency. 800V ultra-fast charging." }
+  },
+  {
+    "id": "2026-kia-ev9-wind-awd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Wind AWD",
+    "slug": "2026-kia-ev9-wind-awd",
+    "pricing": { "msrpBase": 64900, "msrpMax": 64900 },
+    "range": { "epaRangeMiles": 283, "batteryCapacityKwh": 99.8, "efficiencyMPGe": 90, "efficiencyKwhPer100Mi": 37.5 },
+    "performance": { "horsepower": 379, "torque": 516, "zeroTo60": 5.2, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 24 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 5000, "curbWeightLbs": 5750 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Mid-tier AWD trim. 379 hp dual motors, 5.2s 0-60. Adds premium features: heated/ventilated seats, power liftgate, blind-spot cameras." }
+  },
+  {
+    "id": "2026-kia-ev9-land-awd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Land AWD",
+    "slug": "2026-kia-ev9-land-awd",
+    "pricing": { "msrpBase": 68900, "msrpMax": 68900 },
+    "range": { "epaRangeMiles": 280, "batteryCapacityKwh": 99.8, "efficiencyMPGe": 90, "efficiencyKwhPer100Mi": 37.5 },
+    "performance": { "horsepower": 379, "torque": 516, "zeroTo60": 5.0, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 24 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 5000, "curbWeightLbs": 5850 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Luxury trim with premium interior. Adds: Meridian audio, relaxation seats, digital side mirrors, augmented reality HUD. Nightfall Edition package available." }
   },
   {
     "id": "2026-kia-ev9-gt-line",
@@ -1175,26 +1682,71 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
-    "id": "2026-subaru-solterra-touring-xt",
+    "id": "2023-subaru-solterra-premium",
+    "year": 2023,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Premium",
+    "slug": "2023-subaru-solterra-premium",
+    "pricing": { "msrpBase": 44995, "msrpMax": 44995 },
+    "range": { "epaRangeMiles": 228, "batteryCapacityKwh": 72.8, "efficiencyMPGe": 94, "efficiencyKwhPer100Mi": 35.9 },
+    "performance": { "horsepower": 215, "torque": 249, "zeroTo60": 7.3, "topSpeed": 112, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 6.6, "dcChargingMaxKw": 100, "chargingTime10to80Minutes": 56 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 30.3, "towingCapacityLbs": 0, "curbWeightLbs": 4500 },
+    "features": { "hasHeatPump": false, "hasV2L": false, "hasV2H": false, "autopilotLevel": "EyeSight Driver Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2023-subaru-solterra.jpg", "manufacturerUrl": "https://www.subaru.com/vehicles/solterra.html", "availabilityStatus": "Discontinued", "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "First year Solterra (2023): Co-developed with Toyota bZ4X. 228 mi range, CCS1 connector, 100 kW DC charging. 2026 model adds +61 mi range, +123 hp, NACS." }
+  },
+  {
+    "id": "2024-subaru-solterra-premium",
+    "year": 2024,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Premium",
+    "slug": "2024-subaru-solterra-premium",
+    "pricing": { "msrpBase": 46220, "msrpMax": 46220 },
+    "range": { "epaRangeMiles": 227, "batteryCapacityKwh": 72.8, "efficiencyMPGe": 96, "efficiencyKwhPer100Mi": 35.1 },
+    "performance": { "horsepower": 215, "torque": 249, "zeroTo60": 7.3, "topSpeed": 112, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 6.6, "dcChargingMaxKw": 100, "chargingTime10to80Minutes": 56 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 30.3, "towingCapacityLbs": 0, "curbWeightLbs": 4520 },
+    "features": { "hasHeatPump": false, "hasV2L": false, "hasV2H": false, "autopilotLevel": "EyeSight Driver Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2024-subaru-solterra.jpg", "manufacturerUrl": "https://www.subaru.com/vehicles/solterra.html", "availabilityStatus": "Discontinued", "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "2024 Solterra: Minor updates from 2023. Still 227 mi range, CCS1. Wait for 2026 refresh recommended - adds +61 mi range, +18-123 hp, NACS connector." }
+  },
+  {
+    "id": "2025-subaru-solterra-premium",
+    "year": 2025,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Premium",
+    "slug": "2025-subaru-solterra-premium",
+    "pricing": { "msrpBase": 46220, "msrpMax": 46220 },
+    "range": { "epaRangeMiles": 227, "batteryCapacityKwh": 72.8, "efficiencyMPGe": 96, "efficiencyKwhPer100Mi": 35.1 },
+    "performance": { "horsepower": 215, "torque": 249, "zeroTo60": 7.3, "topSpeed": 112, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 6.6, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 37 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 30.3, "towingCapacityLbs": 0, "curbWeightLbs": 4520 },
+    "features": { "hasHeatPump": false, "hasV2L": false, "hasV2H": false, "autopilotLevel": "EyeSight Driver Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2025-subaru-solterra.jpg", "manufacturerUrl": "https://www.subaru.com/vehicles/solterra.html", "availabilityStatus": "Discontinued", "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Final pre-refresh year (2025): Same 227 mi range as 2023-2024. Improved DC charging to 150 kW. 2026 MODEL MAJOR REFRESH: +61 mi range, +18-123 hp, NACS, battery preconditioning!" }
+  },
+  {
+    "id": "2026-subaru-solterra-premium",
     "year": 2026,
     "make": "Subaru",
     "model": "Solterra",
-    "trim": "Touring XT",
-    "slug": "2026-subaru-solterra-touring-xt",
+    "trim": "Premium",
+    "slug": "2026-subaru-solterra-premium",
     "pricing": {
-      "msrpBase": 47000,
-      "msrpMax": 52000
+      "msrpBase": 38495,
+      "msrpMax": 38495
     },
     "range": {
-      "epaRangeMiles": 260,
-      "batteryCapacityKwh": 72.8,
-      "efficiencyMPGe": 93,
-      "efficiencyKwhPer100Mi": 36.3
+      "epaRangeMiles": 288,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.5
     },
     "performance": {
-      "horsepower": 215,
+      "horsepower": 233,
       "torque": 249,
-      "zeroTo60": 7.5,
+      "zeroTo60": 6.5,
       "topSpeed": 100,
       "drivetrain": "AWD"
     },
@@ -1208,7 +1760,7 @@ export const vehicles: Vehicle[] = [
       "seatingCapacity": 5,
       "cargoVolumeCuFt": 30.3,
       "towingCapacityLbs": 2700,
-      "curbWeightLbs": 4300
+      "curbWeightLbs": 4250
     },
     "features": {
       "hasHeatPump": true,
@@ -1222,8 +1774,206 @@ export const vehicles: Vehicle[] = [
       "availabilityStatus": "Available",
       "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
       "lastVerified": "2025-11-27",
-      "notes": "Co-developed with Toyota on e-TNGA platform. 2026 model features native NACS charging and improved range over previous years."
+      "notes": "Base trim. 2026 model features native NACS charging, +61 mi range improvement, and battery preconditioning."
     }
+  },
+  {
+    "id": "2026-subaru-solterra-limited",
+    "year": 2026,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Limited",
+    "slug": "2026-subaru-solterra-limited",
+    "pricing": {
+      "msrpBase": 41395,
+      "msrpMax": 41395
+    },
+    "range": {
+      "epaRangeMiles": 288,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.5
+    },
+    "performance": {
+      "horsepower": 233,
+      "torque": 249,
+      "zeroTo60": 6.5,
+      "topSpeed": 100,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 6.6,
+      "dcChargingMaxKw": 150,
+      "chargingTime10to80Minutes": 40
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 30.3,
+      "towingCapacityLbs": 2700,
+      "curbWeightLbs": 4280
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "EyeSight with Lane Centering"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
+      "manufacturerUrl": "https://www.subaru.com/solterra",
+      "availabilityStatus": "Available",
+      "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Mid-level trim with additional features. 2026 model features native NACS charging and improved range."
+    }
+  },
+  {
+    "id": "2026-subaru-solterra-limited-xt",
+    "year": 2026,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Limited XT",
+    "slug": "2026-subaru-solterra-limited-xt",
+    "pricing": {
+      "msrpBase": 42895,
+      "msrpMax": 42895
+    },
+    "range": {
+      "epaRangeMiles": 278,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 338,
+      "torque": 332,
+      "zeroTo60": 5.2,
+      "topSpeed": 100,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 6.6,
+      "dcChargingMaxKw": 150,
+      "chargingTime10to80Minutes": 40
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 30.3,
+      "towingCapacityLbs": 2700,
+      "curbWeightLbs": 4320
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "EyeSight with Lane Centering"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
+      "manufacturerUrl": "https://www.subaru.com/solterra",
+      "availabilityStatus": "Available",
+      "dataSource": "Subaru.com official specs, media.subaru.com press releases",
+      "lastVerified": "2025-11-28",
+      "notes": "NEW 2026 XT trim: 338 hp dual motors, 0-60 in 5.2s. Same performance as Touring XT but Limited trim features. Perfect middle ground between comfort and performance."
+    }
+  },
+  {
+    "id": "2026-subaru-solterra-touring-xt",
+    "year": 2026,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Touring XT",
+    "slug": "2026-subaru-solterra-touring-xt",
+    "pricing": {
+      "msrpBase": 45555,
+      "msrpMax": 45555
+    },
+    "range": {
+      "epaRangeMiles": 278,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 338,
+      "torque": 332,
+      "zeroTo60": 5.2,
+      "topSpeed": 100,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 6.6,
+      "dcChargingMaxKw": 150,
+      "chargingTime10to80Minutes": 40
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 30.3,
+      "towingCapacityLbs": 2700,
+      "curbWeightLbs": 4350
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "EyeSight with Lane Centering"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
+      "manufacturerUrl": "https://www.subaru.com/solterra",
+      "availabilityStatus": "Available",
+      "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Top performance trim with dual motors. +123 hp over base model. 2026 features native NACS charging."
+    }
+  },
+  {
+    "id": "2026-tesla-model-3-standard-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model 3",
+    "trim": "Standard RWD",
+    "slug": "2026-tesla-model-3-standard-rwd",
+    "pricing": { "msrpBase": 38630, "msrpMax": 38630 },
+    "range": { "epaRangeMiles": 321, "batteryCapacityKwh": 70, "efficiencyMPGe": 130, "efficiencyKwhPer100Mi": 26.0 },
+    "performance": { "horsepower": 286, "torque": 307, "zeroTo60": 5.8, "topSpeed": 140, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 23, "towingCapacityLbs": 0, "curbWeightLbs": 3862 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-3.jpg", "manufacturerUrl": "https://www.tesla.com/model3", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "NEW 2026 base Model 3. 70 kWh battery, 321 mi range, most affordable Tesla sedan at $38,630." }
+  },
+  {
+    "id": "2026-tesla-model-3-premium-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model 3",
+    "trim": "Premium RWD",
+    "slug": "2026-tesla-model-3-premium-rwd",
+    "pricing": { "msrpBase": 44130, "msrpMax": 44130 },
+    "range": { "epaRangeMiles": 363, "batteryCapacityKwh": 80, "efficiencyMPGe": 138, "efficiencyKwhPer100Mi": 24.5 },
+    "performance": { "horsepower": 286, "torque": 307, "zeroTo60": 4.9, "topSpeed": 145, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 23, "towingCapacityLbs": 0, "curbWeightLbs": 3946 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-3.jpg", "manufacturerUrl": "https://www.tesla.com/model3", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Premium RWD (formerly 'Long Range'). 80 kWh battery, 363 mi EPA - best Model 3 range. Simplified 2026 naming." }
+  },
+  {
+    "id": "2026-tesla-model-3-performance",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model 3",
+    "trim": "Performance",
+    "slug": "2026-tesla-model-3-performance",
+    "pricing": { "msrpBase": 56630, "msrpMax": 56630 },
+    "range": { "epaRangeMiles": 298, "batteryCapacityKwh": 80, "efficiencyMPGe": 115, "efficiencyKwhPer100Mi": 29.4 },
+    "performance": { "horsepower": 510, "torque": 487, "zeroTo60": 2.9, "topSpeed": 163, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 23, "towingCapacityLbs": 0, "curbWeightLbs": 4048 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-3-performance.jpg", "manufacturerUrl": "https://www.tesla.com/model3", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Model 3 Performance: 510 hp, 0-60 in 2.9s, 163 mph top speed. Track Mode, carbon fiber spoiler, sport brakes." }
   },
   {
     "id": "2026-tesla-model-3-long-range",
@@ -1326,5 +2076,50 @@ export const vehicles: Vehicle[] = [
       "lastVerified": "2025-11-27",
       "notes": "America's best-selling EV. 2026 model features improved efficiency and range. Optional 7-seat configuration. Excellent cargo space and practicality."
     }
+  },
+  {
+    "id": "2026-tesla-model-y-standard-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model Y",
+    "trim": "Standard RWD",
+    "slug": "2026-tesla-model-y-standard-rwd",
+    "pricing": { "msrpBase": 41630, "msrpMax": 41630 },
+    "range": { "epaRangeMiles": 321, "batteryCapacityKwh": 69.5, "efficiencyMPGe": 123, "efficiencyKwhPer100Mi": 27.4 },
+    "performance": { "horsepower": 300, "torque": 325, "zeroTo60": 6.8, "topSpeed": 135, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 76, "towingCapacityLbs": 2200, "curbWeightLbs": 4120 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-y.jpg", "manufacturerUrl": "https://www.tesla.com/modely", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "NEW 2026 base Model Y. 69.5 kWh battery, RWD, 321 mi range. Most affordable Model Y at $41,630. Juniper refresh with updated interior." }
+  },
+  {
+    "id": "2026-tesla-model-y-premium-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model Y",
+    "trim": "Premium RWD",
+    "slug": "2026-tesla-model-y-premium-rwd",
+    "pricing": { "msrpBase": 46630, "msrpMax": 46630 },
+    "range": { "epaRangeMiles": 357, "batteryCapacityKwh": 75, "efficiencyMPGe": 129, "efficiencyKwhPer100Mi": 26.1 },
+    "performance": { "horsepower": 310, "torque": 340, "zeroTo60": 5.4, "topSpeed": 135, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 76, "towingCapacityLbs": 2200, "curbWeightLbs": 4250 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-y.jpg", "manufacturerUrl": "https://www.tesla.com/modely", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Premium RWD: 75 kWh battery, 357 mi EPA range - best Model Y efficiency. Ventilated seats, improved materials." }
+  },
+  {
+    "id": "2026-tesla-model-y-performance",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model Y",
+    "trim": "Performance",
+    "slug": "2026-tesla-model-y-performance",
+    "pricing": { "msrpBase": 59130, "msrpMax": 59130 },
+    "range": { "epaRangeMiles": 306, "batteryCapacityKwh": 75, "efficiencyMPGe": 111, "efficiencyKwhPer100Mi": 30.4 },
+    "performance": { "horsepower": 460, "torque": 487, "zeroTo60": 3.3, "topSpeed": 155, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 76, "towingCapacityLbs": 3500, "curbWeightLbs": 4555 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-y-performance.jpg", "manufacturerUrl": "https://www.tesla.com/modely", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Model Y Performance: 460 hp, 0-60 in 3.3s, 155 mph top speed. Track Mode, performance brakes, lowered suspension." }
   }
 ];

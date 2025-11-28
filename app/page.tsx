@@ -45,7 +45,7 @@ export default function Home() {
                 Browse Guides
                 <ArrowRight className="ml-2" size={20} />
               </Button>
-              <Button href="/vehicles" variant="outline" size="lg">
+              <Button href="/vehicles" variant="outline-light" size="lg">
                 Explore {models.length} EV Models
               </Button>
             </div>
@@ -277,7 +277,7 @@ export default function Home() {
             <Button href="/guides" variant="eco" size="lg">
               Browse All Guides
             </Button>
-            <Button href="/vehicles" variant="outline" size="lg">
+            <Button href="/vehicles" variant="outline-light" size="lg">
               Explore Vehicles
             </Button>
           </div>
