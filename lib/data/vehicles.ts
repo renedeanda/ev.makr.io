@@ -1418,6 +1418,66 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2026-kia-ev9-light-rwd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Light RWD",
+    "slug": "2026-kia-ev9-light-rwd",
+    "pricing": { "msrpBase": 54900, "msrpMax": 54900 },
+    "range": { "epaRangeMiles": 230, "batteryCapacityKwh": 76.1, "efficiencyMPGe": 88, "efficiencyKwhPer100Mi": 38.3 },
+    "performance": { "horsepower": 201, "torque": 258, "zeroTo60": 8.5, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 210, "chargingTime10to80Minutes": 28 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 0, "curbWeightLbs": 5350 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Base EV9 trim. 76.1 kWh battery, RWD only, 7-seater. Most affordable 3-row electric SUV at $54,900. Native NACS charging." }
+  },
+  {
+    "id": "2026-kia-ev9-light-lr-rwd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Light Long Range RWD",
+    "slug": "2026-kia-ev9-light-lr-rwd",
+    "pricing": { "msrpBase": 57900, "msrpMax": 57900 },
+    "range": { "epaRangeMiles": 305, "batteryCapacityKwh": 99.8, "efficiencyMPGe": 95, "efficiencyKwhPer100Mi": 35.5 },
+    "performance": { "horsepower": 201, "torque": 258, "zeroTo60": 8.2, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 24 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 0, "curbWeightLbs": 5550 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Long range EV9 with 99.8 kWh battery. Best range in lineup at 305 miles EPA. RWD for maximum efficiency. 800V ultra-fast charging." }
+  },
+  {
+    "id": "2026-kia-ev9-wind-awd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Wind AWD",
+    "slug": "2026-kia-ev9-wind-awd",
+    "pricing": { "msrpBase": 64900, "msrpMax": 64900 },
+    "range": { "epaRangeMiles": 283, "batteryCapacityKwh": 99.8, "efficiencyMPGe": 90, "efficiencyKwhPer100Mi": 37.5 },
+    "performance": { "horsepower": 379, "torque": 516, "zeroTo60": 5.2, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 24 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 5000, "curbWeightLbs": 5750 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Mid-tier AWD trim. 379 hp dual motors, 5.2s 0-60. Adds premium features: heated/ventilated seats, power liftgate, blind-spot cameras." }
+  },
+  {
+    "id": "2026-kia-ev9-land-awd",
+    "year": 2026,
+    "make": "Kia",
+    "model": "EV9",
+    "trim": "Land AWD",
+    "slug": "2026-kia-ev9-land-awd",
+    "pricing": { "msrpBase": 68900, "msrpMax": 68900 },
+    "range": { "epaRangeMiles": 280, "batteryCapacityKwh": 99.8, "efficiencyMPGe": 90, "efficiencyKwhPer100Mi": 37.5 },
+    "performance": { "horsepower": 379, "torque": 516, "zeroTo60": 5.0, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 24 },
+    "physical": { "seatingCapacity": 7, "cargoVolumeCuFt": 81.7, "towingCapacityLbs": 5000, "curbWeightLbs": 5850 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-kia-ev9.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev9", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Luxury trim with premium interior. Adds: Meridian audio, relaxation seats, digital side mirrors, augmented reality HUD. Nightfall Edition package available." }
+  },
+  {
     "id": "2026-kia-ev9-gt-line",
     "year": 2026,
     "make": "Kia",
@@ -1766,6 +1826,57 @@ export const vehicles: Vehicle[] = [
       "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
       "lastVerified": "2025-11-27",
       "notes": "Mid-level trim with additional features. 2026 model features native NACS charging and improved range."
+    }
+  },
+  {
+    "id": "2026-subaru-solterra-limited-xt",
+    "year": 2026,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Limited XT",
+    "slug": "2026-subaru-solterra-limited-xt",
+    "pricing": {
+      "msrpBase": 42895,
+      "msrpMax": 42895
+    },
+    "range": {
+      "epaRangeMiles": 278,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 338,
+      "torque": 332,
+      "zeroTo60": 5.2,
+      "topSpeed": 100,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 6.6,
+      "dcChargingMaxKw": 150,
+      "chargingTime10to80Minutes": 40
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 30.3,
+      "towingCapacityLbs": 2700,
+      "curbWeightLbs": 4320
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "EyeSight with Lane Centering"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
+      "manufacturerUrl": "https://www.subaru.com/solterra",
+      "availabilityStatus": "Available",
+      "dataSource": "Subaru.com official specs, media.subaru.com press releases",
+      "lastVerified": "2025-11-28",
+      "notes": "NEW 2026 XT trim: 338 hp dual motors, 0-60 in 5.2s. Same performance as Touring XT but Limited trim features. Perfect middle ground between comfort and performance."
     }
   },
   {

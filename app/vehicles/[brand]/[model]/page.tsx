@@ -108,11 +108,11 @@ export default function VehicleModelPage({ params }: PageProps) {
             
             <div className="flex gap-2">
               {latestVehicle.charging.connector && (
-                <Badge variant={latestVehicle.charging.connector === "NACS" ? "nacs" : "ccs1"} size="md">
+                <Badge variant="outline-light" size="md">
                   {latestVehicle.charging.connector}
                 </Badge>
               )}
-              <Badge variant="eco" size="md">
+              <Badge variant="outline-light" size="md">
                 All-Electric
               </Badge>
             </div>
