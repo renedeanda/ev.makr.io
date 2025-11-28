@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Zap, Heart, BookOpen, Users } from "lucide-react";
+import { Zap, Heart, BookOpen, Users, Leaf } from "lucide-react";
 import DisclaimerBox from "@/components/DisclaimerBox";
 
 export const metadata: Metadata = {
@@ -14,9 +14,21 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-electric-blue to-electric-green text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About ev.makr.io</h1>
+      <div className="relative bg-gradient-to-br from-primary via-primary to-eco-green text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '32px 32px'
+          }}></div>
+        </div>
+        
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="inline-flex items-center gap-2 bg-eco-green/20 text-eco-green-light px-4 py-2 rounded-full mb-6">
+            <Leaf size={16} />
+            <span className="text-sm font-semibold">Our Story</span>
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">About ev.makr.io</h1>
           <p className="text-xl md:text-2xl text-white/90">
             An educational resource built by a new EV owner, for new EV owners
           </p>
