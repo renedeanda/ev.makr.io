@@ -1,0 +1,23 @@
+{
+  "id": "tesla-supercharger",
+  "name": "Tesla Supercharger",
+  "websiteUrl": "https://www.tesla.com/supercharger",
+  "appIosUrl": "https://apps.apple.com/us/app/tesla/id582007913",
+  "appAndroidUrl": "https://play.google.com/store/apps/details?id=com.teslamotors.tesla",
+  "details": {
+    "stationCount": 2100,
+    "statesAvailable": ["All 50 states"],
+    "connectorTypes": ["NACS"],
+    "maxPowerKw": 250
+  },
+  "pricing": {
+    "pricingStructure": "Per kWh, varies by location and time",
+    "averageCostPerKwh": 0.35,
+    "membershipAvailable": false
+  },
+  "access": {
+    "requiresAccount": true,
+    "paymentMethods": ["Tesla App", "Credit Card (at select locations)"],
+    "hasPlugAndCharge": true
+  }
+}

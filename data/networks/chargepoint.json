@@ -1,0 +1,23 @@
+{
+  "id": "chargepoint",
+  "name": "ChargePoint",
+  "websiteUrl": "https://www.chargepoint.com",
+  "appIosUrl": "https://apps.apple.com/us/app/chargepoint/id356866857",
+  "appAndroidUrl": "https://play.google.com/store/apps/details?id=com.coulombtech.ChargePoint",
+  "details": {
+    "stationCount": 2000,
+    "statesAvailable": ["All 50 states + Canada"],
+    "connectorTypes": ["CCS1", "CHAdeMO", "J1772"],
+    "maxPowerKw": 350
+  },
+  "pricing": {
+    "pricingStructure": "Set by station owner - varies widely by location",
+    "averageCostPerKwh": 0.40,
+    "membershipAvailable": false
+  },
+  "access": {
+    "requiresAccount": false,
+    "paymentMethods": ["ChargePoint App", "RFID Card", "Credit Card (select locations)"],
+    "hasPlugAndCharge": false
+  }
+}

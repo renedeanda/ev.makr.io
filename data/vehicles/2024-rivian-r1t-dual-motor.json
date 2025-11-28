@@ -1,0 +1,51 @@
+{
+  "id": "2024-rivian-r1t-dual-motor",
+  "year": 2024,
+  "make": "Rivian",
+  "model": "R1T",
+  "trim": "Dual Motor",
+  "slug": "2024-rivian-r1t-dual-motor",
+  "pricing": {
+    "msrpBase": 73000,
+    "msrpMax": 83000
+  },
+  "range": {
+    "epaRangeMiles": 270,
+    "batteryCapacityKwh": 92,
+    "efficiencyMPGe": 71,
+    "efficiencyKwhPer100Mi": 47.5
+  },
+  "performance": {
+    "horsepower": 533,
+    "torque": 610,
+    "zeroTo60": 4.5,
+    "topSpeed": 110,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "CCS1",
+    "acChargingMaxKw": 11.5,
+    "dcChargingMaxKw": 220,
+    "chargingTime10to80Minutes": 30
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 54,
+    "towingCapacityLbs": 11000,
+    "curbWeightLbs": 7148
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": true,
+    "hasV2H": false,
+    "autopilotLevel": "Driver+"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2024-rivian-r1t.jpg",
+    "manufacturerUrl": "https://rivian.com/r1t",
+    "availabilityStatus": "Available",
+    "dataSource": "Rivian.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Adventure-focused electric truck with innovative gear tunnel. Exceptional off-road capability. Native NACS starting 2025, access to Rivian Adventure Network + Tesla Superchargers."
+  }
+}

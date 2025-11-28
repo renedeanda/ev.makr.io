@@ -1,0 +1,51 @@
+{
+  "id": "2024-tesla-model-y-long-range",
+  "year": 2024,
+  "make": "Tesla",
+  "model": "Model Y",
+  "trim": "Long Range",
+  "slug": "2024-tesla-model-y-long-range",
+  "pricing": {
+    "msrpBase": 48990,
+    "msrpMax": 48990
+  },
+  "range": {
+    "epaRangeMiles": 330,
+    "batteryCapacityKwh": 82,
+    "efficiencyMPGe": 122,
+    "efficiencyKwhPer100Mi": 27.7
+  },
+  "performance": {
+    "horsepower": 384,
+    "torque": 376,
+    "zeroTo60": 4.8,
+    "topSpeed": 135,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11,
+    "dcChargingMaxKw": 250,
+    "chargingTime10to80Minutes": 27
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 76,
+    "towingCapacityLbs": 3500,
+    "curbWeightLbs": 4398
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Autopilot included, FSD available"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2024-tesla-model-y.jpg",
+    "manufacturerUrl": "https://www.tesla.com/modely",
+    "availabilityStatus": "Available",
+    "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Best-selling EV in America. Compact SUV with excellent cargo space and efficiency."
+  }
+}

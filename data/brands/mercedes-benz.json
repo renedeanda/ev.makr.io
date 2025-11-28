@@ -1,0 +1,22 @@
+{
+  "id": "mercedes-benz",
+  "name": "Mercedes-Benz",
+  "slug": "mercedes-benz",
+  "parentCompany": "Mercedes-Benz Group AG",
+  "countryOfOrigin": "Germany",
+  "chargingStrategy": {
+    "currentConnector": "NACS (2026+), CCS1 (2023-2025)",
+    "nacsAdoptionTimeline": "Native NACS starting with 2026 model year vehicles"
+  },
+  "networkPartnerships": [
+    "Partnership with BMW, Stellantis, Honda, Hyundai, Kia for IONNA charging network",
+    "Mercedes me Charge service for access to multiple networks",
+    "NACS adapter program for existing CCS1 models"
+  ],
+  "content": {
+    "description": "Mercedes-Benz EQ electric vehicles represent the pinnacle of luxury and technology. From the flagship EQS sedan and SUV to the mid-size EQE models, Mercedes offers Level 3 autonomous driving (Drive Pilot), premium interiors, and the advanced MBUX Hyperscreen infotainment system.",
+    "evStrategySummary": "Mercedes-Benz is transitioning to an all-electric future with the EQ brand. Focus on luxury, advanced technology, and innovation. Features include Drive Pilot Level 3 autonomous driving (approved highways), MBUX Hyperscreen, premium materials, and long-range capabilities. Targeting affluent buyers seeking cutting-edge electric luxury.",
+    "logoUrl": "/images/brands/mercedes-benz-logo.svg",
+    "websiteUrl": "https://www.mbusa.com/en/vehicles/class/eq"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "2026-ford-f150-lightning-lariat",
+  "year": 2026,
+  "make": "Ford",
+  "model": "F-150 Lightning",
+  "trim": "Lariat Extended Range",
+  "slug": "2026-ford-f150-lightning-lariat",
+  "pricing": {
+    "msrpBase": 76995,
+    "msrpMax": 81995
+  },
+  "range": {
+    "epaRangeMiles": 340,
+    "batteryCapacityKwh": 140,
+    "efficiencyMPGe": 68,
+    "efficiencyKwhPer100Mi": 49.5
+  },
+  "performance": {
+    "horsepower": 580,
+    "torque": 775,
+    "zeroTo60": 4.0,
+    "topSpeed": 110,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 19.2,
+    "dcChargingMaxKw": 175,
+    "chargingTime10to80Minutes": 40
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 52.8,
+    "towingCapacityLbs": 10000,
+    "curbWeightLbs": 6650
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": true,
+    "hasV2H": true,
+    "autopilotLevel": "BlueCruise 1.5 (hands-free highway driving)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-ford-f150-lightning.jpg",
+    "manufacturerUrl": "https://www.ford.com/trucks/f150/f150-lightning/",
+    "availabilityStatus": "Available",
+    "dataSource": "Ford.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "2026 model features native NACS connector for direct Supercharger access. Improved battery capacity and range. Electric version of America's best-selling truck. Exceptional towing (10,000 lbs). V2H can power your home during outages."
+  }
+}

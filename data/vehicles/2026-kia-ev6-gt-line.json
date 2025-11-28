@@ -1,0 +1,51 @@
+{
+  "id": "2026-kia-ev6-gt-line",
+  "year": 2026,
+  "make": "Kia",
+  "model": "EV6",
+  "trim": "GT-Line AWD",
+  "slug": "2026-kia-ev6-gt-line",
+  "pricing": {
+    "msrpBase": 52900,
+    "msrpMax": 57900
+  },
+  "range": {
+    "epaRangeMiles": 295,
+    "batteryCapacityKwh": 84.0,
+    "efficiencyMPGe": 108,
+    "efficiencyKwhPer100Mi": 31.2
+  },
+  "performance": {
+    "horsepower": 320,
+    "torque": 446,
+    "zeroTo60": 4.5,
+    "topSpeed": 117,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.0,
+    "dcChargingMaxKw": 250,
+    "chargingTime10to80Minutes": 18
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 50.2,
+    "towingCapacityLbs": 1650,
+    "curbWeightLbs": 4720
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": true,
+    "hasV2H": false,
+    "autopilotLevel": "Highway Driving Assist 2"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-kia-ev6.jpg",
+    "manufacturerUrl": "https://www.kia.com/us/en/ev6",
+    "availabilityStatus": "Available",
+    "dataSource": "Kia.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "2026 model features native NACS connector for direct Tesla Supercharger access. 800V architecture enables ultra-fast charging (10-80% in 18 min). Enhanced range over 2024-2025 models."
+  }
+}

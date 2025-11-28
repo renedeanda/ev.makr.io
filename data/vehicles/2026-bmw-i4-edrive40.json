@@ -1,0 +1,51 @@
+{
+  "id": "2026-bmw-i4-edrive40",
+  "year": 2026,
+  "make": "BMW",
+  "model": "i4",
+  "trim": "eDrive40",
+  "slug": "2026-bmw-i4-edrive40",
+  "pricing": {
+    "msrpBase": 59400,
+    "msrpMax": 65000
+  },
+  "range": {
+    "epaRangeMiles": 301,
+    "batteryCapacityKwh": 83.9,
+    "efficiencyMPGe": 99,
+    "efficiencyKwhPer100Mi": 34.1
+  },
+  "performance": {
+    "horsepower": 335,
+    "torque": 317,
+    "zeroTo60": 5.5,
+    "topSpeed": 118,
+    "drivetrain": "RWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.0,
+    "dcChargingMaxKw": 205,
+    "chargingTime10to80Minutes": 31
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 45.6,
+    "towingCapacityLbs": 0,
+    "curbWeightLbs": 4970
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Driving Assistant Professional"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-bmw-i4.jpg",
+    "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+    "availabilityStatus": "Available",
+    "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "BMW's electric sedan based on the popular 4 Series Gran Coupe. 2026 model features native NACS connector for direct Supercharger access. Excellent 300+ mile range, premium interior, and BMW driving dynamics. Rear-wheel drive for classic BMW feel."
+  }
+}

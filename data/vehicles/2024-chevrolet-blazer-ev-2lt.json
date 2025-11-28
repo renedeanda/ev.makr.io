@@ -1,0 +1,51 @@
+{
+  "id": "2024-chevrolet-blazer-ev-2lt",
+  "year": 2024,
+  "make": "Chevrolet",
+  "model": "Blazer EV",
+  "trim": "2LT",
+  "slug": "2024-chevrolet-blazer-ev-2lt",
+  "pricing": {
+    "msrpBase": 56715,
+    "msrpMax": 61715
+  },
+  "range": {
+    "epaRangeMiles": 293,
+    "batteryCapacityKwh": 85,
+    "efficiencyMPGe": 98,
+    "efficiencyKwhPer100Mi": 34.4
+  },
+  "performance": {
+    "horsepower": 288,
+    "torque": 333,
+    "zeroTo60": 6.0,
+    "topSpeed": 112,
+    "drivetrain": "RWD"
+  },
+  "charging": {
+    "connector": "CCS1",
+    "acChargingMaxKw": 11.5,
+    "dcChargingMaxKw": 190,
+    "chargingTime10to80Minutes": 32
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 64.1,
+    "towingCapacityLbs": 0,
+    "curbWeightLbs": 5025
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Super Cruise (hands-free highway driving)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2024-chevrolet-blazer-ev.jpg",
+    "manufacturerUrl": "https://www.chevrolet.com/electric/blazer-ev",
+    "availabilityStatus": "Available",
+    "dataSource": "Chevrolet.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "GM Ultium platform with fast charging. Super Cruise hands-free driving available. Transitioning to NACS 2025+."
+  }
+}

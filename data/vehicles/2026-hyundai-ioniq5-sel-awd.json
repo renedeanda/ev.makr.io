@@ -1,0 +1,51 @@
+{
+  "id": "2026-hyundai-ioniq5-sel-awd",
+  "year": 2026,
+  "make": "Hyundai",
+  "model": "IONIQ 5",
+  "trim": "SEL AWD",
+  "slug": "2026-hyundai-ioniq5-sel-awd",
+  "pricing": {
+    "msrpBase": 52500,
+    "msrpMax": 57500
+  },
+  "range": {
+    "epaRangeMiles": 280,
+    "batteryCapacityKwh": 84.0,
+    "efficiencyMPGe": 107,
+    "efficiencyKwhPer100Mi": 31.5
+  },
+  "performance": {
+    "horsepower": 320,
+    "torque": 446,
+    "zeroTo60": 4.7,
+    "topSpeed": 115,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.0,
+    "dcChargingMaxKw": 250,
+    "chargingTime10to80Minutes": 18
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 59.3,
+    "towingCapacityLbs": 1650,
+    "curbWeightLbs": 4700
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": true,
+    "hasV2H": true,
+    "autopilotLevel": "Highway Driving Assist 2"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg",
+    "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5",
+    "availabilityStatus": "Available",
+    "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "2026 model features native NACS connector for direct Tesla Supercharger access without adapter. Award-winning design with 800V architecture. Enhanced battery capacity and range. V2L and V2H capabilities."
+  }
+}

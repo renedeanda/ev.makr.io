@@ -1,0 +1,22 @@
+{
+  "id": "genesis",
+  "name": "Genesis",
+  "slug": "genesis",
+  "parentCompany": "Hyundai Motor Group",
+  "countryOfOrigin": "South Korea",
+  "chargingStrategy": {
+    "currentConnector": "NACS (2026+), CCS1 (2023-2025)",
+    "nacsAdoptionTimeline": "Native NACS starting with 2026 models (GV60, GV70 Electrified)"
+  },
+  "networkPartnerships": [
+    "Shares 800V charging technology with Hyundai and Kia",
+    "NACS adapter program for existing CCS1 models",
+    "Compatible with Electrify America network"
+  ],
+  "content": {
+    "description": "Genesis is Hyundai's luxury brand, offering premium electric vehicles with cutting-edge technology. The GV60 and Electrified GV70 feature 800V architecture enabling ultra-fast charging (10-80% in 18 minutes), luxurious interiors, and advanced driver assistance systems.",
+    "evStrategySummary": "Genesis positions itself as a luxury EV brand with premium features, advanced technology, and competitive pricing compared to European luxury brands. Shares platform and technology with Hyundai IONIQ 5 and Kia EV6 but with elevated materials, design, and amenities. Focus on innovation, performance, and luxury.",
+    "logoUrl": "/images/brands/genesis-logo.svg",
+    "websiteUrl": "https://www.genesis.com/us/en/electrified.html"
+  }
+}

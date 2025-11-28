@@ -1,0 +1,51 @@
+{
+  "id": "2026-mercedes-eqs-suv-450plus",
+  "year": 2026,
+  "make": "Mercedes-Benz",
+  "model": "EQS SUV",
+  "trim": "450+",
+  "slug": "2026-mercedes-eqs-suv-450plus",
+  "pricing": {
+    "msrpBase": 107500,
+    "msrpMax": 115000
+  },
+  "range": {
+    "epaRangeMiles": 305,
+    "batteryCapacityKwh": 108.4,
+    "efficiencyMPGe": 88,
+    "efficiencyKwhPer100Mi": 38.3
+  },
+  "performance": {
+    "horsepower": 329,
+    "torque": 417,
+    "zeroTo60": 5.8,
+    "topSpeed": 130,
+    "drivetrain": "RWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.0,
+    "dcChargingMaxKw": 200,
+    "chargingTime10to80Minutes": 31
+  },
+  "physical": {
+    "seatingCapacity": 7,
+    "cargoVolumeCuFt": 74.8,
+    "towingCapacityLbs": 0,
+    "curbWeightLbs": 6195
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Drive Pilot (Level 3 autonomous)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-mercedes-eqs-suv.jpg",
+    "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+    "availabilityStatus": "Available",
+    "dataSource": "Mercedes-Benz.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Mercedes' flagship electric SUV with luxury appointments and advanced technology. 2026 model features native NACS connector. Spacious 7-seat configuration. Drive Pilot offers Level 3 autonomous driving on approved highways. Premium interior with MBUX Hyperscreen optional."
+  }
+}

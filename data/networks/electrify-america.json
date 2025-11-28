@@ -1,0 +1,23 @@
+{
+  "id": "electrify-america",
+  "name": "Electrify America",
+  "websiteUrl": "https://www.electrifyamerica.com",
+  "appIosUrl": "https://apps.apple.com/us/app/electrify-america/id1458030456",
+  "appAndroidUrl": "https://play.google.com/store/apps/details?id=com.ea.evowner",
+  "details": {
+    "stationCount": 950,
+    "statesAvailable": ["All 50 states"],
+    "connectorTypes": ["CCS1", "CHAdeMO"],
+    "maxPowerKw": 350
+  },
+  "pricing": {
+    "pricingStructure": "Per kWh or per minute depending on state regulations",
+    "averageCostPerKwh": 0.48,
+    "membershipAvailable": true
+  },
+  "access": {
+    "requiresAccount": false,
+    "paymentMethods": ["Electrify America App", "Credit Card", "Apple Pay", "Google Pay"],
+    "hasPlugAndCharge": true
+  }
+}

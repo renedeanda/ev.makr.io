@@ -1,0 +1,51 @@
+{
+  "id": "2024-ford-mustang-mach-e-premium",
+  "year": 2024,
+  "make": "Ford",
+  "model": "Mustang Mach-E",
+  "trim": "Premium AWD Extended Range",
+  "slug": "2024-ford-mustang-mach-e-premium",
+  "pricing": {
+    "msrpBase": 54995,
+    "msrpMax": 59995
+  },
+  "range": {
+    "epaRangeMiles": 290,
+    "batteryCapacityKwh": 91,
+    "efficiencyMPGe": 93,
+    "efficiencyKwhPer100Mi": 36.2
+  },
+  "performance": {
+    "horsepower": 346,
+    "torque": 428,
+    "zeroTo60": 5.2,
+    "topSpeed": 111,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "CCS1",
+    "acChargingMaxKw": 10.5,
+    "dcChargingMaxKw": 150,
+    "chargingTime10to80Minutes": 38
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 59.7,
+    "towingCapacityLbs": 0,
+    "curbWeightLbs": 4920
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "BlueCruise (hands-free highway driving)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2024-ford-mustang-mach-e.jpg",
+    "manufacturerUrl": "https://www.ford.com/suvs/mach-e/",
+    "availabilityStatus": "Available",
+    "dataSource": "Ford.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Sporty electric SUV with Mustang heritage. BlueCruise hands-free driving. Free NACS adapter for Supercharger access."
+  }
+}

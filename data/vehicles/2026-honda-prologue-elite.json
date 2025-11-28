@@ -1,0 +1,51 @@
+{
+  "id": "2026-honda-prologue-elite",
+  "year": 2026,
+  "make": "Honda",
+  "model": "Prologue",
+  "trim": "Elite AWD",
+  "slug": "2026-honda-prologue-elite",
+  "pricing": {
+    "msrpBase": 52500,
+    "msrpMax": 57500
+  },
+  "range": {
+    "epaRangeMiles": 273,
+    "batteryCapacityKwh": 85,
+    "efficiencyMPGe": 94,
+    "efficiencyKwhPer100Mi": 35.9
+  },
+  "performance": {
+    "horsepower": 288,
+    "torque": 333,
+    "zeroTo60": 5.8,
+    "topSpeed": 112,
+    "drivetrain": "AWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.5,
+    "dcChargingMaxKw": 155,
+    "chargingTime10to80Minutes": 40
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 71.0,
+    "towingCapacityLbs": 1500,
+    "curbWeightLbs": 5050
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Honda Sensing Elite"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-honda-prologue.jpg",
+    "manufacturerUrl": "https://automobiles.honda.com/prologue",
+    "availabilityStatus": "Available",
+    "dataSource": "Honda.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Honda's first dedicated EV, built in partnership with GM on Ultium platform. Native NACS connector for Tesla Supercharger access. Spacious SUV with Honda quality and reliability. Available with Honda Sensing Elite advanced driver assistance."
+  }
+}
