@@ -1,0 +1,51 @@
+{
+  "id": "2026-chevrolet-equinox-ev-2lt",
+  "year": 2026,
+  "make": "Chevrolet",
+  "model": "Equinox EV",
+  "trim": "2LT",
+  "slug": "2026-chevrolet-equinox-ev-2lt",
+  "pricing": {
+    "msrpBase": 35000,
+    "msrpMax": 42000
+  },
+  "range": {
+    "epaRangeMiles": 319,
+    "batteryCapacityKwh": 85,
+    "efficiencyMPGe": 102,
+    "efficiencyKwhPer100Mi": 33.0
+  },
+  "performance": {
+    "horsepower": 210,
+    "torque": 242,
+    "zeroTo60": 6.8,
+    "topSpeed": 112,
+    "drivetrain": "FWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.5,
+    "dcChargingMaxKw": 150,
+    "chargingTime10to80Minutes": 42
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 57.2,
+    "towingCapacityLbs": 0,
+    "curbWeightLbs": 4900
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Super Cruise (optional)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-chevrolet-equinox-ev.jpg",
+    "manufacturerUrl": "https://www.chevrolet.com/electric/equinox-ev",
+    "availabilityStatus": "Available",
+    "dataSource": "Chevrolet.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "One of the most affordable EVs available in 2026. GM Ultium platform with native NACS connector for direct Tesla Supercharger access. Excellent range for the price point. Super Cruise hands-free driving available on higher trims."
+  }
+}

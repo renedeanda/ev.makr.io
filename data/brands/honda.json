@@ -1,0 +1,21 @@
+{
+  "id": "honda",
+  "name": "Honda",
+  "slug": "honda",
+  "parentCompany": "Honda Motor Company",
+  "countryOfOrigin": "Japan",
+  "chargingStrategy": {
+    "currentConnector": "NACS (2026+), CCS1 (2024-2025)",
+    "nacsAdoptionTimeline": "Native NACS starting with 2026 Prologue"
+  },
+  "networkPartnerships": [
+    "Partnership with GM for Ultium platform EVs",
+    "Compatible with all major U.S. charging networks"
+  ],
+  "content": {
+    "description": "Honda entered the EV market with the Prologue, built in partnership with GM on the Ultium platform. Known for reliability and quality, Honda brings their engineering expertise to electric mobility with spacious SUVs and advanced driver assistance.",
+    "evStrategySummary": "Honda is leveraging GM's Ultium platform for initial EV offerings while developing proprietary electric architecture for future models. Focus on practical, reliable EVs with Honda's signature quality and advanced safety features. Targeting mainstream American buyers with familiar SUV form factors.",
+    "logoUrl": "/images/brands/honda-logo.svg",
+    "websiteUrl": "https://automobiles.honda.com/prologue"
+  }
+}

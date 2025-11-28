@@ -1,0 +1,22 @@
+{
+  "id": "chevrolet",
+  "name": "Chevrolet",
+  "slug": "chevrolet",
+  "parentCompany": "General Motors",
+  "countryOfOrigin": "United States",
+  "chargingStrategy": {
+    "currentConnector": "NACS (2026+), CCS1 (2024-2025)",
+    "nacsAdoptionTimeline": "Native NACS starting with 2026 models (Equinox EV, Blazer EV, Silverado EV)"
+  },
+  "networkPartnerships": [
+    "GM Energy (home charging solutions)",
+    "Free NACS adapter program for 2024-2025 CCS1 models",
+    "Partnership with EVgo for public charging"
+  ],
+  "content": {
+    "description": "Chevrolet is bringing affordable electric vehicles to market with the Equinox EV starting around $35,000. Built on GM's Ultium platform, Chevy EVs offer competitive range, fast charging, and available Super Cruise hands-free driving technology.",
+    "evStrategySummary": "GM's mainstream brand focusing on affordable EVs for mass market adoption. Equinox EV targets budget-conscious buyers while Blazer EV and Silverado EV serve performance and truck markets. All-electric future with Ultium platform enabling multiple body styles and price points.",
+    "logoUrl": "/images/brands/chevrolet-logo.svg",
+    "websiteUrl": "https://www.chevrolet.com/electric"
+  }
+}

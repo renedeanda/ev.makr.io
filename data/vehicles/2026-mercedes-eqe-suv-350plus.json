@@ -1,0 +1,51 @@
+{
+  "id": "2026-mercedes-eqe-suv-350plus",
+  "year": 2026,
+  "make": "Mercedes-Benz",
+  "model": "EQE SUV",
+  "trim": "350+",
+  "slug": "2026-mercedes-eqe-suv-350plus",
+  "pricing": {
+    "msrpBase": 78500,
+    "msrpMax": 85000
+  },
+  "range": {
+    "epaRangeMiles": 260,
+    "batteryCapacityKwh": 90.6,
+    "efficiencyMPGe": 91,
+    "efficiencyKwhPer100Mi": 37.0
+  },
+  "performance": {
+    "horsepower": 288,
+    "torque": 391,
+    "zeroTo60": 6.2,
+    "topSpeed": 130,
+    "drivetrain": "RWD"
+  },
+  "charging": {
+    "connector": "NACS",
+    "acChargingMaxKw": 11.0,
+    "dcChargingMaxKw": 170,
+    "chargingTime10to80Minutes": 32
+  },
+  "physical": {
+    "seatingCapacity": 5,
+    "cargoVolumeCuFt": 60.0,
+    "towingCapacityLbs": 0,
+    "curbWeightLbs": 5820
+  },
+  "features": {
+    "hasHeatPump": true,
+    "hasV2L": false,
+    "hasV2H": false,
+    "autopilotLevel": "Drive Pilot (Level 3 autonomous)"
+  },
+  "meta": {
+    "imageUrl": "/images/vehicles/2026-mercedes-eqe-suv.jpg",
+    "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+    "availabilityStatus": "Available",
+    "dataSource": "Mercedes-Benz.com official specs, EPA FuelEconomy.gov",
+    "lastVerified": "2025-11-27",
+    "notes": "Mercedes' mid-size electric SUV with premium features and technology. 2026 model features native NACS connector for Tesla Supercharger access. More affordable than EQS SUV while maintaining Mercedes luxury. MBUX infotainment with voice control. Drive Pilot Level 3 autonomy available."
+  }
+}
