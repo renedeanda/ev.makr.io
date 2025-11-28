@@ -107,7 +107,7 @@ export default async function GuidePage({
         </header>
 
         {/* MDX Content */}
-        <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-neutral-charcoal prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-electric-blue prose-a:no-underline hover:prose-a:underline prose-strong:text-neutral-charcoal prose-code:text-electric-blue prose-code:bg-neutral-light prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-neutral-charcoal prose-pre:text-white prose-table:border-collapse prose-th:bg-neutral-light prose-th:p-3 prose-td:p-3 prose-td:border prose-td:border-gray-300 prose-img:rounded-lg">
+        <div className="prose prose-lg max-w-none">
           <MDXRemote source={guide.content} components={components} />
         </div>
 
