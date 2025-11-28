@@ -869,6 +869,57 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2026-hyundai-ioniq5-se-standard",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "SE Standard Range",
+    "slug": "2026-hyundai-ioniq5-se-standard",
+    "pricing": {
+      "msrpBase": 35000,
+      "msrpMax": 35000
+    },
+    "range": {
+      "epaRangeMiles": 245,
+      "batteryCapacityKwh": 63,
+      "efficiencyMPGe": 100,
+      "efficiencyKwhPer100Mi": 33.6
+    },
+    "performance": {
+      "horsepower": 168,
+      "torque": 258,
+      "zeroTo60": 7.3,
+      "topSpeed": 115,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 350,
+      "chargingTime10to80Minutes": 18
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 59.3,
+      "towingCapacityLbs": 1650,
+      "curbWeightLbs": 4200
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": true,
+      "hasV2H": false,
+      "autopilotLevel": "Highway Driving Assist 2"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg",
+      "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5",
+      "availabilityStatus": "Available",
+      "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Most affordable IONIQ 5 trim. 63 kWh battery, RWD only. 2026 includes NACS connector and $7,600 price cut from 2025."
+    }
+  },
+  {
     "id": "2026-hyundai-ioniq5-sel-awd",
     "year": 2026,
     "make": "Hyundai",
@@ -917,6 +968,57 @@ export const vehicles: Vehicle[] = [
       "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
       "lastVerified": "2025-11-27",
       "notes": "2026 model features native NACS connector for direct Tesla Supercharger access without adapter. Award-winning design with 800V architecture. Enhanced battery capacity and range. V2L and V2H capabilities."
+    }
+  },
+  {
+    "id": "2026-hyundai-ioniq5-n",
+    "year": 2026,
+    "make": "Hyundai",
+    "model": "IONIQ 5",
+    "trim": "N (Performance)",
+    "slug": "2026-hyundai-ioniq5-n",
+    "pricing": {
+      "msrpBase": 67000,
+      "msrpMax": 67000
+    },
+    "range": {
+      "epaRangeMiles": 221,
+      "batteryCapacityKwh": 84,
+      "efficiencyMPGe": 84,
+      "efficiencyKwhPer100Mi": 40.2
+    },
+    "performance": {
+      "horsepower": 641,
+      "torque": 545,
+      "zeroTo60": 3.4,
+      "topSpeed": 162,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 350,
+      "chargingTime10to80Minutes": 18
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 59.3,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4900
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": true,
+      "hasV2H": false,
+      "autopilotLevel": "N Active Sound+"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-hyundai-ioniq5-n.jpg",
+      "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5-n",
+      "availabilityStatus": "Available",
+      "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Hyundai N performance variant. 641 hp, 0-60 in 3.4s. Track-focused with N Grin Boost mode, drift optimizer, launch control. Enhanced suspension, brakes, and cooling systems."
     }
   },
   {
@@ -1175,26 +1277,26 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
-    "id": "2026-subaru-solterra-touring-xt",
+    "id": "2026-subaru-solterra-premium",
     "year": 2026,
     "make": "Subaru",
     "model": "Solterra",
-    "trim": "Touring XT",
-    "slug": "2026-subaru-solterra-touring-xt",
+    "trim": "Premium",
+    "slug": "2026-subaru-solterra-premium",
     "pricing": {
-      "msrpBase": 47000,
-      "msrpMax": 52000
+      "msrpBase": 38495,
+      "msrpMax": 38495
     },
     "range": {
-      "epaRangeMiles": 260,
-      "batteryCapacityKwh": 72.8,
-      "efficiencyMPGe": 93,
-      "efficiencyKwhPer100Mi": 36.3
+      "epaRangeMiles": 288,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.5
     },
     "performance": {
-      "horsepower": 215,
+      "horsepower": 233,
       "torque": 249,
-      "zeroTo60": 7.5,
+      "zeroTo60": 6.5,
       "topSpeed": 100,
       "drivetrain": "AWD"
     },
@@ -1208,7 +1310,7 @@ export const vehicles: Vehicle[] = [
       "seatingCapacity": 5,
       "cargoVolumeCuFt": 30.3,
       "towingCapacityLbs": 2700,
-      "curbWeightLbs": 4300
+      "curbWeightLbs": 4250
     },
     "features": {
       "hasHeatPump": true,
@@ -1222,7 +1324,109 @@ export const vehicles: Vehicle[] = [
       "availabilityStatus": "Available",
       "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
       "lastVerified": "2025-11-27",
-      "notes": "Co-developed with Toyota on e-TNGA platform. 2026 model features native NACS charging and improved range over previous years."
+      "notes": "Base trim. 2026 model features native NACS charging, +61 mi range improvement, and battery preconditioning."
+    }
+  },
+  {
+    "id": "2026-subaru-solterra-limited",
+    "year": 2026,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Limited",
+    "slug": "2026-subaru-solterra-limited",
+    "pricing": {
+      "msrpBase": 41395,
+      "msrpMax": 41395
+    },
+    "range": {
+      "epaRangeMiles": 288,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.5
+    },
+    "performance": {
+      "horsepower": 233,
+      "torque": 249,
+      "zeroTo60": 6.5,
+      "topSpeed": 100,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 6.6,
+      "dcChargingMaxKw": 150,
+      "chargingTime10to80Minutes": 40
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 30.3,
+      "towingCapacityLbs": 2700,
+      "curbWeightLbs": 4280
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "EyeSight with Lane Centering"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
+      "manufacturerUrl": "https://www.subaru.com/solterra",
+      "availabilityStatus": "Available",
+      "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Mid-level trim with additional features. 2026 model features native NACS charging and improved range."
+    }
+  },
+  {
+    "id": "2026-subaru-solterra-touring-xt",
+    "year": 2026,
+    "make": "Subaru",
+    "model": "Solterra",
+    "trim": "Touring XT",
+    "slug": "2026-subaru-solterra-touring-xt",
+    "pricing": {
+      "msrpBase": 45555,
+      "msrpMax": 45555
+    },
+    "range": {
+      "epaRangeMiles": 278,
+      "batteryCapacityKwh": 74.7,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 338,
+      "torque": 332,
+      "zeroTo60": 5.2,
+      "topSpeed": 100,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 6.6,
+      "dcChargingMaxKw": 150,
+      "chargingTime10to80Minutes": 40
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 30.3,
+      "towingCapacityLbs": 2700,
+      "curbWeightLbs": 4350
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "EyeSight with Lane Centering"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
+      "manufacturerUrl": "https://www.subaru.com/solterra",
+      "availabilityStatus": "Available",
+      "dataSource": "Subaru.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-27",
+      "notes": "Top performance trim with dual motors. +123 hp over base model. 2026 features native NACS charging."
     }
   },
   {

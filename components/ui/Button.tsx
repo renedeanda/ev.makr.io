@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: 'primary' | 'secondary' | 'outline' | 'eco';
+  variant?: 'primary' | 'secondary' | 'outline' | 'outline-light' | 'eco';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   onClick?: () => void;
@@ -28,6 +28,7 @@ export default function Button({
     primary: 'bg-primary text-white hover:bg-primary-dark focus:ring-primary shadow-soft',
     secondary: 'bg-slate text-white hover:bg-slate/90 focus:ring-slate shadow-soft',
     outline: 'border-2 border-primary text-primary hover:bg-primary/5 focus:ring-primary',
+    'outline-light': 'border-2 border-white text-white hover:bg-white/10 focus:ring-white',
     eco: 'bg-eco-green text-white hover:bg-eco-green-dark focus:ring-eco-green shadow-soft',
   };
   

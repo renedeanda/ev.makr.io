@@ -207,7 +207,7 @@ export default function GuidesPage() {
             <Button href="/vehicles" variant="eco" size="lg">
               Explore Vehicles
             </Button>
-            <Button href="/about" variant="outline" size="lg">
+            <Button href="/about" variant="outline-light" size="lg">
               About This Site
             </Button>
           </div>
