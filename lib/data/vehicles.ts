@@ -1640,6 +1640,51 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2026-tesla-model-3-standard-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model 3",
+    "trim": "Standard RWD",
+    "slug": "2026-tesla-model-3-standard-rwd",
+    "pricing": { "msrpBase": 38630, "msrpMax": 38630 },
+    "range": { "epaRangeMiles": 321, "batteryCapacityKwh": 70, "efficiencyMPGe": 130, "efficiencyKwhPer100Mi": 26.0 },
+    "performance": { "horsepower": 286, "torque": 307, "zeroTo60": 5.8, "topSpeed": 140, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 23, "towingCapacityLbs": 0, "curbWeightLbs": 3862 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-3.jpg", "manufacturerUrl": "https://www.tesla.com/model3", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "NEW 2026 base Model 3. 70 kWh battery, 321 mi range, most affordable Tesla sedan at $38,630." }
+  },
+  {
+    "id": "2026-tesla-model-3-premium-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model 3",
+    "trim": "Premium RWD",
+    "slug": "2026-tesla-model-3-premium-rwd",
+    "pricing": { "msrpBase": 44130, "msrpMax": 44130 },
+    "range": { "epaRangeMiles": 363, "batteryCapacityKwh": 80, "efficiencyMPGe": 138, "efficiencyKwhPer100Mi": 24.5 },
+    "performance": { "horsepower": 286, "torque": 307, "zeroTo60": 4.9, "topSpeed": 145, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 23, "towingCapacityLbs": 0, "curbWeightLbs": 3946 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-3.jpg", "manufacturerUrl": "https://www.tesla.com/model3", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Premium RWD (formerly 'Long Range'). 80 kWh battery, 363 mi EPA - best Model 3 range. Simplified 2026 naming." }
+  },
+  {
+    "id": "2026-tesla-model-3-performance",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model 3",
+    "trim": "Performance",
+    "slug": "2026-tesla-model-3-performance",
+    "pricing": { "msrpBase": 56630, "msrpMax": 56630 },
+    "range": { "epaRangeMiles": 298, "batteryCapacityKwh": 80, "efficiencyMPGe": 115, "efficiencyKwhPer100Mi": 29.4 },
+    "performance": { "horsepower": 510, "torque": 487, "zeroTo60": 2.9, "topSpeed": 163, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 23, "towingCapacityLbs": 0, "curbWeightLbs": 4048 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-3-performance.jpg", "manufacturerUrl": "https://www.tesla.com/model3", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Model 3 Performance: 510 hp, 0-60 in 2.9s, 163 mph top speed. Track Mode, carbon fiber spoiler, sport brakes." }
+  },
+  {
     "id": "2026-tesla-model-3-long-range",
     "year": 2026,
     "make": "Tesla",
@@ -1740,5 +1785,50 @@ export const vehicles: Vehicle[] = [
       "lastVerified": "2025-11-27",
       "notes": "America's best-selling EV. 2026 model features improved efficiency and range. Optional 7-seat configuration. Excellent cargo space and practicality."
     }
+  },
+  {
+    "id": "2026-tesla-model-y-standard-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model Y",
+    "trim": "Standard RWD",
+    "slug": "2026-tesla-model-y-standard-rwd",
+    "pricing": { "msrpBase": 41630, "msrpMax": 41630 },
+    "range": { "epaRangeMiles": 321, "batteryCapacityKwh": 69.5, "efficiencyMPGe": 123, "efficiencyKwhPer100Mi": 27.4 },
+    "performance": { "horsepower": 300, "torque": 325, "zeroTo60": 6.8, "topSpeed": 135, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 76, "towingCapacityLbs": 2200, "curbWeightLbs": 4120 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-y.jpg", "manufacturerUrl": "https://www.tesla.com/modely", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "NEW 2026 base Model Y. 69.5 kWh battery, RWD, 321 mi range. Most affordable Model Y at $41,630. Juniper refresh with updated interior." }
+  },
+  {
+    "id": "2026-tesla-model-y-premium-rwd",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model Y",
+    "trim": "Premium RWD",
+    "slug": "2026-tesla-model-y-premium-rwd",
+    "pricing": { "msrpBase": 46630, "msrpMax": 46630 },
+    "range": { "epaRangeMiles": 357, "batteryCapacityKwh": 75, "efficiencyMPGe": 129, "efficiencyKwhPer100Mi": 26.1 },
+    "performance": { "horsepower": 310, "torque": 340, "zeroTo60": 5.4, "topSpeed": 135, "drivetrain": "RWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 76, "towingCapacityLbs": 2200, "curbWeightLbs": 4250 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-y.jpg", "manufacturerUrl": "https://www.tesla.com/modely", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Premium RWD: 75 kWh battery, 357 mi EPA range - best Model Y efficiency. Ventilated seats, improved materials." }
+  },
+  {
+    "id": "2026-tesla-model-y-performance",
+    "year": 2026,
+    "make": "Tesla",
+    "model": "Model Y",
+    "trim": "Performance",
+    "slug": "2026-tesla-model-y-performance",
+    "pricing": { "msrpBase": 59130, "msrpMax": 59130 },
+    "range": { "epaRangeMiles": 306, "batteryCapacityKwh": 75, "efficiencyMPGe": 111, "efficiencyKwhPer100Mi": 30.4 },
+    "performance": { "horsepower": 460, "torque": 487, "zeroTo60": 3.3, "topSpeed": 155, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 250, "chargingTime10to80Minutes": 25 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 76, "towingCapacityLbs": 3500, "curbWeightLbs": 4555 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Autopilot included, FSD available" },
+    "meta": { "imageUrl": "/images/vehicles/2026-tesla-model-y-performance.jpg", "manufacturerUrl": "https://www.tesla.com/modely", "availabilityStatus": "Available", "dataSource": "Tesla.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-28", "notes": "Model Y Performance: 460 hp, 0-60 in 3.3s, 155 mph top speed. Track Mode, performance brakes, lowered suspension." }
   }
 ];
