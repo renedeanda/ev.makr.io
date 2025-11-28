@@ -27,10 +27,38 @@ export async function generateMetadata({
     };
   }
 
+  const baseUrl = 'https://ev.makr.io';
+  const guideUrl = `${baseUrl}/guides/${slug}`;
+
   return {
     title: `${guide.title} | ev.makr.io`,
     description: guide.description,
     keywords: guide.tags,
+    authors: [{ name: 'ev.makr.io' }],
+    openGraph: {
+      title: guide.title,
+      description: guide.description,
+      url: guideUrl,
+      siteName: 'ev.makr.io',
+      locale: 'en_US',
+      type: 'article',
+      publishedTime: guide.publishedDate,
+      modifiedTime: guide.updatedDate,
+      authors: ['ev.makr.io'],
+      tags: guide.tags,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: guide.title,
+      description: guide.description,
+    },
+    alternates: {
+      canonical: guideUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 
@@ -50,8 +78,42 @@ export default async function GuidePage({
     DisclaimerBox,
   };
 
+  // Generate JSON-LD structured data
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: guide.title,
+    description: guide.description,
+    author: {
+      '@type': 'Organization',
+      name: 'ev.makr.io',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ev.makr.io',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://ev.makr.io/logo.png',
+      },
+    },
+    datePublished: guide.publishedDate,
+    dateModified: guide.updatedDate,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://ev.makr.io/guides/${guide.slug}`,
+    },
+    keywords: guide.tags.join(', '),
+    articleSection: guide.category,
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Back Button */}
       <div className="bg-neutral-light border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
