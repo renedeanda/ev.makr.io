@@ -1,4 +1,4 @@
-import { getGuideBySlug, getAllGuides } from "@/lib/data";
+import { getGuideBySlug, getAllGuides } from "@/lib/guides";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
