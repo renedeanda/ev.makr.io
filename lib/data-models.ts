@@ -165,7 +165,7 @@ export const models: VehicleModel[] = [
     urlPath: "/vehicles/hyundai/ioniq5",
     years: [2026, 2024],
     latestYear: 2026,
-    vehicleCount: 3,
+    vehicleCount: 10,
     priceRange: { min: 35000, max: 67000 },
     rangeMin: 221,
     rangeMax: 318,
