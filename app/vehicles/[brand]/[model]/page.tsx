@@ -171,7 +171,54 @@ export default function VehicleModelPage({ params }: PageProps) {
           </div>
         </div>
       )}
-      
+
+      {/* Solterra Owner's Guide Banner */}
+      {latestVehicle.make === "Subaru" && latestVehicle.model === "Solterra" && (
+        <div className="bg-gradient-to-r from-primary/5 to-eco-green/5 border-b border-primary/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <Card variant="bordered" className="p-6 bg-white">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Badge variant="eco" size="sm">NEW GUIDE</Badge>
+                    <Badge variant="nacs" size="sm">2026 Owner's Guide</Badge>
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate mb-2">
+                    Complete 2026 Solterra Owner's Guide
+                  </h3>
+                  <p className="text-slate-light text-lg mb-3">
+                    Everything you need to know about your 2026 Solterra: NACS charging, Plug & Charge at Tesla Superchargers, battery preconditioning, range optimization, and more.
+                  </p>
+                  <ul className="text-slate-light space-y-1">
+                    <li className="flex items-center gap-2">
+                      <span className="text-eco-green">✓</span>
+                      <span>How to use Plug & Charge with Subaru Connect app</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-eco-green">✓</span>
+                      <span>Maximizing your 288-mile range (real-world tips)</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-eco-green">✓</span>
+                      <span>Battery preconditioning for faster winter charging</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-eco-green">✓</span>
+                      <span>Complete trim comparison (Premium, Limited, Touring XT)</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex-shrink-0">
+                  <Button href="/guides/2026-solterra-owners-guide" variant="primary" size="lg">
+                    Read Complete Guide →
+                  </Button>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      )}
+
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Key Specs Grid */}
