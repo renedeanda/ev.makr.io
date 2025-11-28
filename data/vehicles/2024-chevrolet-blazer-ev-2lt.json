@@ -40,11 +40,6 @@
     "hasV2H": false,
     "autopilotLevel": "Super Cruise (hands-free highway driving)"
   },
-  "incentives": {
-    "federalTaxCreditEligible": false,
-    "federalCreditAmount": 0,
-    "notes": "Not eligible - MSRP exceeds $55,000 SUV cap for federal tax credit"
-  },
   "meta": {
     "imageUrl": "/images/vehicles/2024-chevrolet-blazer-ev.jpg",
     "manufacturerUrl": "https://www.chevrolet.com/electric/blazer-ev",

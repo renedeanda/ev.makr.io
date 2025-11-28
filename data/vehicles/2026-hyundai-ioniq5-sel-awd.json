@@ -40,11 +40,6 @@
     "hasV2H": true,
     "autopilotLevel": "Highway Driving Assist 2"
   },
-  "incentives": {
-    "federalTaxCreditEligible": false,
-    "federalCreditAmount": 0,
-    "notes": "Not eligible due to battery sourcing requirements (built in South Korea)"
-  },
   "meta": {
     "imageUrl": "/images/vehicles/2026-hyundai-ioniq5.jpg",
     "manufacturerUrl": "https://www.hyundai.com/us/en/vehicles/ioniq-5",

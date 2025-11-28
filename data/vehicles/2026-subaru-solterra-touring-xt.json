@@ -40,11 +40,6 @@
     "hasV2H": false,
     "autopilotLevel": "EyeSight with Lane Centering"
   },
-  "incentives": {
-    "federalTaxCreditEligible": false,
-    "federalCreditAmount": 0,
-    "notes": "Not eligible due to battery sourcing requirements"
-  },
   "meta": {
     "imageUrl": "/images/vehicles/2026-subaru-solterra.jpg",
     "manufacturerUrl": "https://www.subaru.com/solterra",

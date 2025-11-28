@@ -40,11 +40,6 @@
     "hasV2H": false,
     "autopilotLevel": "BlueCruise (hands-free highway driving)"
   },
-  "incentives": {
-    "federalTaxCreditEligible": true,
-    "federalCreditAmount": 3750,
-    "notes": "Eligible for $3,750 federal tax credit"
-  },
   "meta": {
     "imageUrl": "/images/vehicles/2024-ford-mustang-mach-e.jpg",
     "manufacturerUrl": "https://www.ford.com/suvs/mach-e/",

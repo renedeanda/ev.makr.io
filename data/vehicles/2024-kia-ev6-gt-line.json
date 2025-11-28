@@ -40,11 +40,6 @@
     "hasV2H": false,
     "autopilotLevel": "Highway Driving Assist 2"
   },
-  "incentives": {
-    "federalTaxCreditEligible": false,
-    "federalCreditAmount": 0,
-    "notes": "Not eligible due to battery sourcing requirements (built in South Korea)"
-  },
   "meta": {
     "imageUrl": "/images/vehicles/2024-kia-ev6.jpg",
     "manufacturerUrl": "https://www.kia.com/us/en/ev6",

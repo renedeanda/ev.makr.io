@@ -40,11 +40,6 @@
     "hasV2H": false,
     "autopilotLevel": "ProPILOT Assist 2.0"
   },
-  "incentives": {
-    "federalTaxCreditEligible": false,
-    "federalCreditAmount": 0,
-    "notes": "Not eligible due to battery sourcing requirements (built in Japan)"
-  },
   "meta": {
     "imageUrl": "/images/vehicles/2024-nissan-ariya.jpg",
     "manufacturerUrl": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",

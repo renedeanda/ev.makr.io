@@ -40,11 +40,6 @@
     "hasV2H": false,
     "autopilotLevel": "Driver+"
   },
-  "incentives": {
-    "federalTaxCreditEligible": true,
-    "federalCreditAmount": 7500,
-    "notes": "Eligible for full $7,500 federal tax credit"
-  },
   "meta": {
     "imageUrl": "/images/vehicles/2026-rivian-r1s.jpg",
     "manufacturerUrl": "https://rivian.com/r1s",

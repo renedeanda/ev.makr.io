@@ -66,11 +66,11 @@ export default function VehiclesPage() {
             <div className="text-center">
               <div className="text-3xl font-bold text-electric-blue">
                 {
-                  vehicles.filter((v) => v.incentives.federalTaxCreditEligible)
+                  vehicles.filter((v) => v.charging.connector === "NACS")
                     .length
                 }
               </div>
-              <div className="text-sm text-gray-600">Tax Credit Eligible</div>
+              <div className="text-sm text-gray-600">NACS-Equipped</div>
             </div>
           </div>
         </div>

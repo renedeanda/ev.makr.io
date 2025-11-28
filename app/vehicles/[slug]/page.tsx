@@ -302,41 +302,6 @@ export default async function VehiclePage({
               </div>
             </div>
           </div>
-
-          {/* Incentives */}
-          <div className="bg-neutral-light rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <DollarSign className="text-electric-yellow" size={24} />
-              Federal Tax Credit
-            </h3>
-            <div className="space-y-3">
-              <div className="flex justify-between items-center">
-                <span className="text-gray-600">Eligible:</span>
-                <span
-                  className={`font-semibold ${
-                    vehicle.incentives.federalTaxCreditEligible
-                      ? "text-green-600"
-                      : "text-red-600"
-                  }`}
-                >
-                  {vehicle.incentives.federalTaxCreditEligible ? "✓ Yes" : "✗ No"}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Credit Amount:</span>
-                <span className="font-semibold text-2xl">
-                  {vehicle.incentives.federalCreditAmount > 0
-                    ? `$${vehicle.incentives.federalCreditAmount.toLocaleString()}`
-                    : "$0"}
-                </span>
-              </div>
-              {vehicle.incentives.notes && (
-                <div className="pt-2 border-t border-gray-300">
-                  <p className="text-sm text-gray-600">{vehicle.incentives.notes}</p>
-                </div>
-              )}
-            </div>
-          </div>
         </div>
 
         {/* Important Disclaimer */}

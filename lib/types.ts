@@ -41,11 +41,6 @@ export interface Vehicle {
     hasV2H: boolean;
     autopilotLevel: string;
   };
-  incentives: {
-    federalTaxCreditEligible: boolean;
-    federalCreditAmount: number;
-    notes: string;
-  };
   meta: {
     imageUrl: string;
     manufacturerUrl: string;
