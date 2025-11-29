@@ -1,9 +1,37 @@
 "use client";
 
-import { useState } from "react";
-import { DollarSign, Zap, Fuel, Wrench, TrendingDown } from "lucide-react";
+import { useState, useEffect } from "react";
+import { DollarSign, Zap, Fuel, Wrench, TrendingDown, Share2, Calendar } from "lucide-react";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
+
+// Preset configurations
+const PRESETS = {
+  commuter: {
+    name: "Daily Commuter",
+    evPrice: 42000,
+    gasCarPrice: 32000,
+    milesPerYear: 15000,
+    gasMpg: 30,
+    evEfficiency: 3.5,
+  },
+  family: {
+    name: "Family SUV",
+    evPrice: 55000,
+    gasCarPrice: 42000,
+    milesPerYear: 12000,
+    gasMpg: 25,
+    evEfficiency: 3.0,
+  },
+  roadtripper: {
+    name: "Road Tripper",
+    evPrice: 65000,
+    gasCarPrice: 50000,
+    milesPerYear: 20000,
+    gasMpg: 28,
+    evEfficiency: 3.2,
+  },
+};
 
 export default function CostCalculatorClient() {
   // EV inputs
@@ -11,16 +39,60 @@ export default function CostCalculatorClient() {
   const [evRange, setEvRange] = useState(300);
   const [evEfficiency, setEvEfficiency] = useState(3.5); // mi/kWh
   const [electricityRate, setElectricityRate] = useState(0.14);
+  const [evInsurance, setEvInsurance] = useState(1400); // Annual
 
   // Gas car inputs
   const [gasCarPrice, setGasCarPrice] = useState(35000);
   const [gasMpg, setGasMpg] = useState(30);
   const [gasPricePerGallon, setGasPricePerGallon] = useState(3.50);
+  const [gasInsurance, setGasInsurance] = useState(1200); // Annual
 
   // Shared inputs
   const [milesPerYear, setMilesPerYear] = useState(12000);
   const [years, setYears] = useState(5);
   const [evTaxCredit, setEvTaxCredit] = useState(7500);
+
+  // Load from URL on mount
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('evPrice')) setEvPrice(Number(params.get('evPrice')));
+    if (params.get('gasCarPrice')) setGasCarPrice(Number(params.get('gasCarPrice')));
+    if (params.get('milesPerYear')) setMilesPerYear(Number(params.get('milesPerYear')));
+    if (params.get('years')) setYears(Number(params.get('years')));
+    if (params.get('evTaxCredit')) setEvTaxCredit(Number(params.get('evTaxCredit')));
+    if (params.get('gasMpg')) setGasMpg(Number(params.get('gasMpg')));
+    if (params.get('evEfficiency')) setEvEfficiency(Number(params.get('evEfficiency')));
+    if (params.get('electricityRate')) setElectricityRate(Number(params.get('electricityRate')));
+    if (params.get('gasPricePerGallon')) setGasPricePerGallon(Number(params.get('gasPricePerGallon')));
+  }, []);
+
+  // Apply preset
+  const applyPreset = (presetKey: keyof typeof PRESETS) => {
+    const preset = PRESETS[presetKey];
+    setEvPrice(preset.evPrice);
+    setGasCarPrice(preset.gasCarPrice);
+    setMilesPerYear(preset.milesPerYear);
+    setGasMpg(preset.gasMpg);
+    setEvEfficiency(preset.evEfficiency);
+  };
+
+  // Share via URL
+  const shareCalculation = () => {
+    const params = new URLSearchParams({
+      evPrice: evPrice.toString(),
+      gasCarPrice: gasCarPrice.toString(),
+      milesPerYear: milesPerYear.toString(),
+      years: years.toString(),
+      evTaxCredit: evTaxCredit.toString(),
+      gasMpg: gasMpg.toString(),
+      evEfficiency: evEfficiency.toString(),
+      electricityRate: electricityRate.toString(),
+      gasPricePerGallon: gasPricePerGallon.toString(),
+    });
+    const url = `${window.location.origin}${window.location.pathname}?${params}`;
+    navigator.clipboard.writeText(url);
+    alert('Link copied to clipboard! Share this URL to show your comparison.');
+  };
 
   // Calculate costs
   const calculateCosts = () => {
@@ -37,12 +109,26 @@ export default function CostCalculatorClient() {
     const gasTotalFuel = gasAnnualFuel * years;
     const evTotalMaintenance = evAnnualMaintenance * years;
     const gasTotalMaintenance = gasAnnualMaintenance * years;
+    const evTotalInsurance = evInsurance * years;
+    const gasTotalInsurance = gasInsurance * years;
 
-    const evTotalCost = evPrice - evTaxCredit + evTotalFuel + evTotalMaintenance;
-    const gasTotalCost = gasCarPrice + gasTotalFuel + gasTotalMaintenance;
+    const evTotalCost = evPrice - evTaxCredit + evTotalFuel + evTotalMaintenance + evTotalInsurance;
+    const gasTotalCost = gasCarPrice + gasTotalFuel + gasTotalMaintenance + gasTotalInsurance;
 
     const savings = gasTotalCost - evTotalCost;
     const savingsPerMonth = savings / (years * 12);
+
+    // Calculate break-even point (in months)
+    const purchasePriceDiff = (evPrice - evTaxCredit) - gasCarPrice;
+    const monthlyFuelSavings = (gasAnnualFuel - evAnnualFuel) / 12;
+    const monthlyMaintenanceSavings = (gasAnnualMaintenance - evAnnualMaintenance) / 12;
+    const monthlyInsuranceDiff = (evInsurance - gasInsurance) / 12;
+    const monthlySavings = monthlyFuelSavings + monthlyMaintenanceSavings - monthlyInsuranceDiff;
+
+    let breakEvenMonths = null;
+    if (monthlySavings > 0 && purchasePriceDiff > 0) {
+      breakEvenMonths = Math.ceil(purchasePriceDiff / monthlySavings);
+    }
 
     return {
       evAnnualFuel,
@@ -57,6 +143,9 @@ export default function CostCalculatorClient() {
       gasTotalFuel,
       evTotalMaintenance,
       gasTotalMaintenance,
+      evTotalInsurance,
+      gasTotalInsurance,
+      breakEvenMonths,
     };
   };
 
@@ -73,6 +162,43 @@ export default function CostCalculatorClient() {
           Compare the total cost of ownership between electric and gas vehicles over time, including purchase price, fuel, and maintenance costs.
         </p>
       </div>
+
+      {/* Preset Templates */}
+      <Card variant="bordered" className="p-6 mb-8 bg-gradient-to-br from-primary/5 to-eco-green/5">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h3 className="font-bold text-lg text-slate mb-1">Quick Presets</h3>
+            <p className="text-sm text-slate-light">Load common scenarios to get started</p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <button
+              onClick={() => applyPreset('commuter')}
+              className="px-4 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+            >
+              Daily Commuter
+            </button>
+            <button
+              onClick={() => applyPreset('family')}
+              className="px-4 py-2 bg-eco-green text-white rounded-lg font-semibold hover:bg-eco-green-dark transition-colors"
+            >
+              Family SUV
+            </button>
+            <button
+              onClick={() => applyPreset('roadtripper')}
+              className="px-4 py-2 bg-accent-sage text-white rounded-lg font-semibold hover:bg-accent-sage-dark transition-colors"
+            >
+              Road Tripper
+            </button>
+            <button
+              onClick={shareCalculation}
+              className="px-4 py-2 bg-slate text-white rounded-lg font-semibold hover:bg-slate-light transition-colors inline-flex items-center gap-2"
+            >
+              <Share2 size={18} />
+              Share
+            </button>
+          </div>
+        </div>
+      </Card>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         {/* EV Inputs */}
@@ -182,6 +308,26 @@ export default function CostCalculatorClient() {
                 </span>
               </div>
             </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-slate mb-2">
+                Annual Insurance
+              </label>
+              <div className="flex items-center gap-3">
+                <input
+                  type="range"
+                  min="800"
+                  max="2500"
+                  step="100"
+                  value={evInsurance}
+                  onChange={(e) => setEvInsurance(Number(e.target.value))}
+                  className="flex-1"
+                />
+                <span className="text-lg font-bold text-primary min-w-[120px]">
+                  ${evInsurance.toLocaleString()}/yr
+                </span>
+              </div>
+            </div>
           </div>
         </Card>
 
@@ -253,6 +399,26 @@ export default function CostCalculatorClient() {
                 />
                 <span className="text-lg font-bold text-slate min-w-[120px]">
                   ${gasPricePerGallon.toFixed(2)}/gal
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-slate mb-2">
+                Annual Insurance
+              </label>
+              <div className="flex items-center gap-3">
+                <input
+                  type="range"
+                  min="800"
+                  max="2500"
+                  step="100"
+                  value={gasInsurance}
+                  onChange={(e) => setGasInsurance(Number(e.target.value))}
+                  className="flex-1"
+                />
+                <span className="text-lg font-bold text-slate min-w-[120px]">
+                  ${gasInsurance.toLocaleString()}/yr
                 </span>
               </div>
             </div>
@@ -421,6 +587,20 @@ export default function CostCalculatorClient() {
                     -${(costs.gasTotalMaintenance - costs.evTotalMaintenance).toLocaleString()}
                   </td>
                 </tr>
+                <tr className="hover:bg-gray-bg/50">
+                  <td className="px-6 py-4 text-slate">
+                    Insurance ({years} {years === 1 ? 'year' : 'years'})
+                  </td>
+                  <td className="px-6 py-4 text-right font-semibold text-primary">
+                    ${costs.evTotalInsurance.toLocaleString()}
+                  </td>
+                  <td className="px-6 py-4 text-right font-semibold text-slate">
+                    ${costs.gasTotalInsurance.toLocaleString()}
+                  </td>
+                  <td className="px-6 py-4 text-right font-semibold text-slate">
+                    ${(costs.evTotalInsurance - costs.gasTotalInsurance) > 0 ? '+' : ''}${(costs.evTotalInsurance - costs.gasTotalInsurance).toLocaleString()}
+                  </td>
+                </tr>
                 <tr className="bg-gray-bg font-bold">
                   <td className="px-6 py-4 text-slate">TOTAL</td>
                   <td className="px-6 py-4 text-right text-lg text-primary">
@@ -476,6 +656,21 @@ export default function CostCalculatorClient() {
             </p>
             <p className="text-sm text-slate-light mt-1">
               That's enough to cover {Math.floor(costs.savings / 1000)} months of typical car payments or a nice vacation.
+            </p>
+          </div>
+        )}
+
+        {/* Break-even Point */}
+        {costs.breakEvenMonths !== null && (
+          <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
+            <div className="flex items-center gap-3 mb-2">
+              <Calendar className="text-primary" size={24} />
+              <p className="text-slate font-semibold text-lg">
+                Break-Even Point
+              </p>
+            </div>
+            <p className="text-slate-light">
+              You'll recover the higher purchase cost in <span className="text-primary font-bold">{costs.breakEvenMonths} months</span> ({(costs.breakEvenMonths / 12).toFixed(1)} years) through fuel and maintenance savings.
             </p>
           </div>
         )}
