@@ -96,7 +96,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/guides">
+            <Link href="/guides/getting-started">
               <Card variant="hover" className="p-8 h-full">
                 <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                   <Car className="text-primary" size={32} />
@@ -114,7 +114,7 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/guides">
+            <Link href="/guides/essential-ev-apps">
               <Card variant="hover" className="p-8 h-full bg-gradient-to-br from-eco-green/5 to-white">
                 <div className="bg-eco-green/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                   <Zap className="text-eco-green" size={32} />
@@ -132,7 +132,7 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/guides">
+            <Link href="/guides/battery-care-tips">
               <Card variant="hover" className="p-8 h-full">
                 <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                   <BookOpen className="text-primary" size={32} />
@@ -144,7 +144,7 @@ export default function Home() {
                   Deep dives on battery care, road trip planning, maintenance, and maximizing your EV experience.
                 </p>
                 <span className="text-primary font-semibold inline-flex items-center gap-2">
-                  Browse All Guides
+                  Battery Care Tips
                   <ArrowRight size={18} />
                 </span>
               </Card>
