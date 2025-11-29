@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
-import { getVehiclesByModel, getAllVehicleModels } from "@/lib/data";
+import { getVehiclesByModel, getAllVehicleModels, getVehicleModelBySlug } from "@/lib/data";
 import { Metadata } from "next";
 import VehicleYearSelector from "@/components/VehicleYearSelector";
 
@@ -22,10 +22,19 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { brand, model } = await params;
-  const decodedBrand = decodeURIComponent(brand);
-  const decodedModel = decodeURIComponent(model);
+  // Decode URL parameters
+  const brandSlug = decodeURIComponent(brand);
+  const modelSlug = decodeURIComponent(model);
 
-  const vehicles = getVehiclesByModel(decodedBrand, decodedModel);
+  // Get the model to find the correct make/model names
+  const vehicleModel = getVehicleModelBySlug(brandSlug, modelSlug);
+  if (!vehicleModel) {
+    return {
+      title: "Vehicle Not Found",
+    };
+  }
+
+  const vehicles = getVehiclesByModel(vehicleModel.make, vehicleModel.model);
 
   if (vehicles.length === 0) {
     return {
@@ -83,10 +92,16 @@ export default async function VehicleModelPage({ params }: PageProps) {
   const { brand, model } = await params;
 
   // Decode URL parameters
-  const decodedBrand = decodeURIComponent(brand);
-  const decodedModel = decodeURIComponent(model);
+  const brandSlug = decodeURIComponent(brand);
+  const modelSlug = decodeURIComponent(model);
 
-  const vehicles = getVehiclesByModel(decodedBrand, decodedModel);
+  // Get the model to find the correct make/model names
+  const vehicleModel = getVehicleModelBySlug(brandSlug, modelSlug);
+  if (!vehicleModel) {
+    notFound();
+  }
+
+  const vehicles = getVehiclesByModel(vehicleModel.make, vehicleModel.model);
 
   if (vehicles.length === 0) {
     notFound();
@@ -166,7 +181,9 @@ export default async function VehicleModelPage({ params }: PageProps) {
                 {latestVehicle.make} {latestVehicle.model}
               </h1>
               <p className="text-xl text-white/90">
-                Available model years: {years.join(", ")}
+                {years.length === 1
+                  ? `${years[0]} Model Year`
+                  : `${Math.min(...years)}-${Math.max(...years)} Model Years`}
               </p>
             </div>
 

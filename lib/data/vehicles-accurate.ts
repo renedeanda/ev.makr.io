@@ -83,7 +83,7 @@ export const subaru_solterra_2026: VehicleData = {
  * Larger 84 kWh battery, NACS charging
  */
 export const hyundai_ioniq5_2026: VehicleData = {
-  id: 'hyundai-ioniq5-2026',
+  id: 'hyundai-ioniq-5-2026',
   brand: 'Hyundai',
   model: 'IONIQ 5',
   year: 2026,

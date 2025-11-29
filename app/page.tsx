@@ -4,24 +4,19 @@ import ModelCard from "@/components/ModelCard";
 import DisclaimerBox from "@/components/DisclaimerBox";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
-import { getAllVehicles, getAllVehicleModels } from "@/lib/data";
+import { getAllVehicles, getAllVehicleModels, getFeaturedModels } from "@/lib/data";
 
 export default function Home() {
   const vehicles = getAllVehicles();
   const models = getAllVehicleModels();
-  const featuredModels = models.slice(0, 6); // Show 6 models
+  const featuredModels = getFeaturedModels().slice(0, 6); // Show top 6 featured models
 
   return (
     <div>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-eco-green text-white py-24 md:py-32 overflow-hidden">
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '32px 32px'
-          }}></div>
-        </div>
+        {/* Solterra sun pattern overlay */}
+        <div className="absolute inset-0 pattern-sun opacity-30"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
@@ -159,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Quick Access Tools */}
-      <section className="bg-gray-bg py-20">
+      <section className="pattern-topo py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate">
@@ -217,7 +212,7 @@ export default function Home() {
 
       {/* Featured Models */}
       {featuredModels.length > 0 && (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white pattern-wave">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-12">
               <div>
@@ -243,7 +238,7 @@ export default function Home() {
       )}
 
       {/* Important Information */}
-      <section className="py-16 bg-gray-bg border-y border-gray-border">
+      <section className="py-16 pattern-topo border-y border-gray-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card variant="bordered" className="p-8 bg-white">
             <div className="flex items-start gap-4">
