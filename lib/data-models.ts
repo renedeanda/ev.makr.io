@@ -160,10 +160,10 @@ export const models: VehicleModel[] = [
   {
     make: "Hyundai",
     model: "IONIQ 5",
-    slug: "hyundai-ioniq5",
+    slug: "hyundai-ioniq-5",
     brandSlug: "hyundai",
-    modelSlug: "ioniq5",
-    urlPath: "/vehicles/hyundai/ioniq5",
+    modelSlug: "ioniq-5",
+    urlPath: "/vehicles/hyundai/ioniq-5",
     years: [2026, 2024],
     latestYear: 2026,
     vehicleCount: 10,
