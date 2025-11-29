@@ -50,7 +50,6 @@ export default function CostCalculatorClient() {
   // Shared inputs
   const [milesPerYear, setMilesPerYear] = useState(12000);
   const [years, setYears] = useState(5);
-  const [evTaxCredit, setEvTaxCredit] = useState(7500);
 
   // Load from URL on mount
   useEffect(() => {
@@ -59,7 +58,6 @@ export default function CostCalculatorClient() {
     if (params.get('gasCarPrice')) setGasCarPrice(Number(params.get('gasCarPrice')));
     if (params.get('milesPerYear')) setMilesPerYear(Number(params.get('milesPerYear')));
     if (params.get('years')) setYears(Number(params.get('years')));
-    if (params.get('evTaxCredit')) setEvTaxCredit(Number(params.get('evTaxCredit')));
     if (params.get('gasMpg')) setGasMpg(Number(params.get('gasMpg')));
     if (params.get('evEfficiency')) setEvEfficiency(Number(params.get('evEfficiency')));
     if (params.get('electricityRate')) setElectricityRate(Number(params.get('electricityRate')));
@@ -83,7 +81,6 @@ export default function CostCalculatorClient() {
       gasCarPrice: gasCarPrice.toString(),
       milesPerYear: milesPerYear.toString(),
       years: years.toString(),
-      evTaxCredit: evTaxCredit.toString(),
       gasMpg: gasMpg.toString(),
       evEfficiency: evEfficiency.toString(),
       electricityRate: electricityRate.toString(),
@@ -112,14 +109,14 @@ export default function CostCalculatorClient() {
     const evTotalInsurance = evInsurance * years;
     const gasTotalInsurance = gasInsurance * years;
 
-    const evTotalCost = evPrice - evTaxCredit + evTotalFuel + evTotalMaintenance + evTotalInsurance;
+    const evTotalCost = evPrice + evTotalFuel + evTotalMaintenance + evTotalInsurance;
     const gasTotalCost = gasCarPrice + gasTotalFuel + gasTotalMaintenance + gasTotalInsurance;
 
     const savings = gasTotalCost - evTotalCost;
     const savingsPerMonth = savings / (years * 12);
 
     // Calculate break-even point (in months)
-    const purchasePriceDiff = (evPrice - evTaxCredit) - gasCarPrice;
+    const purchasePriceDiff = evPrice - gasCarPrice;
     const monthlyFuelSavings = (gasAnnualFuel - evAnnualFuel) / 12;
     const monthlyMaintenanceSavings = (gasAnnualMaintenance - evAnnualMaintenance) / 12;
     const monthlyInsuranceDiff = (evInsurance - gasInsurance) / 12;
@@ -211,7 +208,7 @@ export default function CostCalculatorClient() {
           <div className="space-y-6">
             <div>
               <label className="block text-sm font-semibold text-slate mb-2">
-                Purchase Price (before tax credit)
+                Purchase Price
               </label>
               <div className="flex items-center gap-3">
                 <input
@@ -225,26 +222,6 @@ export default function CostCalculatorClient() {
                 />
                 <span className="text-lg font-bold text-primary min-w-[120px]">
                   ${evPrice.toLocaleString()}
-                </span>
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-slate mb-2">
-                Federal Tax Credit
-              </label>
-              <div className="flex items-center gap-3">
-                <input
-                  type="range"
-                  min="0"
-                  max="7500"
-                  step="500"
-                  value={evTaxCredit}
-                  onChange={(e) => setEvTaxCredit(Number(e.target.value))}
-                  className="flex-1"
-                />
-                <span className="text-lg font-bold text-eco-green min-w-[120px]">
-                  -${evTaxCredit.toLocaleString()}
                 </span>
               </div>
             </div>
@@ -545,18 +522,6 @@ export default function CostCalculatorClient() {
                   </td>
                   <td className="px-6 py-4 text-right font-semibold text-slate">
                     ${(gasCarPrice - evPrice).toLocaleString()}
-                  </td>
-                </tr>
-                <tr className="hover:bg-gray-bg/50">
-                  <td className="px-6 py-4 text-slate">Federal Tax Credit</td>
-                  <td className="px-6 py-4 text-right font-semibold text-eco-green">
-                    -${evTaxCredit.toLocaleString()}
-                  </td>
-                  <td className="px-6 py-4 text-right font-semibold text-slate">
-                    $0
-                  </td>
-                  <td className="px-6 py-4 text-right font-semibold text-eco-green">
-                    -${evTaxCredit.toLocaleString()}
                   </td>
                 </tr>
                 <tr className="hover:bg-gray-bg/50">

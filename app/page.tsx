@@ -165,7 +165,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link href="/vehicles">
+            <Link href="/vehicles/compare">
               <Card variant="hover" className="p-6 text-center">
                 <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Battery className="text-primary" size={28} />
