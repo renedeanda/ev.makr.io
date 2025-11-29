@@ -3,39 +3,45 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  /* Modern Clean Tech (Primary) - Accessible blue */
-  --color-primary: #0052CC;
-  --color-primary-dark: #003D99;
-  --color-primary-light: #1976D2;
-  
-  /* Eco-Minimalist (Accents) - Accessible green */
-  --color-eco-green: #059669;
-  --color-eco-green-light: #10B981;
-  --color-eco-green-dark: #047857;
-  
-  /* Neutrals - High contrast */
-  --color-slate: #0F172A;
-  --color-slate-light: #475569;
-  --color-gray-bg: #F8FAFC;
-  --color-gray-border: #E2E8F0;
-  
-  /* Legacy colors (for backwards compatibility) */
-  --color-electric-blue: #0052CC;
-  --color-electric-green: #059669;
-  --color-electric-yellow: #D97706;
-  --color-neutral-charcoal: #0F172A;
-  --color-neutral-light: #F8FAFC;
-  --color-warning-amber: #D97706;
-  
-  /* Shadows */
-  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-soft-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
-  
+  /* Solterra Theme - Sun + Earth */
+  /* Primary: Terracotta Earth */
+  --color-primary: #C75B39;
+  --color-primary-dark: #A8442A;
+  --color-primary-light: #D87F5F;
+
+  /* Secondary: Warm Amber Sun */
+  --color-eco-green: #D97706;
+  --color-eco-green-light: #F59E0B;
+  --color-eco-green-dark: #B45309;
+
+  /* Accent: Sage Growth */
+  --color-accent-sage: #6B8E23;
+  --color-accent-sage-light: #85A638;
+  --color-accent-sage-dark: #556B1A;
+
+  /* Neutrals - Warm earth tones */
+  --color-slate: #292524;
+  --color-slate-light: #57534E;
+  --color-gray-bg: #FAFAF9;
+  --color-gray-border: #E7E5E4;
+
+  /* Legacy colors (mapped to new theme) */
+  --color-electric-blue: #C75B39;
+  --color-electric-green: #D97706;
+  --color-electric-yellow: #F59E0B;
+  --color-neutral-charcoal: #292524;
+  --color-neutral-light: #FAFAF9;
+  --color-warning-amber: #F59E0B;
+
+  /* Shadows - Softer, warmer */
+  --shadow-soft: 0 2px 8px rgba(199, 91, 57, 0.08);
+  --shadow-soft-lg: 0 4px 16px rgba(199, 91, 57, 0.12);
+  --shadow-card: 0 1px 3px rgba(41, 37, 36, 0.06);
+  --shadow-card-hover: 0 4px 12px rgba(199, 91, 57, 0.15);
+
   /* Border Radius */
   --radius-card: 12px;
-  
+
   /* Font Family */
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -46,7 +52,7 @@
 
 body {
   color: var(--color-slate);
-  background-color: white;
+  background-color: var(--color-gray-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-sans);
@@ -60,6 +66,42 @@ h1, h2, h3, h4, h5, h6 {
 /* Smooth transitions for interactive elements */
 button, a, [role="button"] {
   transition: all 0.2s ease-in-out;
+}
+
+/* Subtle patterned background - Topographic earth lines */
+.pattern-topo {
+  background-color: var(--color-gray-bg);
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 35px,
+      rgba(199, 91, 57, 0.02) 35px,
+      rgba(199, 91, 57, 0.02) 70px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 35px,
+      rgba(217, 119, 6, 0.02) 35px,
+      rgba(217, 119, 6, 0.02) 70px
+    );
+}
+
+/* Subtle sun radial gradient */
+.pattern-sun {
+  background: radial-gradient(
+    circle at 50% -20%,
+    rgba(245, 158, 11, 0.08) 0%,
+    rgba(217, 119, 6, 0.04) 35%,
+    transparent 70%
+  );
+}
+
+/* Organic wave pattern */
+.pattern-wave {
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23C75B39' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 /* MDX Content - Prose Tables */
@@ -82,13 +124,14 @@ button, a, [role="button"] {
   border-collapse: collapse;
   margin: 0;
   border-radius: 8px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(41, 37, 36, 0.1), 0 1px 2px 0 rgba(41, 37, 36, 0.06);
   display: table;
   border: 1px solid var(--color-gray-border);
+  background-color: white;
 }
 
 .prose thead {
-  background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+  background: linear-gradient(to bottom, #FEF7EE, #FEF3E7);
   border-bottom: 2px solid var(--color-primary);
 }
 
@@ -101,7 +144,6 @@ button, a, [role="button"] {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   white-space: nowrap;
-  background-color: #f9fafb;
 }
 
 .prose td {
@@ -114,10 +156,11 @@ button, a, [role="button"] {
 
 .prose tbody tr {
   transition: background-color 0.15s ease;
+  background-color: white;
 }
 
 .prose tbody tr:hover {
-  background-color: rgba(37, 99, 235, 0.03);
+  background-color: rgba(199, 91, 57, 0.03);
 }
 
 .prose tbody tr:last-child td {
