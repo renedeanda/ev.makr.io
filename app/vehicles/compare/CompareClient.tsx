@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Plus, X, Zap, Battery, DollarSign, Gauge } from "lucide-react";
 import { getAllVehicleModels } from "@/lib/data";
-import { VehicleModel } from "@/lib/types";
+import { VehicleModel } from "@/lib/data-models";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 
