@@ -110,6 +110,7 @@ export const models: VehicleModel[] = [
     rangeMin: 312,
     rangeMax: 312,
     connectors: ["CCS1"],
+    featured: true,
   },
   {
     make: "Genesis",

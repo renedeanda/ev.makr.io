@@ -22,8 +22,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { brand, model } = await params;
-  const decodedBrand = decodeURIComponent(brand);
-  const decodedModel = decodeURIComponent(model);
+  // Convert hyphens back to spaces for matching
+  const decodedBrand = decodeURIComponent(brand).replace(/-/g, ' ');
+  const decodedModel = decodeURIComponent(model).replace(/-/g, ' ');
 
   const vehicles = getVehiclesByModel(decodedBrand, decodedModel);
 
@@ -82,9 +83,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function VehicleModelPage({ params }: PageProps) {
   const { brand, model } = await params;
 
-  // Decode URL parameters
-  const decodedBrand = decodeURIComponent(brand);
-  const decodedModel = decodeURIComponent(model);
+  // Decode URL parameters and convert hyphens back to spaces
+  const decodedBrand = decodeURIComponent(brand).replace(/-/g, ' ');
+  const decodedModel = decodeURIComponent(model).replace(/-/g, ' ');
 
   const vehicles = getVehiclesByModel(decodedBrand, decodedModel);
 

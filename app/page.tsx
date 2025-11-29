@@ -4,12 +4,12 @@ import ModelCard from "@/components/ModelCard";
 import DisclaimerBox from "@/components/DisclaimerBox";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
-import { getAllVehicles, getAllVehicleModels } from "@/lib/data";
+import { getAllVehicles, getAllVehicleModels, getFeaturedModels } from "@/lib/data";
 
 export default function Home() {
   const vehicles = getAllVehicles();
   const models = getAllVehicleModels();
-  const featuredModels = models.slice(0, 6); // Show 6 models
+  const featuredModels = getFeaturedModels().slice(0, 6); // Show top 6 featured models
 
   return (
     <div>
