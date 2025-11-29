@@ -33,6 +33,23 @@ export default function VehicleYearSelector({ vehicles, years, initialYear }: Ve
       return changes;
     }
 
+    // Special handling for EV6 2025 - dual battery options
+    if (currentYearVehicle.make === "Kia" && currentYearVehicle.model === "EV6" && year === 2025) {
+      const currentYearVehicles = vehicles.filter((v) => v.year === year);
+      const batteryOptions = Array.from(
+        new Set(currentYearVehicles.map((v) => v.range.batteryCapacityKwh))
+      ).sort((a, b) => a - b);
+
+      if (batteryOptions.length > 1) {
+        changes.push(
+          `Two battery options: ${batteryOptions[0]} kWh (new base) and ${batteryOptions[1]} kWh (upgraded from ${previousYearVehicle.range.batteryCapacityKwh} kWh)`
+        );
+      }
+      changes.push("Upgraded to NACS charging port (native Tesla Supercharger compatibility)");
+      changes.push("Improved range: up to 319 miles (best in EV6 lineup)");
+      return changes;
+    }
+
     // Check for connector changes
     if (currentYearVehicle.charging.connector !== previousYearVehicle.charging.connector) {
       changes.push(
@@ -269,13 +286,25 @@ export default function VehicleYearSelector({ vehicles, years, initialYear }: Ve
                   <div className="flex justify-between">
                     <span className="text-slate-light">Battery Capacity</span>
                     <span className="font-semibold text-slate">
-                      {selectedYearVehicles[0].range.batteryCapacityKwh} kWh
+                      {(() => {
+                        const batteryCapacities = Array.from(
+                          new Set(selectedYearVehicles.map(v => v.range.batteryCapacityKwh))
+                        ).sort((a, b) => a - b);
+                        return batteryCapacities.length > 1
+                          ? `${batteryCapacities[0]}-${batteryCapacities[batteryCapacities.length - 1]} kWh`
+                          : `${batteryCapacities[0]} kWh`;
+                      })()}
                     </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-slate-light">EPA Range</span>
                     <span className="font-semibold text-slate">
-                      {selectedYearVehicles[0].range.epaRangeMiles} mi
+                      {(() => {
+                        const ranges = selectedYearVehicles.map(v => v.range.epaRangeMiles);
+                        const minRange = Math.min(...ranges);
+                        const maxRange = Math.max(...ranges);
+                        return minRange === maxRange ? `${minRange} mi` : `${minRange}-${maxRange} mi`;
+                      })()}
                     </span>
                   </div>
                   <div className="flex justify-between">
