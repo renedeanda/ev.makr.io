@@ -281,6 +281,141 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2022-kia-ev6-light-rwd",
+    "year": 2022,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Light RWD",
+    "slug": "2022-kia-ev6-light-rwd",
+    "pricing": { "msrpBase": 42115, "msrpMax": 42115 },
+    "range": { "epaRangeMiles": 232, "batteryCapacityKwh": 58, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 167, "torque": 258, "zeroTo60": 8.0, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 0, "curbWeightLbs": 3900 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2022-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "First year EV6 production for North America. Base Light trim with 58 kWh battery, not rated for towing. 800V ultra-fast charging architecture." }
+  },
+  {
+    "id": "2022-kia-ev6-wind-rwd",
+    "year": 2022,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Wind RWD",
+    "slug": "2022-kia-ev6-wind-rwd",
+    "pricing": { "msrpBase": 48215, "msrpMax": 48215 },
+    "range": { "epaRangeMiles": 310, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 117, "efficiencyKwhPer100Mi": 28.8 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.2, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 2300, "curbWeightLbs": 4100 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2022-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "Best range in 2022 lineup at 310 miles. 77.4 kWh battery with RWD efficiency. Adds towing capability (2,300 lbs)." }
+  },
+  {
+    "id": "2022-kia-ev6-wind-awd",
+    "year": 2022,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Wind AWD",
+    "slug": "2022-kia-ev6-wind-awd",
+    "pricing": { "msrpBase": 52115, "msrpMax": 52115 },
+    "range": { "epaRangeMiles": 274, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.6, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 2300, "curbWeightLbs": 4500 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2022-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "Dual motor AWD with 320 hp. Quick 4.6s 0-60 time. 77.4 kWh battery, towing capable." }
+  },
+  {
+    "id": "2022-kia-ev6-gtline-awd",
+    "year": 2022,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "GT-Line AWD",
+    "slug": "2022-kia-ev6-gtline-awd",
+    "pricing": { "msrpBase": 57115, "msrpMax": 57115 },
+    "range": { "epaRangeMiles": 274, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.5, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 2300, "curbWeightLbs": 4600 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2022-kia-ev6-gtline.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "Top 2022 trim. Sport styling, D-shaped steering wheel, surround-view camera, sunroof. 320 hp AWD, 0-60 in 4.5s." }
+  },
+  {
+    "id": "2023-kia-ev6-light-rwd",
+    "year": 2023,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Light RWD",
+    "slug": "2023-kia-ev6-light-rwd",
+    "pricing": { "msrpBase": 42600, "msrpMax": 42600 },
+    "range": { "epaRangeMiles": 232, "batteryCapacityKwh": 58, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 167, "torque": 258, "zeroTo60": 8.0, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 0, "curbWeightLbs": 3900 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2023-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "2023 adds GT trim to lineup. Base Light trim continues with 58 kWh battery." }
+  },
+  {
+    "id": "2023-kia-ev6-wind-rwd",
+    "year": 2023,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Wind RWD",
+    "slug": "2023-kia-ev6-wind-rwd",
+    "pricing": { "msrpBase": 48700, "msrpMax": 48700 },
+    "range": { "epaRangeMiles": 310, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 117, "efficiencyKwhPer100Mi": 28.8 },
+    "performance": { "horsepower": 225, "torque": 258, "zeroTo60": 7.2, "topSpeed": 115, "drivetrain": "RWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 2300, "curbWeightLbs": 4100 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2023-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "Best range option at 310 miles. RWD efficiency with 77.4 kWh battery." }
+  },
+  {
+    "id": "2023-kia-ev6-wind-awd",
+    "year": 2023,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "Wind AWD",
+    "slug": "2023-kia-ev6-wind-awd",
+    "pricing": { "msrpBase": 52600, "msrpMax": 52600 },
+    "range": { "epaRangeMiles": 274, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.6, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 2300, "curbWeightLbs": 4500 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist" },
+    "meta": { "imageUrl": "/images/vehicles/2023-kia-ev6.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "Dual motor AWD with 320 hp. Popular mid-tier trim." }
+  },
+  {
+    "id": "2023-kia-ev6-gtline-awd",
+    "year": 2023,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "GT-Line AWD",
+    "slug": "2023-kia-ev6-gtline-awd",
+    "pricing": { "msrpBase": 57600, "msrpMax": 57600 },
+    "range": { "epaRangeMiles": 274, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 105, "efficiencyKwhPer100Mi": 32.1 },
+    "performance": { "horsepower": 320, "torque": 446, "zeroTo60": 4.5, "topSpeed": 115, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 2300, "curbWeightLbs": 4600 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2023-kia-ev6-gtline.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "Sport styling with premium features. 320 hp AWD." }
+  },
+  {
+    "id": "2023-kia-ev6-gt",
+    "year": 2023,
+    "make": "Kia",
+    "model": "EV6",
+    "trim": "GT",
+    "slug": "2023-kia-ev6-gt",
+    "pricing": { "msrpBase": 61600, "msrpMax": 61600 },
+    "range": { "epaRangeMiles": 206, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 89, "efficiencyKwhPer100Mi": 37.9 },
+    "performance": { "horsepower": 576, "torque": 545, "zeroTo60": 3.2, "topSpeed": 162, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 50.2, "towingCapacityLbs": 0, "curbWeightLbs": 4900 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2023-kia-ev6-gt.jpg", "manufacturerUrl": "https://www.kia.com/us/en/ev6", "availabilityStatus": "Available", "dataSource": "Kia.com official specs, EPA FuelEconomy.gov", "lastVerified": "2025-11-29", "notes": "NEW for 2023: First EV6 GT with 576 hp, 0-60 in 3.2s. Track-focused with adaptive suspension, drift mode, GT mode. Performance reduces range to 206 mi." }
+  },
+  {
     "id": "2024-kia-ev6-gt-line",
     "year": 2024,
     "make": "Kia",
@@ -1364,57 +1499,6 @@ export const vehicles: Vehicle[] = [
       "dataSource": "Hyundai.com official specs, EPA FuelEconomy.gov",
       "lastVerified": "2025-11-27",
       "notes": "Hyundai N performance variant. 641 hp, 0-60 in 3.4s. Track-focused with N Grin Boost mode, drift optimizer, launch control. Enhanced suspension, brakes, and cooling systems."
-    }
-  },
-  {
-    "id": "2026-kia-ev6-gt-line",
-    "year": 2026,
-    "make": "Kia",
-    "model": "EV6",
-    "trim": "GT-Line AWD",
-    "slug": "2026-kia-ev6-gt-line",
-    "pricing": {
-      "msrpBase": 52900,
-      "msrpMax": 57900
-    },
-    "range": {
-      "epaRangeMiles": 295,
-      "batteryCapacityKwh": 84,
-      "efficiencyMPGe": 108,
-      "efficiencyKwhPer100Mi": 31.2
-    },
-    "performance": {
-      "horsepower": 320,
-      "torque": 446,
-      "zeroTo60": 4.5,
-      "topSpeed": 117,
-      "drivetrain": "AWD"
-    },
-    "charging": {
-      "connector": "NACS",
-      "acChargingMaxKw": 11,
-      "dcChargingMaxKw": 250,
-      "chargingTime10to80Minutes": 18
-    },
-    "physical": {
-      "seatingCapacity": 5,
-      "cargoVolumeCuFt": 50.2,
-      "towingCapacityLbs": 1650,
-      "curbWeightLbs": 4720
-    },
-    "features": {
-      "hasHeatPump": true,
-      "hasV2L": true,
-      "hasV2H": false,
-      "autopilotLevel": "Highway Driving Assist 2"
-    },
-    "meta": {
-      "imageUrl": "/images/vehicles/2026-kia-ev6.jpg",
-      "manufacturerUrl": "https://www.kia.com/us/en/ev6",
-      "availabilityStatus": "Available",
-      "dataSource": "Kia.com official specs, EPA FuelEconomy.gov",
-      "lastVerified": "2025-11-27",
-      "notes": "2026 model features native NACS connector for direct Tesla Supercharger access. 800V architecture enables ultra-fast charging (10-80% in 18 min). Enhanced range over 2024-2025 models."
     }
   },
   {

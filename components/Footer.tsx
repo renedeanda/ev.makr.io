@@ -104,13 +104,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/vehicles/kia/ev6" className="hover:text-eco-green-light transition-colors">
-                  Kia EV6
+                <Link href="/vehicles/ford/mustang-mach-e" className="hover:text-eco-green-light transition-colors">
+                  Ford Mustang Mach-E
                 </Link>
               </li>
               <li>
-                <Link href="/vehicles/hyundai/ioniq5" className="hover:text-eco-green-light transition-colors">
+                <Link href="/vehicles/hyundai/ioniq-5" className="hover:text-eco-green-light transition-colors">
                   Hyundai IONIQ 5
+                </Link>
+              </li>
+              <li>
+                <Link href="/vehicles/kia/ev6" className="hover:text-eco-green-light transition-colors">
+                  Kia EV6
                 </Link>
               </li>
               <li>

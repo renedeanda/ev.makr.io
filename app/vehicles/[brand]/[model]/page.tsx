@@ -167,7 +167,9 @@ export default async function VehicleModelPage({ params }: PageProps) {
                 {latestVehicle.make} {latestVehicle.model}
               </h1>
               <p className="text-xl text-white/90">
-                Available model years: {years.join(", ")}
+                {years.length === 1
+                  ? `${years[0]} Model Year`
+                  : `${Math.min(...years)}-${Math.max(...years)} Model Years`}
               </p>
             </div>
 

@@ -100,10 +100,13 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Make Filter */}
               <div>
-                <h3 className="font-semibold text-slate mb-3">Make</h3>
-                <div className="space-y-2 max-h-48 overflow-y-auto">
+                <h3 className="font-semibold text-slate mb-3 flex items-center justify-between">
+                  Make
+                  <span className="text-xs text-slate-light font-normal">Scroll ↕</span>
+                </h3>
+                <div className="space-y-2 max-h-48 overflow-y-auto border border-gray-border rounded-lg p-3 bg-white shadow-sm">
                   {makes.map((make) => (
-                    <label key={make} className="flex items-center gap-2 cursor-pointer">
+                    <label key={make} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
                       <input
                         type="checkbox"
                         checked={selectedMakes.includes(make)}
@@ -113,15 +116,18 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
                       <span className="text-sm text-slate">{make}</span>
                     </label>
                   ))}
+                  <div className="text-center pt-2 text-xs text-slate-light border-t border-gray-border">
+                    ↑ Scroll for more ↓
+                  </div>
                 </div>
               </div>
               
               {/* Year Filter */}
               <div>
                 <h3 className="font-semibold text-slate mb-3">Model Year</h3>
-                <div className="space-y-2">
+                <div className="space-y-2 border border-gray-border rounded-lg p-3 bg-white shadow-sm">
                   {allYears.map((year) => (
-                    <label key={year} className="flex items-center gap-2 cursor-pointer">
+                    <label key={year} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
                       <input
                         type="checkbox"
                         checked={selectedYears.includes(year)}
@@ -133,13 +139,13 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
                   ))}
                 </div>
               </div>
-              
+
               {/* Connector Filter */}
               <div>
                 <h3 className="font-semibold text-slate mb-3">Connector Type</h3>
-                <div className="space-y-2">
+                <div className="space-y-2 border border-gray-border rounded-lg p-3 bg-white shadow-sm">
                   {connectors.map((connector) => (
-                    <label key={connector} className="flex items-center gap-2 cursor-pointer">
+                    <label key={connector} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
                       <input
                         type="checkbox"
                         checked={selectedConnectors.includes(connector)}

@@ -120,6 +120,26 @@
   - Verify getAllVehicleModels() returns all 30 models
   - Check for missing brands in filter
   - Ensure trim counts are accurate
+- [x] **Data Quality & Accuracy Initiative** 🎯
+  - [x] EV6 Data Audit (2022-2025 comprehensive trim coverage)
+  - [ ] Verify all vehicle first production years are included
+  - [ ] Document year-over-year changes for each model
+  - [ ] Ensure complete trim coverage across all years
+  - [ ] Validate spec ranges between trims (HP, range, pricing)
+  - [ ] Cross-reference all data with manufacturer sources
+  - [ ] Add "last verified" dates to all vehicle entries
+  - [ ] Create data source citations for transparency
+  - [ ] Identify and remove unreleased model years (e.g., 2026 models)
+  - [ ] Priority models for full historical data:
+    - Tesla Model 3/Y (2018-2026 for Model 3, 2020-2026 for Model Y)
+    - Ford F-150 Lightning (2022-2026)
+    - Hyundai IONIQ 5 (2022-2026)
+    - Kia EV9 (2024-2026)
+    - Subaru Solterra (2023-2026)
+    - Chevrolet Equinox EV (2024-2026)
+  - [ ] Document major platform changes (e.g., NACS adoption timeline)
+  - [ ] Track battery upgrades across model years
+  - [ ] Note significant spec changes (HP increases, range improvements)
 - [ ] **Mobile Experience**
   - Test all tables on mobile devices
   - Improve filter UI on mobile
