@@ -63,52 +63,105 @@ button, a, [role="button"] {
 }
 
 /* MDX Content - Prose Tables */
+.prose {
+  max-width: 100%;
+}
+
+/* Scrollable table container */
+.prose > div:has(table),
+.prose table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+}
+
+/* Table itself */
 .prose table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
-  margin: 1.5rem 0;
-  overflow-x: auto;
-  display: block;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  display: table;
+  border: 1px solid var(--color-gray-border);
 }
 
 .prose thead {
-  background-color: var(--color-gray-bg);
+  background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
   border-bottom: 2px solid var(--color-primary);
 }
 
 .prose th {
-  padding: 0.75rem 1rem;
+  padding: 0.875rem 1rem;
   text-align: left;
   font-weight: 700;
   color: var(--color-slate);
-  font-size: 0.875rem;
-  letter-spacing: 0.025em;
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #f9fafb;
 }
 
 .prose td {
-  padding: 0.75rem 1rem;
+  padding: 0.875rem 1rem;
   border-bottom: 1px solid var(--color-gray-border);
-  color: var(--color-slate-light);
+  color: var(--color-slate);
   font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.prose tbody tr {
+  transition: background-color 0.15s ease;
 }
 
 .prose tbody tr:hover {
-  background-color: var(--color-gray-bg);
+  background-color: rgba(37, 99, 235, 0.03);
 }
 
 .prose tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* Responsive tables */
-@media (max-width: 640px) {
+/* Strong text in tables */
+.prose table strong {
+  color: var(--color-slate);
+  font-weight: 600;
+}
+
+/* Checkmark and special characters in tables */
+.prose table td:first-child {
+  font-weight: 500;
+}
+
+/* Mobile responsive tables */
+@media (max-width: 768px) {
   .prose table {
+    min-width: 100%;
+    font-size: 0.875rem;
+    border-radius: 6px;
+  }
+
+  .prose th {
+    padding: 0.75rem 0.625rem;
+    font-size: 0.75rem;
+  }
+
+  .prose td {
+    padding: 0.75rem 0.625rem;
     font-size: 0.875rem;
   }
 
-  .prose th,
-  .prose td {
-    padding: 0.5rem 0.75rem;
+  /* Add scroll hint on mobile */
+  .prose table::after {
+    content: "← Scroll to see more →";
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--color-slate-light);
+    padding: 0.5rem;
+    background-color: var(--color-gray-bg);
+    border-top: 1px solid var(--color-gray-border);
   }
 }
