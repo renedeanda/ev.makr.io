@@ -15,8 +15,8 @@ interface PageProps {
 export async function generateStaticParams() {
   const vehicleModels = getAllVehicleModels();
   return vehicleModels.map((model) => ({
-    brand: encodeURIComponent(model.make.toLowerCase().replace(/\s+/g, '-')),
-    model: encodeURIComponent(model.model.toLowerCase().replace(/\s+/g, '-')),
+    brand: model.brandSlug,
+    model: model.modelSlug,
   }));
 }
 
@@ -263,7 +263,7 @@ export default async function VehicleModelPage({ params }: PageProps) {
           <Button href="/guides/understanding-charging" variant="primary" size="lg">
             Learn About Charging
           </Button>
-          <Button href="/tools/comparison" variant="outline" size="lg">
+          <Button href="/vehicles/compare" variant="outline" size="lg">
             Compare Vehicles
           </Button>
         </div>
