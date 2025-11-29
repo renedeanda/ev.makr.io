@@ -121,25 +121,41 @@
   - Check for missing brands in filter
   - Ensure trim counts are accurate
 - [x] **Data Quality & Accuracy Initiative** 🎯
-  - [x] EV6 Data Audit (2022-2025 comprehensive trim coverage)
-  - [ ] Verify all vehicle first production years are included
-  - [ ] Document year-over-year changes for each model
-  - [ ] Ensure complete trim coverage across all years
-  - [ ] Validate spec ranges between trims (HP, range, pricing)
+
+  **Philosophy: Focus on Recent + Context**
+  - **Recent 2-3 years**: Full trim coverage with detailed specs
+  - **Older models**: Note first production year + major milestones, no exhaustive data
+  - **Rationale**: Most buyers care about current/recent models; reduces data overwhelm
+
+  **Example**: "Kia EV6 (First produced: 2022, GT trim added 2023)"
+  - Full data: 2024-2025 models only
+  - Context: Note 2022 launch, 2023 GT introduction, NACS switch in 2025
+  - Skip: Exhaustive 2022-2023 trim details
+
+  **Completed:**
+  - [x] EV6 Data Audit (removed unreleased 2026, noted 2022 launch)
+  - [x] Remove unreleased model years (2026 models not yet available)
+  - [x] Add data quality section to ROADMAP
+
+  **To Do:**
+  - [ ] Verify all vehicle first production years are noted
+  - [ ] Add "first produced" year to all model entries
+  - [ ] Document major milestones (GT trims, NACS adoption, battery upgrades)
+  - [ ] Ensure recent 2-3 years have complete trim coverage
+  - [ ] Validate spec ranges between current trims (HP, range, pricing)
   - [ ] Cross-reference all data with manufacturer sources
   - [ ] Add "last verified" dates to all vehicle entries
   - [ ] Create data source citations for transparency
-  - [ ] Identify and remove unreleased model years (e.g., 2026 models)
-  - [ ] Priority models for full historical data:
-    - Tesla Model 3/Y (2018-2026 for Model 3, 2020-2026 for Model Y)
-    - Ford F-150 Lightning (2022-2026)
-    - Hyundai IONIQ 5 (2022-2026)
-    - Kia EV9 (2024-2026)
-    - Subaru Solterra (2023-2026)
-    - Chevrolet Equinox EV (2024-2026)
-  - [ ] Document major platform changes (e.g., NACS adoption timeline)
-  - [ ] Track battery upgrades across model years
-  - [ ] Note significant spec changes (HP increases, range improvements)
+  - [ ] Priority models for recent data focus:
+    - Tesla Model 3/Y (2024-2026 full data, note 2018/2020 launch)
+    - Ford F-150 Lightning (2024-2026 full data, note 2022 launch)
+    - Hyundai IONIQ 5 (2024-2026 full data, note 2022 launch, 2025 facelift)
+    - Kia EV9 (2024-2026 full data)
+    - Chevrolet Equinox EV (2025-2026 full data, note 2024 launch)
+  - [ ] Document major platform changes with context:
+    - NACS adoption timeline (which brands, which years)
+    - Battery size increases (e.g., EV6: 58/77.4 kWh → 84 kWh in 2025)
+    - Performance upgrades (e.g., EV6 GT: 576 hp in 2023 → 641 hp in 2025)
 - [ ] **Mobile Experience**
   - Test all tables on mobile devices
   - Improve filter UI on mobile
