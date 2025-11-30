@@ -2453,7 +2453,7 @@ export const vehicles: Vehicle[] = [
     "charging": { "connector": "CCS1", "acChargingMaxKw": 6.6, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 35 },
     "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 27.7, "towingCapacityLbs": 1500, "curbWeightLbs": 4420 },
     "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Toyota Safety Sense 2.5+" },
-    "meta": { "imageUrl": "/images/vehicles/2023-toyota-bz4x.jpg", "manufacturerUrl": "https://www.toyota.com/bz4x", "availabilityStatus": "Available", "dataSource": "Toyota.com, InsideEVs", "lastVerified": "2025-11-29", "notes": "2023 bZ4X (initial release): Toyota's first mass-market EV. Dual motor AWD, 228 mi range, CCS1 connector. Shares e-TNGA platform with Subaru Solterra." }
+    "meta": { "imageUrl": "/images/vehicles/2023-toyota-bz4x.jpg", "manufacturerUrl": "https://www.toyota.com/bz4x", "availabilityStatus": "Available", "dataSource": "Toyota.com, InsideEVs", "lastVerified": "2025-11-29", "notes": "2023 bZ4X: Toyota's first mass-market EV. Dual motor AWD, 228 mi range, CCS1 connector. Shares e-TNGA platform with Subaru Solterra." }
   },
   {
     "id": "2026-toyota-bz-xle-fwd",
