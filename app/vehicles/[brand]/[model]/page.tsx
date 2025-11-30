@@ -43,13 +43,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const latestVehicle = vehicles[0];
-  const years = Array.from(new Set(vehicles.map((v) => v.year))).sort((a, b) => b - a);
+
+  // Use full production years from data-models.ts
+  const fullProductionYears = vehicleModel.years;
 
   const baseUrl = 'https://ev.makr.io';
   const vehicleUrl = `${baseUrl}/vehicles/${brand}/${model}`;
 
-  const title = `${latestVehicle.make} ${latestVehicle.model} (${years.join(', ')}) - Electric Vehicle Specs`;
-  const description = `Complete specs for ${latestVehicle.make} ${latestVehicle.model}: ${latestVehicle.range.epaRangeMiles} mi range, ${latestVehicle.charging.dcChargingMaxKw} kW DC fast charging, starting at $${latestVehicle.pricing.msrpBase.toLocaleString()}. Available years: ${years.join(', ')}.`;
+  const yearRange = fullProductionYears.length === 1
+    ? `${fullProductionYears[0]}`
+    : `${Math.min(...fullProductionYears)}-${Math.max(...fullProductionYears)}`;
+
+  const title = `${latestVehicle.make} ${latestVehicle.model} (${yearRange}) - Electric Vehicle Specs`;
+  const description = `Complete specs for ${latestVehicle.make} ${latestVehicle.model} (${yearRange}): ${latestVehicle.range.epaRangeMiles} mi range, ${latestVehicle.charging.dcChargingMaxKw} kW DC fast charging, starting at $${latestVehicle.pricing.msrpBase.toLocaleString()}.`;
 
   return {
     title,
@@ -62,7 +68,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'EPA range',
       latestVehicle.charging.connector,
       'DC fast charging',
-      ...years.map(y => `${y} ${latestVehicle.make} ${latestVehicle.model}`),
+      ...fullProductionYears.map(y => `${y} ${latestVehicle.make} ${latestVehicle.model}`),
     ],
     authors: [{ name: 'ev.makr.io' }],
     openGraph: {
@@ -108,7 +114,18 @@ export default async function VehicleModelPage({ params }: PageProps) {
   }
 
   const latestVehicle = vehicles[0]; // Newest year first
-  const years = Array.from(new Set(vehicles.map((v) => v.year))).sort((a, b) => b - a);
+
+  // Use full production years from data-models.ts for display
+  const fullProductionYears = vehicleModel.years;
+
+  // Get years with actual vehicle data for the year selector component
+  const availableYears = Array.from(new Set(vehicles.map((v) => v.year))).sort((a, b) => b - a);
+
+  // Calculate HP range across all trims
+  const hpRange = {
+    min: Math.min(...vehicles.map(v => v.performance.horsepower)),
+    max: Math.max(...vehicles.map(v => v.performance.horsepower))
+  };
 
   // Generate JSON-LD structured data for Vehicle
   const jsonLd = {
@@ -180,19 +197,47 @@ export default async function VehicleModelPage({ params }: PageProps) {
               <h1 className="text-4xl md:text-5xl font-bold mb-2">
                 {latestVehicle.make} {latestVehicle.model}
               </h1>
-              <p className="text-xl text-white/90">
-                {years.length === 1
-                  ? `${years[0]} Model Year`
-                  : `${Math.min(...years)}-${Math.max(...years)} Model Years`}
+              <p className="text-xl text-white/90 mb-4">
+                {fullProductionYears.length === 1
+                  ? `${fullProductionYears[0]} Model Year`
+                  : `Production Years: ${Math.min(...fullProductionYears)}-${Math.max(...fullProductionYears)}`}
               </p>
+
+              {/* Key Specs */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                <div>
+                  <div className="text-white/70 text-sm mb-1">MSRP Range</div>
+                  <div className="text-lg font-semibold">
+                    ${(vehicleModel.priceRange.min / 1000).toFixed(0)}k - ${(vehicleModel.priceRange.max / 1000).toFixed(0)}k
+                  </div>
+                </div>
+                <div>
+                  <div className="text-white/70 text-sm mb-1">EPA Range</div>
+                  <div className="text-lg font-semibold">
+                    {vehicleModel.rangeMin} - {vehicleModel.rangeMax} mi
+                  </div>
+                </div>
+                <div>
+                  <div className="text-white/70 text-sm mb-1">Horsepower</div>
+                  <div className="text-lg font-semibold">
+                    {hpRange.min} - {hpRange.max} hp
+                  </div>
+                </div>
+                <div>
+                  <div className="text-white/70 text-sm mb-1">Trims Available</div>
+                  <div className="text-lg font-semibold">
+                    {vehicleModel.vehicleCount} {vehicleModel.vehicleCount === 1 ? 'trim' : 'trims'}
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="flex gap-2">
-              {latestVehicle.charging.connector && (
-                <Badge variant="outline-light" size="md">
-                  {latestVehicle.charging.connector}
+            <div className="flex gap-2 items-start">
+              {vehicleModel.connectors.map((connector) => (
+                <Badge key={connector} variant="outline-light" size="md">
+                  {connector}
                 </Badge>
-              )}
+              ))}
               <Badge variant="outline-light" size="md">
                 All-Electric
               </Badge>
@@ -249,7 +294,7 @@ export default async function VehicleModelPage({ params }: PageProps) {
       )}
 
       {/* Year Selector and Content (Client Component) */}
-      <VehicleYearSelector vehicles={vehicles} years={years} initialYear={years[0]} />
+      <VehicleYearSelector vehicles={vehicles} years={availableYears} initialYear={availableYears[0]} />
 
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pb-12 text-center">
