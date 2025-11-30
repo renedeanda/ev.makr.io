@@ -842,6 +842,363 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2024-bmw-i4-edrive35",
+    "year": 2024,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "eDrive35",
+    "slug": "2024-bmw-i4-edrive35",
+    "pricing": {
+      "msrpBase": 57900,
+      "msrpMax": 62900
+    },
+    "range": {
+      "epaRangeMiles": 276,
+      "batteryCapacityKwh": 70.2,
+      "efficiencyMPGe": 104,
+      "efficiencyKwhPer100Mi": 32.4
+    },
+    "performance": {
+      "horsepower": 282,
+      "torque": 295,
+      "zeroTo60": 6.0,
+      "topSpeed": 118,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 180,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4650
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "Entry-level i4 with smaller battery pack. Excellent efficiency at 104 MPGe. RWD provides classic BMW driving dynamics at an accessible price point."
+    }
+  },
+  {
+    "id": "2024-bmw-i4-edrive40",
+    "year": 2024,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "eDrive40",
+    "slug": "2024-bmw-i4-edrive40",
+    "pricing": {
+      "msrpBase": 59400,
+      "msrpMax": 64400
+    },
+    "range": {
+      "epaRangeMiles": 301,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 99,
+      "efficiencyKwhPer100Mi": 34.1
+    },
+    "performance": {
+      "horsepower": 335,
+      "torque": 317,
+      "zeroTo60": 5.5,
+      "topSpeed": 118,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4970
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "Popular i4 configuration with excellent 301-mile range and 335 HP. RWD for classic BMW driving feel. CCS1 connector with adapter available for Tesla Supercharger access."
+    }
+  },
+  {
+    "id": "2024-bmw-i4-xdrive40",
+    "year": 2024,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "xDrive40",
+    "slug": "2024-bmw-i4-xdrive40",
+    "pricing": {
+      "msrpBase": 63400,
+      "msrpMax": 68400
+    },
+    "range": {
+      "epaRangeMiles": 307,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.5
+    },
+    "performance": {
+      "horsepower": 396,
+      "torque": 586,
+      "zeroTo60": 4.9,
+      "topSpeed": 118,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5150
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "AWD i4 with 396 HP and excellent all-weather capability. 0-60 in 4.9 seconds. Combines performance with practical 307-mile range."
+    }
+  },
+  {
+    "id": "2024-bmw-i4-m50",
+    "year": 2024,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "M50",
+    "slug": "2024-bmw-i4-m50",
+    "pricing": {
+      "msrpBase": 67300,
+      "msrpMax": 72300
+    },
+    "range": {
+      "epaRangeMiles": 270,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 89,
+      "efficiencyKwhPer100Mi": 37.9
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 586,
+      "zeroTo60": 3.7,
+      "topSpeed": 140,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5200
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "Performance-oriented i4 M50 with 536 HP and blistering 3.7-second 0-60 time. M Sport brakes, adaptive M suspension, and iconic M styling. Top speed of 140 mph."
+    }
+  },
+  {
+    "id": "2025-bmw-i4-edrive40",
+    "year": 2025,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "eDrive40",
+    "slug": "2025-bmw-i4-edrive40",
+    "pricing": {
+      "msrpBase": 60900,
+      "msrpMax": 65900
+    },
+    "range": {
+      "epaRangeMiles": 318,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 102,
+      "efficiencyKwhPer100Mi": 33.0
+    },
+    "performance": {
+      "horsepower": 335,
+      "torque": 317,
+      "zeroTo60": 5.5,
+      "topSpeed": 118,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4970
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "2025 i4 eDrive40 with improved range of 318 miles and better efficiency. CCS1 connector with adapter available for Supercharger access."
+    }
+  },
+  {
+    "id": "2025-bmw-i4-xdrive40",
+    "year": 2025,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "xDrive40",
+    "slug": "2025-bmw-i4-xdrive40",
+    "pricing": {
+      "msrpBase": 64900,
+      "msrpMax": 69900
+    },
+    "range": {
+      "epaRangeMiles": 287,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.5
+    },
+    "performance": {
+      "horsepower": 396,
+      "torque": 586,
+      "zeroTo60": 4.9,
+      "topSpeed": 118,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5150
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "2025 xDrive40 with AWD and 396 HP. Excellent performance with 0-60 in 4.9 seconds. 287-mile range balances performance and practicality."
+    }
+  },
+  {
+    "id": "2025-bmw-i4-m50",
+    "year": 2025,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "M50",
+    "slug": "2025-bmw-i4-m50",
+    "pricing": {
+      "msrpBase": 68800,
+      "msrpMax": 73800
+    },
+    "range": {
+      "epaRangeMiles": 267,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 89,
+      "efficiencyKwhPer100Mi": 37.9
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 586,
+      "zeroTo60": 3.7,
+      "topSpeed": 140,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5200
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "2025 M50 performance sedan with 536 HP. 0-60 in 3.7 seconds makes it one of the quickest electric sedans. M Sport features throughout."
+    }
+  },
+  {
     "id": "2026-bmw-i4-edrive40",
     "year": 2026,
     "make": "BMW",
@@ -893,6 +1250,363 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2026-bmw-i4-xdrive40",
+    "year": 2026,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "xDrive40",
+    "slug": "2026-bmw-i4-xdrive40",
+    "pricing": {
+      "msrpBase": 66400,
+      "msrpMax": 71400
+    },
+    "range": {
+      "epaRangeMiles": 287,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.5
+    },
+    "performance": {
+      "horsepower": 396,
+      "torque": 586,
+      "zeroTo60": 4.9,
+      "topSpeed": 118,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5150
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "2026 xDrive40 with native NACS and 396 HP. AWD provides excellent traction. Direct Supercharger access without adapters."
+    }
+  },
+  {
+    "id": "2026-bmw-i4-m60",
+    "year": 2026,
+    "make": "BMW",
+    "model": "i4",
+    "trim": "M60",
+    "slug": "2026-bmw-i4-m60",
+    "pricing": {
+      "msrpBase": 75800,
+      "msrpMax": 80800
+    },
+    "range": {
+      "epaRangeMiles": 278,
+      "batteryCapacityKwh": 83.9,
+      "efficiencyMPGe": 88,
+      "efficiencyKwhPer100Mi": 38.3
+    },
+    "performance": {
+      "horsepower": 591,
+      "torque": 605,
+      "zeroTo60": 3.5,
+      "topSpeed": 143,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 205,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 45.6,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5250
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-bmw-i4.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-i4.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "New-for-2026 M60 flagship with 591 HP and 3.5-second 0-60. Native NACS connector. Ultimate i4 performance with M Sport technology throughout."
+    }
+  },
+  {
+    "id": "2024-bmw-ix-xdrive50",
+    "year": 2024,
+    "make": "BMW",
+    "model": "iX",
+    "trim": "xDrive50",
+    "slug": "2024-bmw-ix-xdrive50",
+    "pricing": {
+      "msrpBase": 87000,
+      "msrpMax": 95000
+    },
+    "range": {
+      "epaRangeMiles": 307,
+      "batteryCapacityKwh": 111.5,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 516,
+      "torque": 564,
+      "zeroTo60": 4.6,
+      "topSpeed": 124,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 195,
+      "chargingTime10to80Minutes": 35
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 77.9,
+      "towingCapacityLbs": 6000,
+      "curbWeightLbs": 5659
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-bmw-ix.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-ix.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "2024 iX xDrive50 with 516 HP and 307-mile range. CCS1 connector with adapter available for Supercharger access. Premium luxury SUV with 6,000 lb towing capacity."
+    }
+  },
+  {
+    "id": "2024-bmw-ix-m60",
+    "year": 2024,
+    "make": "BMW",
+    "model": "iX",
+    "trim": "M60",
+    "slug": "2024-bmw-ix-m60",
+    "pricing": {
+      "msrpBase": 109895,
+      "msrpMax": 115000
+    },
+    "range": {
+      "epaRangeMiles": 296,
+      "batteryCapacityKwh": 111.5,
+      "efficiencyMPGe": 82,
+      "efficiencyKwhPer100Mi": 41.1
+    },
+    "performance": {
+      "horsepower": 610,
+      "torque": 811,
+      "zeroTo60": 3.6,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 195,
+      "chargingTime10to80Minutes": 35
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 77.9,
+      "towingCapacityLbs": 6000,
+      "curbWeightLbs": 5769
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-bmw-ix.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-ix.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "Performance iX M60 with 610 HP and 811 lb-ft of torque. 0-60 in 3.6 seconds. M Sport suspension, brakes, and styling. Luxury meets performance."
+    }
+  },
+  {
+    "id": "2025-bmw-ix-xdrive50",
+    "year": 2025,
+    "make": "BMW",
+    "model": "iX",
+    "trim": "xDrive50",
+    "slug": "2025-bmw-ix-xdrive50",
+    "pricing": {
+      "msrpBase": 88500,
+      "msrpMax": 96500
+    },
+    "range": {
+      "epaRangeMiles": 324,
+      "batteryCapacityKwh": 111.5,
+      "efficiencyMPGe": 89,
+      "efficiencyKwhPer100Mi": 37.9
+    },
+    "performance": {
+      "horsepower": 516,
+      "torque": 564,
+      "zeroTo60": 4.6,
+      "topSpeed": 124,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 195,
+      "chargingTime10to80Minutes": 35
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 77.9,
+      "towingCapacityLbs": 6000,
+      "curbWeightLbs": 5659
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-bmw-ix.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-ix.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "2025 iX xDrive50 with improved 324-mile range. 516 HP, excellent efficiency at 89 MPGe. Premium luxury SUV with advanced technology."
+    }
+  },
+  {
+    "id": "2025-bmw-ix-m60",
+    "year": 2025,
+    "make": "BMW",
+    "model": "iX",
+    "trim": "M60",
+    "slug": "2025-bmw-ix-m60",
+    "pricing": {
+      "msrpBase": 111395,
+      "msrpMax": 117000
+    },
+    "range": {
+      "epaRangeMiles": 296,
+      "batteryCapacityKwh": 111.5,
+      "efficiencyMPGe": 82,
+      "efficiencyKwhPer100Mi": 41.1
+    },
+    "performance": {
+      "horsepower": 610,
+      "torque": 811,
+      "zeroTo60": 3.6,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 195,
+      "chargingTime10to80Minutes": 35
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 77.9,
+      "towingCapacityLbs": 6000,
+      "curbWeightLbs": 5769
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-bmw-ix.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-ix.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "2025 M60 performance SUV with 610 HP. 0-60 in 3.6 seconds with massive 811 lb-ft torque. M Sport technology and luxury combined."
+    }
+  },
+  {
+    "id": "2026-bmw-ix-xdrive45",
+    "year": 2026,
+    "make": "BMW",
+    "model": "iX",
+    "trim": "xDrive45",
+    "slug": "2026-bmw-ix-xdrive45",
+    "pricing": {
+      "msrpBase": 75000,
+      "msrpMax": 82000
+    },
+    "range": {
+      "epaRangeMiles": 312,
+      "batteryCapacityKwh": 94.0,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 402,
+      "torque": 494,
+      "zeroTo60": 5.5,
+      "topSpeed": 118,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 195,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 77.9,
+      "towingCapacityLbs": 6000,
+      "curbWeightLbs": 5450
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-bmw-ix.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-ix.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "New-for-2026 xDrive45 entry-level iX with native NACS. 402 HP, 312-mile range. Direct Supercharger access. More accessible price point."
+    }
+  },
+  {
     "id": "2026-bmw-ix-xdrive50",
     "year": 2026,
     "make": "BMW",
@@ -941,6 +1655,108 @@ export const vehicles: Vehicle[] = [
       "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
       "lastVerified": "2025-11-27",
       "notes": "BMW's flagship electric SUV with premium luxury features and advanced technology. 2026 model features native NACS connector. Spacious interior, excellent range, and impressive 516 HP. Towing capacity of 6,000 lbs. Premium materials and BMW's iconic driving dynamics."
+    }
+  },
+  {
+    "id": "2026-bmw-ix-xdrive60",
+    "year": 2026,
+    "make": "BMW",
+    "model": "iX",
+    "trim": "xDrive60",
+    "slug": "2026-bmw-ix-xdrive60",
+    "pricing": {
+      "msrpBase": 95000,
+      "msrpMax": 103000
+    },
+    "range": {
+      "epaRangeMiles": 364,
+      "batteryCapacityKwh": 111.5,
+      "efficiencyMPGe": 91,
+      "efficiencyKwhPer100Mi": 37.0
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 586,
+      "zeroTo60": 4.4,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 195,
+      "chargingTime10to80Minutes": 35
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 77.9,
+      "towingCapacityLbs": 6000,
+      "curbWeightLbs": 5700
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-bmw-ix.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-ix.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "New-for-2026 xDrive60 with 364-mile range and 536 HP. Native NACS connector. Best range in the iX lineup with excellent performance."
+    }
+  },
+  {
+    "id": "2026-bmw-ix-m70",
+    "year": 2026,
+    "make": "BMW",
+    "model": "iX",
+    "trim": "M70",
+    "slug": "2026-bmw-ix-m70",
+    "pricing": {
+      "msrpBase": 122000,
+      "msrpMax": 130000
+    },
+    "range": {
+      "epaRangeMiles": 302,
+      "batteryCapacityKwh": 111.5,
+      "efficiencyMPGe": 82,
+      "efficiencyKwhPer100Mi": 41.1
+    },
+    "performance": {
+      "horsepower": 650,
+      "torque": 811,
+      "zeroTo60": 3.4,
+      "topSpeed": 155,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "NACS",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 195,
+      "chargingTime10to80Minutes": 35
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 77.9,
+      "towingCapacityLbs": 6000,
+      "curbWeightLbs": 5850
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Driving Assistant Professional"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-bmw-ix.jpg",
+      "manufacturerUrl": "https://www.bmwusa.com/vehicles/bmwi/bmw-ix.html",
+      "availabilityStatus": "Available",
+      "dataSource": "BMW.com official specs, EPA FuelEconomy.gov",
+      "lastVerified": "2025-11-30",
+      "notes": "New flagship M70 with incredible 650 HP and 811 lb-ft torque. 0-60 in 3.4 seconds. Native NACS. Top speed of 155 mph. Ultimate performance SUV."
     }
   },
   {
