@@ -28,8 +28,8 @@ export default function VehicleYearSelector({ vehicles, years, initialYear }: Ve
 
     if (!currentYearVehicle) return changes;
 
+    // If no previous year vehicle, don't show anything (could be missing data or first year we have data for)
     if (!previousYearVehicle) {
-      changes.push("Initial release");
       return changes;
     }
 
@@ -151,49 +151,65 @@ export default function VehicleYearSelector({ vehicles, years, initialYear }: Ve
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Key Specs Grid */}
+        {/* Key Specs Grid for Selected Year */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <Card variant="bordered" className="p-6">
             <div className="flex items-center gap-3 mb-3">
               <Battery className="text-primary" size={24} />
-              <h3 className="font-semibold text-slate">Range</h3>
+              <h3 className="font-semibold text-slate">Range ({selectedYear})</h3>
             </div>
             <p className="text-3xl font-bold text-slate mb-1">
-              {selectedYearVehicles[0].range.epaRangeMiles}
+              {(() => {
+                const ranges = selectedYearVehicles.map(v => v.range.epaRangeMiles);
+                const minRange = Math.min(...ranges);
+                const maxRange = Math.max(...ranges);
+                return minRange === maxRange ? `${minRange}` : `${minRange}-${maxRange}`;
+              })()}
               <span className="text-lg font-normal text-slate-light"> mi</span>
             </p>
-            <p className="text-sm text-slate-light">EPA Estimated</p>
+            <p className="text-sm text-slate-light">EPA Range</p>
           </Card>
 
           <Card variant="bordered" className="p-6">
             <div className="flex items-center gap-3 mb-3">
               <DollarSign className="text-eco-green" size={24} />
-              <h3 className="font-semibold text-slate">Starting Price</h3>
+              <h3 className="font-semibold text-slate">Price ({selectedYear})</h3>
             </div>
             <p className="text-3xl font-bold text-slate mb-1">
-              ${selectedYearVehicles[0].pricing.msrpBase.toLocaleString()}
+              {(() => {
+                const prices = selectedYearVehicles.map(v => v.pricing.msrpBase);
+                const minPrice = Math.min(...prices);
+                const maxPrice = Math.max(...prices);
+                return minPrice === maxPrice
+                  ? `$${minPrice.toLocaleString()}`
+                  : `$${(minPrice / 1000).toFixed(0)}k-${(maxPrice / 1000).toFixed(0)}k`;
+              })()}
             </p>
-            <p className="text-sm text-slate-light">MSRP</p>
+            <p className="text-sm text-slate-light">MSRP Range</p>
           </Card>
 
           <Card variant="bordered" className="p-6">
             <div className="flex items-center gap-3 mb-3">
               <Zap className="text-eco-green" size={24} />
-              <h3 className="font-semibold text-slate">DC Fast Charging</h3>
+              <h3 className="font-semibold text-slate">Charging ({selectedYear})</h3>
             </div>
             <p className="text-3xl font-bold text-slate mb-1">
-              {selectedYearVehicles[0].charging.dcChargingMaxKw}
+              {(() => {
+                const chargeSpeeds = selectedYearVehicles.map(v => v.charging.dcChargingMaxKw);
+                const uniqueSpeeds = Array.from(new Set(chargeSpeeds)).sort((a, b) => a - b);
+                return uniqueSpeeds.length === 1 ? `${uniqueSpeeds[0]}` : `${uniqueSpeeds[0]}-${uniqueSpeeds[uniqueSpeeds.length - 1]}`;
+              })()}
               <span className="text-lg font-normal text-slate-light"> kW</span>
             </p>
             <p className="text-sm text-slate-light">
-              10-80% in ~{selectedYearVehicles[0].charging.chargingTime10to80Minutes} min
+              DC Fast Charging
             </p>
           </Card>
 
           <Card variant="bordered" className="p-6">
             <div className="flex items-center gap-3 mb-3">
               <Gauge className="text-primary" size={24} />
-              <h3 className="font-semibold text-slate">Performance</h3>
+              <h3 className="font-semibold text-slate">Power ({selectedYear})</h3>
             </div>
             <p className="text-3xl font-bold text-slate mb-1">
               {getPerformanceRange('horsepower')}
