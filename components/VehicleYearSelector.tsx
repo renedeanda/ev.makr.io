@@ -63,10 +63,28 @@ export default function VehicleYearSelector({ vehicles, years, initialYear }: Ve
       changes.push(`Improved range: +${rangeDiff} miles (now ${currentYearVehicle.range.epaRangeMiles} mi)`);
     }
 
-    // Check for battery capacity changes
-    if (currentYearVehicle.range.batteryCapacityKwh !== previousYearVehicle.range.batteryCapacityKwh) {
+    // Check for battery capacity changes - only show increases or new options
+    const currentYearBatteries = Array.from(
+      new Set(vehicles.filter((v) => v.year === year).map((v) => v.range.batteryCapacityKwh))
+    ).sort((a, b) => a - b);
+    const previousYearBatteries = Array.from(
+      new Set(vehicles.filter((v) => v.year === year - 1).map((v) => v.range.batteryCapacityKwh))
+    ).sort((a, b) => a - b);
+
+    const maxCurrentBattery = Math.max(...currentYearBatteries);
+    const maxPreviousBattery = Math.max(...previousYearBatteries);
+
+    // Only show battery upgrade if the maximum capacity increased
+    if (maxCurrentBattery > maxPreviousBattery) {
       changes.push(
-        `Battery capacity: ${currentYearVehicle.range.batteryCapacityKwh} kWh (was ${previousYearVehicle.range.batteryCapacityKwh} kWh)`
+        `Battery capacity upgraded: up to ${maxCurrentBattery} kWh (was ${maxPreviousBattery} kWh)`
+      );
+    }
+
+    // Show if new battery options were added (multiple sizes)
+    if (currentYearBatteries.length > previousYearBatteries.length && currentYearBatteries.length > 1) {
+      changes.push(
+        `Multiple battery options: ${currentYearBatteries.join(' kWh, ')} kWh`
       );
     }
 

@@ -76,6 +76,26 @@ export default async function GuidePage({
 
   const components = {
     DisclaimerBox,
+    table: (props: React.HTMLAttributes<HTMLTableElement>) => (
+      <div className="overflow-x-auto my-8">
+        <table className="min-w-full divide-y divide-gray-300 border border-gray-300" {...props} />
+      </div>
+    ),
+    thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
+      <thead className="bg-gray-50" {...props} />
+    ),
+    tbody: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
+      <tbody className="divide-y divide-gray-200 bg-white" {...props} />
+    ),
+    tr: (props: React.HTMLAttributes<HTMLTableRowElement>) => (
+      <tr className="hover:bg-gray-50" {...props} />
+    ),
+    th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
+      <th className="px-4 py-3 text-left text-sm font-semibold text-gray-900 border border-gray-300" {...props} />
+    ),
+    td: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
+      <td className="px-4 py-3 text-sm text-gray-700 border border-gray-300" {...props} />
+    ),
   };
 
   // Generate JSON-LD structured data
