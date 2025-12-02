@@ -65,13 +65,16 @@
 - Power: 282-650 HP
 - Notable: 2026 models have native NACS
 
-**Lucid (8 vehicles)**
-- Air: 4 trims x 2 years (2025-2026)
-- Pure (419-420 mi), Touring (406 mi), Grand Touring (512 mi), Sapphire (427 mi, 1234 HP)
-- Range: 406-512 miles
+**Lucid (23 vehicles)**
+- Air: 4 trims x 5 years (2022-2026) - 19 vehicles total
+  - 2022: Dream Edition Range, Dream Edition Performance, Grand Touring
+  - 2023-2026: Pure, Touring, Grand Touring, Sapphire
+- Gravity: 2 trims x 2 years (2025-2026) - 4 vehicles total
+  - Touring (337 mi, 560 HP), Grand Touring (450 mi, 828 HP)
+- Range: 337-520 miles (Air up to 520 mi, Gravity up to 450 mi)
 - Power: 430-1234 HP
 - Price: $69,900-$254,000
-- Notable: Most efficient EV sedan (146 MPGe), longest range (512 mi), 0-60 in 1.9s (Sapphire)
+- Notable: Complete production history 2022-2026, most efficient EV sedan (146 MPGe), longest range sedan (516-520 mi), first luxury SUV with 450 mi range, 400 kW DC fast charging on Gravity
 
 **Polestar (11 vehicles)**
 - Polestar 2: 4 vehicles (2024-2025)
@@ -99,6 +102,22 @@
 - Power: 282-912 HP
 - Price: $49,800-$165,000
 - Notable: 2025 e-tron GT with 97 kWh battery, 320 kW charging (18 min 10-80%), 912 HP RS Performance
+
+**Porsche (12 vehicles - 2024 only, more years planned)**
+- Taycan: 11 vehicles for 2024 (Base RWD, 4, 4S, GTS, Turbo, Turbo S, plus Cross Turismo and Sport Turismo variants)
+- Range: 220-246 miles (2024 models)
+- Power: 402-750 HP
+- Price: $92,550-$207,500
+- Notable: 2024 lineup with 270 kW DC fast charging, Performance Battery (93 kWh). 2025+ models with 320 kW charging and 97 kWh battery coming
+
+**Chevrolet (14 vehicles)**
+- Blazer EV: 3 vehicles (2024-2025) - 2LT, RS, SS
+- Equinox EV: 6 vehicles (2025-2026) - LT FWD/AWD, RS FWD/AWD, 2LT
+- Silverado EV: 5 vehicles (2024-2026) - WT, WT Standard, WT Max, RST, Trail Boss
+- Range: 282-492 miles (Silverado WT Max: 492 mi - highest EV truck range)
+- Power: 210-754 HP
+- Price: $33,600-$100,000
+- Notable: Silverado EV with record 492 mi range, V2H capability, 350 kW DC fast charging. Equinox EV most affordable at $33,600. Native NACS on 2025+
 
 ---
 
@@ -163,10 +182,13 @@
 ## Future Priorities
 
 ### Brands Needing Comprehensive Data
-1. **Chevrolet** - Blazer EV expansion (additional trims), Equinox EV, Silverado EV
-2. **Genesis** - Electrified GV70, GV60, G80
-3. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion)
-4. **Porsche** - Taycan all variants (currently 1 vehicle)
+1. **Porsche** - Taycan 2025-2026 models (currently have 2024 complete, 1 x 2025 Base model)
+2. **Genesis** - Electrified GV70, GV60, G80 - expand to 2024-2025 models (currently only 2 x 2026 models)
+3. **Hyundai** - IONIQ 6 sedan (currently only have IONIQ 5, missing IONIQ 6 across all years)
+4. **Cadillac** - Lyriq expansion (currently only 2 vehicles: 2024, 2026 - missing 2025, other trims)
+5. **Nissan** - Ariya expansion (currently only 1 x 2024 model - missing other trims and years)
+6. **Honda** - Prologue expansion (currently only 1 x 2026 model - missing other trims and years)
+7. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion to 2026)
 
 ### Feature Enhancements
 - [ ] Vehicle comparison tool (side-by-side specs)
@@ -265,10 +287,12 @@ Build: [X] pages generated (up from [Y])
 - ✅ Corrected NACS historical timeline
 - ✅ Fixed Subaru Solterra app name (Subaru Connect)
 - ✅ Added comprehensive BMW i4 & iX data (18 vehicles)
-- ✅ Added comprehensive Lucid Air data (8 vehicles)
+- ✅ Added comprehensive Lucid data (23 vehicles: Air 2022-2026 full production history + Gravity SUV 2025-2026)
 - ✅ Added comprehensive Polestar 2 & 3 data (11 vehicles)
 - ✅ Added comprehensive Mercedes-Benz EQE & EQS data (40 vehicles: sedans and SUVs)
 - ✅ Added comprehensive Audi data (15 vehicles: Q4 e-tron, e-tron GT, Q8 e-tron, SQ8 e-tron)
+- ✅ Added Porsche Taycan 2024 comprehensive lineup (11 vehicles: all sedan, Cross Turismo, and Sport Turismo variants)
+- ✅ Expanded Chevrolet data (14 vehicles total: Blazer EV expanded with RS/SS trims, Silverado EV added with 5 trims across 2024-2026)
 - ✅ Verified SEO optimization across all pages
 - ✅ Sitemap now includes 321 pages (up from 264)
 
