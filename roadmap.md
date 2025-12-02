@@ -40,10 +40,13 @@
 - EV9: 6 trims across 2024-2026
 - Notable: Dual battery options (63 kWh, 84 kWh), NACS adoption for 2025+
 
-**Hyundai (11 vehicles)**
-- IONIQ 5: Multiple configurations
-- IONIQ 6: Various ranges
-- Notable: E-GMP platform, 800V charging
+**Hyundai (40 vehicles)**
+- IONIQ 5: 22 vehicles across 2024-2026 (Standard/Long Range, SEL/Limited, RWD/AWD, N Line)
+- IONIQ 6: 18 vehicles across 2024-2026 (SE Standard/Long Range, SEL/Limited RWD/AWD)
+- Range: 240-361 miles (IONIQ 6 achieves up to 361 mi)
+- Power: 168-320 HP (up to 576 HP in IONIQ 5 N)
+- Price: $37,500-$73,800
+- Notable: E-GMP platform, 800V architecture enables 18 min 10-80% charging, IONIQ 6 achieves 140 MPGe (most efficient EV), NACS adoption for 2025+
 
 **Volkswagen (14 vehicles)**
 - ID.4: Comprehensive trim coverage
@@ -103,12 +106,13 @@
 - Price: $49,800-$165,000
 - Notable: 2025 e-tron GT with 97 kWh battery, 320 kW charging (18 min 10-80%), 912 HP RS Performance
 
-**Porsche (12 vehicles - 2024 only, more years planned)**
+**Porsche (22 vehicles)**
 - Taycan: 11 vehicles for 2024 (Base RWD, 4, 4S, GTS, Turbo, Turbo S, plus Cross Turismo and Sport Turismo variants)
-- Range: 220-246 miles (2024 models)
-- Power: 402-750 HP
-- Price: $92,550-$207,500
-- Notable: 2024 lineup with 270 kW DC fast charging, Performance Battery (93 kWh). 2025+ models with 320 kW charging and 97 kWh battery coming
+- Taycan: 10 vehicles for 2025-2026 (Base RWD, 4S, GTS, Turbo, Turbo S sedans + Cross Turismo variants)
+- Range: 220-318 miles (2024-2026 models)
+- Power: 402-764 HP (up to 938 HP with launch control on Turbo S)
+- Price: $92,550-$215,000
+- Notable: 2024 lineup with 270 kW DC fast charging, 93 kWh battery. 2025-2026 models upgraded to 320 kW charging, 97 kWh Performance Battery Plus, 18 min 10-80% charging
 
 **Chevrolet (14 vehicles)**
 - Blazer EV: 3 vehicles (2024-2025) - 2LT, RS, SS
@@ -118,6 +122,44 @@
 - Power: 210-754 HP
 - Price: $33,600-$100,000
 - Notable: Silverado EV with record 492 mi range, V2H capability, 350 kW DC fast charging. Equinox EV most affordable at $33,600. Native NACS on 2025+
+
+**Genesis (12 vehicles)**
+- GV60: 6 vehicles (2024-2026) - Advanced AWD, Performance AWD
+- Electrified GV70: 3 vehicles (2024-2026) - Advanced
+- Electrified G80: 3 vehicles (2024-2026) - Advanced
+- Range: 235-282 miles
+- Power: 314-429 HP (483 HP in GV60 boost mode)
+- Price: $52,000-$74,000
+- Notable: 800V architecture enables ultra-fast charging (10-80% in 18 min on GV60 and GV70). Shares platform with Hyundai IONIQ 5 and Kia EV6. Flagship G80 sedan with 87.2 kWh battery, 282 mi range. Premium luxury features. Native NACS on 2026+ models.
+
+**Cadillac (9 vehicles)**
+- Lyriq: 9 vehicles across 2024-2026 (Luxury RWD/AWD, Sport, 2024 Debut Edition)
+- Range: 307-314 miles
+- Power: 340-500 HP
+- Price: $58,590-$71,590
+- Notable: Cadillac's first EV on Ultium platform. 102 kWh battery, Super Cruise hands-free driving, 190 kW DC fast charging. Native NACS on 2025+ models.
+
+**Honda (12 vehicles)**
+- Prologue: 12 vehicles across 2024-2026 (EX, Touring FWD/AWD, Elite)
+- Range: 273-296 miles
+- Power: 212-288 HP
+- Price: $47,400-$57,900
+- Notable: Honda's first mainstream EV built on GM Ultium platform. 85 kWh battery, Google Built-in infotainment, 155 kW DC fast charging. Native NACS on 2026+ models.
+
+**Nissan (13 vehicles)**
+- Ariya: 13 vehicles across 2024-2026 (Venture+ FWD/AWD, Evolve+ FWD/AWD, Platinum+ FWD/AWD, e-4ORCE)
+- Range: 216-304 miles
+- Power: 214-389 HP
+- Price: $39,590-$60,190
+- Notable: Nissan's modern EV with CHAdeMO and CCS1 charging (2024-2025), NACS adoption for 2026+. ProPILOT Assist 2.0, dual battery options (63 kWh, 87 kWh).
+
+**Rivian (16 vehicles)**
+- R1T: 8 vehicles across 2024-2026 (Dual Motor, Dual Motor Max, Performance Dual Max, Tri Motor Max, Quad Motor Max)
+- R1S: 8 vehicles across 2025-2026 (Dual Motor, Dual Motor Max, Performance Dual Max, Tri Motor Max, Quad Motor Max)
+- Range: 270-420 miles (R1T up to 420 mi, R1S up to 410 mi)
+- Power: 533-1,025 HP (Quad Motor Max: 1,025 HP, 2.6s 0-60)
+- Price: $73,000-$100,000
+- Notable: Adventure-focused electric truck and SUV. Native NACS charging, access to Rivian Adventure Network + Tesla Superchargers. 141.5 kWh Max battery, V2L/V2H capable, 11,000 lb towing (R1T). 2026 Quad Motor Max most powerful production truck/SUV.
 
 ---
 
@@ -182,13 +224,14 @@
 ## Future Priorities
 
 ### Brands Needing Comprehensive Data
-1. **Porsche** - Taycan 2025-2026 models (currently have 2024 complete, 1 x 2025 Base model)
-2. **Genesis** - Electrified GV70, GV60, G80 - expand to 2024-2025 models (currently only 2 x 2026 models)
-3. **Hyundai** - IONIQ 6 sedan (currently only have IONIQ 5, missing IONIQ 6 across all years)
-4. **Cadillac** - Lyriq expansion (currently only 2 vehicles: 2024, 2026 - missing 2025, other trims)
-5. **Nissan** - Ariya expansion (currently only 1 x 2024 model - missing other trims and years)
-6. **Honda** - Prologue expansion (currently only 1 x 2026 model - missing other trims and years)
-7. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion to 2026)
+All priority brands have been completed! Consider adding:
+- Tesla (Model S, Model X, Model Y, Cybertruck)
+- Acura (ZDX)
+- Mazda (MX-30, future EVs)
+- Volvo (C40 Recharge, XC40 Recharge)
+- Jaguar (I-PACE)
+- Fisker (Ocean, if still available)
+- Lexus (RZ, UX 300e)
 
 ### Feature Enhancements
 - [ ] Vehicle comparison tool (side-by-side specs)
@@ -291,8 +334,14 @@ Build: [X] pages generated (up from [Y])
 - ✅ Added comprehensive Polestar 2 & 3 data (11 vehicles)
 - ✅ Added comprehensive Mercedes-Benz EQE & EQS data (40 vehicles: sedans and SUVs)
 - ✅ Added comprehensive Audi data (15 vehicles: Q4 e-tron, e-tron GT, Q8 e-tron, SQ8 e-tron)
-- ✅ Added Porsche Taycan 2024 comprehensive lineup (11 vehicles: all sedan, Cross Turismo, and Sport Turismo variants)
+- ✅ Added comprehensive Porsche Taycan data (22 vehicles: 2024-2026 all sedan, Cross Turismo, and Sport Turismo variants)
+- ✅ Added comprehensive Genesis data (12 vehicles: GV60, Electrified GV70, Electrified G80 expanded to 2024-2026)
 - ✅ Expanded Chevrolet data (14 vehicles total: Blazer EV expanded with RS/SS trims, Silverado EV added with 5 trims across 2024-2026)
+- ✅ Expanded Hyundai data (40 vehicles total: IONIQ 5 expanded to 22 vehicles, added complete IONIQ 6 lineup with 18 vehicles across 2024-2026)
+- ✅ Added comprehensive Cadillac Lyriq data (9 vehicles across 2024-2026)
+- ✅ Added comprehensive Honda Prologue data (12 vehicles across 2024-2026)
+- ✅ Added comprehensive Nissan Ariya data (13 vehicles across 2024-2026)
+- ✅ Updated Rivian data (16 vehicles: R1T and R1S with correct year ranges and metadata)
 - ✅ Verified SEO optimization across all pages
 - ✅ Sitemap now includes 321 pages (up from 264)
 
