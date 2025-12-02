@@ -182,10 +182,13 @@
 ## Future Priorities
 
 ### Brands Needing Comprehensive Data
-1. **Porsche** - Taycan 2025-2026 models (currently have 2024 complete, 1 x 2025 model)
-2. **Genesis** - Electrified GV70, GV60, G80 - expand to 2024-2025 models
-3. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion to 2026)
-4. **Cadillac** - Lyriq all variants (limited data currently)
+1. **Porsche** - Taycan 2025-2026 models (currently have 2024 complete, 1 x 2025 Base model)
+2. **Genesis** - Electrified GV70, GV60, G80 - expand to 2024-2025 models (currently only 2 x 2026 models)
+3. **Hyundai** - IONIQ 6 sedan (currently only have IONIQ 5, missing IONIQ 6 across all years)
+4. **Cadillac** - Lyriq expansion (currently only 2 vehicles: 2024, 2026 - missing 2025, other trims)
+5. **Nissan** - Ariya expansion (currently only 1 x 2024 model - missing other trims and years)
+6. **Honda** - Prologue expansion (currently only 1 x 2026 model - missing other trims and years)
+7. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion to 2026)
 
 ### Feature Enhancements
 - [ ] Vehicle comparison tool (side-by-side specs)
