@@ -2542,39 +2542,551 @@ export const vehicles: Vehicle[] = [
       "notes": "2026 model features native NACS connector. Three-row electric SUV with spacious interior. 800V architecture for ultra-fast charging. V2L can power appliances. Premium features and build quality."
     }
   },
+  // Mercedes-Benz EQE Sedan (2024-2026) - 10 vehicles
   {
-    "id": "2026-mercedes-eqe-suv-350plus",
+    "id": "2026-mercedes-eqe-320-plus",
     "year": 2026,
     "make": "Mercedes-Benz",
-    "model": "EQE SUV",
-    "trim": "350+",
-    "slug": "2026-mercedes-eqe-suv-350plus",
+    "model": "EQE",
+    "trim": "320+",
+    "slug": "2026-mercedes-eqe-320-plus",
     "pricing": {
-      "msrpBase": 78500,
-      "msrpMax": 85000
+      "msrpBase": 66200,
+      "msrpMax": 70000
     },
     "range": {
-      "epaRangeMiles": 260,
-      "batteryCapacityKwh": 90.6,
-      "efficiencyMPGe": 91,
-      "efficiencyKwhPer100Mi": 37
+      "epaRangeMiles": 308,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 94,
+      "efficiencyKwhPer100Mi": 35.9
     },
     "performance": {
-      "horsepower": 288,
-      "torque": 391,
+      "horsepower": 315,
+      "torque": 416,
       "zeroTo60": 6.2,
       "topSpeed": 130,
       "drivetrain": "RWD"
     },
     "charging": {
-      "connector": "NACS",
+      "connector": "CCS1",
       "acChargingMaxKw": 11,
       "dcChargingMaxKw": 170,
       "chargingTime10to80Minutes": 32
     },
     "physical": {
       "seatingCapacity": 5,
-      "cargoVolumeCuFt": 60,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4826
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQE 320+: Base RWD sedan with 315 HP, 308 mi range. Increased power from 288 HP in 2025. EQE500 discontinued for 2026. More affordable entry point to Mercedes luxury EV sedan."
+    }
+  },
+  {
+    "id": "2026-mercedes-eqe-320-4matic",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "320 4MATIC",
+    "slug": "2026-mercedes-eqe-320-4matic",
+    "pricing": {
+      "msrpBase": 68700,
+      "msrpMax": 73000
+    },
+    "range": {
+      "epaRangeMiles": 267,
+      "batteryCapacityKwh": 90.5,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 315,
+      "torque": 416,
+      "zeroTo60": 6.2,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5026
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQE 320 4MATIC: AWD with 315 HP, 267 mi range. Slightly smaller 90.5 kWh battery vs. RWD. All-weather traction with 4MATIC."
+    }
+  },
+  {
+    "id": "2026-mercedes-amg-eqe",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "AMG EQE",
+    "slug": "2026-mercedes-amg-eqe",
+    "pricing": {
+      "msrpBase": 108050,
+      "msrpMax": 115000
+    },
+    "range": {
+      "epaRangeMiles": 220,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 73,
+      "efficiencyKwhPer100Mi": 46.2
+    },
+    "performance": {
+      "horsepower": 617,
+      "torque": 701,
+      "zeroTo60": 2.9,
+      "topSpeed": 149,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5291
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-amg-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/amg-eqe",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 AMG EQE: Performance sedan with 617 HP, 0-60 in 2.9s. AMG Dynamic Plus package adds 60 HP. Sporty handling with AMG suspension."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqe-350-plus",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "350+",
+    "slug": "2025-mercedes-eqe-350-plus",
+    "pricing": {
+      "msrpBase": 74900,
+      "msrpMax": 80000
+    },
+    "range": {
+      "epaRangeMiles": 308,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 94,
+      "efficiencyKwhPer100Mi": 35.9
+    },
+    "performance": {
+      "horsepower": 288,
+      "torque": 391,
+      "zeroTo60": 5.6,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4826
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQE 350+: RWD with 288 HP, 308 mi range. Upgraded to 96 kWh battery from 90.6 kWh in 2024. Excellent efficiency at 94 MPGe."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqe-350-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "350 4MATIC",
+    "slug": "2025-mercedes-eqe-350-4matic",
+    "pricing": {
+      "msrpBase": 77900,
+      "msrpMax": 83000
+    },
+    "range": {
+      "epaRangeMiles": 267,
+      "batteryCapacityKwh": 90.6,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 288,
+      "torque": 564,
+      "zeroTo60": 5.2,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5026
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQE 350 4MATIC: AWD with 288 HP, 5.2s 0-60. Retains 90.6 kWh battery. Higher torque (564 lb-ft) vs RWD."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqe-500-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "500 4MATIC",
+    "slug": "2025-mercedes-eqe-500-4matic",
+    "pricing": {
+      "msrpBase": 85900,
+      "msrpMax": 92000
+    },
+    "range": {
+      "epaRangeMiles": 266,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 402,
+      "torque": 633,
+      "zeroTo60": 4.0,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5150
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQE 500 4MATIC: 402 HP, 4.0s 0-60. Performance-oriented variant with 96 kWh battery. Discontinued for 2026."
+    }
+  },
+  {
+    "id": "2025-mercedes-amg-eqe",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "AMG EQE",
+    "slug": "2025-mercedes-amg-eqe",
+    "pricing": {
+      "msrpBase": 108050,
+      "msrpMax": 115000
+    },
+    "range": {
+      "epaRangeMiles": 220,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 73,
+      "efficiencyKwhPer100Mi": 46.2
+    },
+    "performance": {
+      "horsepower": 617,
+      "torque": 701,
+      "zeroTo60": 2.9,
+      "topSpeed": 149,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5291
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-amg-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/amg-eqe",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 AMG EQE: 617 HP, 0-60 in 2.9s. Track-ready performance sedan with AMG suspension and braking. Optional Dynamic Plus package."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqe-350-plus",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "350+",
+    "slug": "2024-mercedes-eqe-350-plus",
+    "pricing": {
+      "msrpBase": 75000,
+      "msrpMax": 80000
+    },
+    "range": {
+      "epaRangeMiles": 298,
+      "batteryCapacityKwh": 90.6,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 288,
+      "torque": 391,
+      "zeroTo60": 5.6,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 4826
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQE 350+: RWD with 288 HP, 298 mi range. 90.6 kWh battery. First year with Drive Pilot Level 3 autonomy."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqe-350-4matic",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "350 4MATIC",
+    "slug": "2024-mercedes-eqe-350-4matic",
+    "pricing": {
+      "msrpBase": 78000,
+      "msrpMax": 83000
+    },
+    "range": {
+      "epaRangeMiles": 267,
+      "batteryCapacityKwh": 90.6,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 288,
+      "torque": 564,
+      "zeroTo60": 5.3,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5026
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQE 350 4MATIC: AWD with 288 HP, 267 mi range. All-weather capability with dual-motor AWD."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqe-500-4matic",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQE",
+    "trim": "500 4MATIC",
+    "slug": "2024-mercedes-eqe-500-4matic",
+    "pricing": {
+      "msrpBase": 86000,
+      "msrpMax": 92000
+    },
+    "range": {
+      "epaRangeMiles": 266,
+      "batteryCapacityKwh": 90.6,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 402,
+      "torque": 633,
+      "zeroTo60": 4.0,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 12,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5150
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqe.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQE 500 4MATIC: 402 HP, 4.0s 0-60. Performance variant with 90.6 kWh battery."
+    }
+  },
+  // Mercedes-Benz EQE SUV (2024-2026) - 10 vehicles
+  {
+    "id": "2026-mercedes-eqe-suv-320-plus",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "320+",
+    "slug": "2026-mercedes-eqe-suv-320-plus",
+    "pricing": {
+      "msrpBase": 64950,
+      "msrpMax": 70000
+    },
+    "range": {
+      "epaRangeMiles": 270,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 85,
+      "efficiencyKwhPer100Mi": 39.6
+    },
+    "performance": {
+      "horsepower": 315,
+      "torque": 417,
+      "zeroTo60": 5.9,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
       "towingCapacityLbs": 0,
       "curbWeightLbs": 5820
     },
@@ -2582,66 +3094,1496 @@ export const vehicles: Vehicle[] = [
       "hasHeatPump": true,
       "hasV2L": false,
       "hasV2H": false,
-      "autopilotLevel": "Drive Pilot (Level 3 autonomous)"
+      "autopilotLevel": "Drive Pilot (Level 3)"
     },
     "meta": {
       "imageUrl": "/images/vehicles/2026-mercedes-eqe-suv.jpg",
       "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
       "availabilityStatus": "Available",
-      "dataSource": "Mercedes-Benz.com official specs, EPA FuelEconomy.gov",
-      "lastVerified": "2025-11-27",
-      "notes": "Mercedes' mid-size electric SUV with premium features and technology. 2026 model features native NACS connector for Tesla Supercharger access. More affordable than EQS SUV while maintaining Mercedes luxury. MBUX infotainment with voice control. Drive Pilot Level 3 autonomy available."
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQE SUV 320+: 315 HP RWD, 270 mi range. More affordable entry to luxury EV SUV segment. 96 kWh battery upgrade from 90.6 kWh."
     }
   },
   {
-    "id": "2026-mercedes-eqs-suv-450plus",
+    "id": "2026-mercedes-eqe-suv-320-4matic",
     "year": 2026,
     "make": "Mercedes-Benz",
-    "model": "EQS SUV",
-    "trim": "450+",
-    "slug": "2026-mercedes-eqs-suv-450plus",
+    "model": "EQE SUV",
+    "trim": "320 4MATIC",
+    "slug": "2026-mercedes-eqe-suv-320-4matic",
     "pricing": {
-      "msrpBase": 107500,
-      "msrpMax": 115000
+      "msrpBase": 67450,
+      "msrpMax": 73000
     },
     "range": {
-      "epaRangeMiles": 305,
-      "batteryCapacityKwh": 108.4,
+      "epaRangeMiles": 253,
+      "batteryCapacityKwh": 90.5,
+      "efficiencyMPGe": 81,
+      "efficiencyKwhPer100Mi": 41.6
+    },
+    "performance": {
+      "horsepower": 315,
+      "torque": 417,
+      "zeroTo60": 5.9,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6020
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQE SUV 320 4MATIC: 315 HP AWD, 253 mi range. All-weather capability with 4MATIC. Smaller 90.5 kWh battery vs RWD."
+    }
+  },
+  {
+    "id": "2026-mercedes-amg-eqe-suv",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "AMG EQE",
+    "slug": "2026-mercedes-amg-eqe-suv",
+    "pricing": {
+      "msrpBase": 97550,
+      "msrpMax": 105000
+    },
+    "range": {
+      "epaRangeMiles": 230,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 70,
+      "efficiencyKwhPer100Mi": 48.1
+    },
+    "performance": {
+      "horsepower": 617,
+      "torque": 738,
+      "zeroTo60": 3.1,
+      "topSpeed": 149,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6380
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-amg-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/amg-eqe-suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 AMG EQE SUV: 617 HP, 3.1s 0-60. Performance SUV with AMG suspension, brakes. Fastest accelerating Mercedes SUV."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqe-suv-350-plus",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "350+",
+    "slug": "2025-mercedes-eqe-suv-350-plus",
+    "pricing": {
+      "msrpBase": 77900,
+      "msrpMax": 83000
+    },
+    "range": {
+      "epaRangeMiles": 302,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 91,
+      "efficiencyKwhPer100Mi": 37
+    },
+    "performance": {
+      "horsepower": 288,
+      "torque": 391,
+      "zeroTo60": 6.4,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5820
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQE SUV 350+: 288 HP RWD, 302 mi range. Upgraded to 96 kWh battery. Excellent efficiency for luxury SUV."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqe-suv-350-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "350 4MATIC",
+    "slug": "2025-mercedes-eqe-suv-350-4matic",
+    "pricing": {
+      "msrpBase": 80900,
+      "msrpMax": 86000
+    },
+    "range": {
+      "epaRangeMiles": 253,
+      "batteryCapacityKwh": 90.6,
+      "efficiencyMPGe": 81,
+      "efficiencyKwhPer100Mi": 41.6
+    },
+    "performance": {
+      "horsepower": 288,
+      "torque": 564,
+      "zeroTo60": 5.6,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6020
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQE SUV 350 4MATIC: 288 HP AWD, 253 mi range. Dual-motor AWD with higher torque (564 lb-ft)."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqe-suv-500-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "500 4MATIC",
+    "slug": "2025-mercedes-eqe-suv-500-4matic",
+    "pricing": {
+      "msrpBase": 93900,
+      "msrpMax": 100000
+    },
+    "range": {
+      "epaRangeMiles": 264,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 87,
+      "efficiencyKwhPer100Mi": 38.7
+    },
+    "performance": {
+      "horsepower": 402,
+      "torque": 633,
+      "zeroTo60": 4.3,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6220
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQE SUV 500 4MATIC: 402 HP, 4.3s 0-60. Performance variant with 96 kWh battery. Discontinued for 2026."
+    }
+  },
+  {
+    "id": "2025-mercedes-amg-eqe-suv",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "AMG EQE",
+    "slug": "2025-mercedes-amg-eqe-suv",
+    "pricing": {
+      "msrpBase": 117000,
+      "msrpMax": 125000
+    },
+    "range": {
+      "epaRangeMiles": 230,
+      "batteryCapacityKwh": 96,
+      "efficiencyMPGe": 70,
+      "efficiencyKwhPer100Mi": 48.1
+    },
+    "performance": {
+      "horsepower": 617,
+      "torque": 738,
+      "zeroTo60": 3.1,
+      "topSpeed": 149,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6380
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-amg-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/amg-eqe-suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 AMG EQE SUV: 617 HP, 3.1s 0-60. Track-ready SUV with AMG performance upgrades."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqe-suv-350-plus",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "350+",
+    "slug": "2024-mercedes-eqe-suv-350-plus",
+    "pricing": {
+      "msrpBase": 79050,
+      "msrpMax": 85000
+    },
+    "range": {
+      "epaRangeMiles": 280,
+      "batteryCapacityKwh": 90.6,
       "efficiencyMPGe": 88,
       "efficiencyKwhPer100Mi": 38.3
     },
     "performance": {
-      "horsepower": 329,
-      "torque": 417,
+      "horsepower": 288,
+      "torque": 391,
+      "zeroTo60": 6.4,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5820
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQE SUV 350+: 288 HP RWD, 280 mi range. 90.6 kWh battery. First year for EQE SUV in US market."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqe-suv-350-4matic",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "350 4MATIC",
+    "slug": "2024-mercedes-eqe-suv-350-4matic",
+    "pricing": {
+      "msrpBase": 82050,
+      "msrpMax": 88000
+    },
+    "range": {
+      "epaRangeMiles": 253,
+      "batteryCapacityKwh": 90.6,
+      "efficiencyMPGe": 81,
+      "efficiencyKwhPer100Mi": 41.6
+    },
+    "performance": {
+      "horsepower": 288,
+      "torque": 564,
+      "zeroTo60": 5.6,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6020
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQE SUV 350 4MATIC: 288 HP AWD, 253 mi range. Dual-motor AWD for all-weather capability."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqe-suv-500-4matic",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQE SUV",
+    "trim": "500 4MATIC",
+    "slug": "2024-mercedes-eqe-suv-500-4matic",
+    "pricing": {
+      "msrpBase": 92000,
+      "msrpMax": 98000
+    },
+    "range": {
+      "epaRangeMiles": 264,
+      "batteryCapacityKwh": 90.6,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 402,
+      "torque": 633,
+      "zeroTo60": 4.3,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 170,
+      "chargingTime10to80Minutes": 32
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 14,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6220
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqe-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqe/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQE SUV 500 4MATIC: 402 HP, 4.3s 0-60. Performance SUV variant with 90.6 kWh battery."
+    }
+  },
+  // Mercedes-Benz EQS Sedan (2024-2026) - 10 vehicles
+  {
+    "id": "2026-mercedes-eqs-450-plus",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "450+",
+    "slug": "2026-mercedes-eqs-450-plus",
+    "pricing": {
+      "msrpBase": 99900,
+      "msrpMax": 105000
+    },
+    "range": {
+      "epaRangeMiles": 390,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 97,
+      "efficiencyKwhPer100Mi": 34.7
+    },
+    "performance": {
+      "horsepower": 335,
+      "torque": 419,
+      "zeroTo60": 5.4,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5550
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQS 450+: 335 HP RWD, 390 mi range. Flagship luxury sedan with 118 kWh battery. MBUX Hyperscreen standard. Excellent efficiency at 97 MPGe."
+    }
+  },
+  {
+    "id": "2026-mercedes-eqs-450-4matic",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "450 4MATIC",
+    "slug": "2026-mercedes-eqs-450-4matic",
+    "pricing": {
+      "msrpBase": 102900,
+      "msrpMax": 108000
+    },
+    "range": {
+      "epaRangeMiles": 367,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 335,
+      "torque": 590,
+      "zeroTo60": 5.3,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5806
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQS 450 4MATIC: 335 HP AWD, 367 mi range. Dual-motor AWD with higher torque (590 lb-ft). All-weather capability."
+    }
+  },
+  {
+    "id": "2026-mercedes-eqs-580-4matic",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "580 4MATIC",
+    "slug": "2026-mercedes-eqs-580-4matic",
+    "pricing": {
+      "msrpBase": 123900,
+      "msrpMax": 130000
+    },
+    "range": {
+      "epaRangeMiles": 371,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 94,
+      "efficiencyKwhPer100Mi": 35.8
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 633,
+      "zeroTo60": 3.7,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5806
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQS 580 4MATIC: 536 HP, 3.7s 0-60. Performance flagship sedan with 371 mi range. Balance of power and efficiency."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqs-450-plus",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "450+",
+    "slug": "2025-mercedes-eqs-450-plus",
+    "pricing": {
+      "msrpBase": 104400,
+      "msrpMax": 110000
+    },
+    "range": {
+      "epaRangeMiles": 390,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 97,
+      "efficiencyKwhPer100Mi": 34.7
+    },
+    "performance": {
+      "horsepower": 335,
+      "torque": 419,
+      "zeroTo60": 5.4,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5550
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQS 450+: 335 HP RWD, 390 mi range. Upgraded to 118 kWh battery from 107.8 kWh in 2024. Impressive 11% range increase."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqs-450-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "450 4MATIC",
+    "slug": "2025-mercedes-eqs-450-4matic",
+    "pricing": {
+      "msrpBase": 107400,
+      "msrpMax": 113000
+    },
+    "range": {
+      "epaRangeMiles": 367,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 92,
+      "efficiencyKwhPer100Mi": 36.6
+    },
+    "performance": {
+      "horsepower": 335,
+      "torque": 590,
+      "zeroTo60": 5.3,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5806
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQS 450 4MATIC: 335 HP AWD, 367 mi range. 118 kWh battery, dual-motor AWD with 590 lb-ft torque."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqs-580-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "580 4MATIC",
+    "slug": "2025-mercedes-eqs-580-4matic",
+    "pricing": {
+      "msrpBase": 127350,
+      "msrpMax": 135000
+    },
+    "range": {
+      "epaRangeMiles": 371,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 94,
+      "efficiencyKwhPer100Mi": 35.8
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 633,
+      "zeroTo60": 3.7,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5806
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQS 580 4MATIC: 536 HP, 3.7s 0-60. Performance sedan with 371 mi range. 118 kWh battery with 200 kW charging."
+    }
+  },
+  {
+    "id": "2025-mercedes-amg-eqs",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "AMG EQS",
+    "slug": "2025-mercedes-amg-eqs",
+    "pricing": {
+      "msrpBase": 147550,
+      "msrpMax": 155000
+    },
+    "range": {
+      "epaRangeMiles": 315,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 75,
+      "efficiencyKwhPer100Mi": 44.9
+    },
+    "performance": {
+      "horsepower": 649,
+      "torque": 752,
+      "zeroTo60": 3.4,
+      "topSpeed": 155,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5890
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-amg-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/amg-eqs",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 AMG EQS: 649 HP, 3.4s 0-60. Performance flagship with AMG suspension, brakes. 118 kWh battery, 315 mi range."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqs-450-plus",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "450+",
+    "slug": "2024-mercedes-eqs-450-plus",
+    "pricing": {
+      "msrpBase": 104400,
+      "msrpMax": 110000
+    },
+    "range": {
+      "epaRangeMiles": 350,
+      "batteryCapacityKwh": 107.8,
+      "efficiencyMPGe": 95,
+      "efficiencyKwhPer100Mi": 35.4
+    },
+    "performance": {
+      "horsepower": 335,
+      "torque": 419,
+      "zeroTo60": 5.9,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5550
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQS 450+: 335 HP RWD, 350 mi range. 107.8 kWh battery. Flagship luxury sedan with Drive Pilot Level 3 autonomy."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqs-580-4matic",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "580 4MATIC",
+    "slug": "2024-mercedes-eqs-580-4matic",
+    "pricing": {
+      "msrpBase": 125950,
+      "msrpMax": 133000
+    },
+    "range": {
+      "epaRangeMiles": 345,
+      "batteryCapacityKwh": 107.8,
+      "efficiencyMPGe": 93,
+      "efficiencyKwhPer100Mi": 36.2
+    },
+    "performance": {
+      "horsepower": 516,
+      "torque": 633,
+      "zeroTo60": 4.2,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5806
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/sedan",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQS 580 4MATIC: 516 HP, 4.2s 0-60. Performance sedan with 345 mi range. 107.8 kWh battery."
+    }
+  },
+  {
+    "id": "2024-mercedes-amg-eqs",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQS",
+    "trim": "AMG EQS",
+    "slug": "2024-mercedes-amg-eqs",
+    "pricing": {
+      "msrpBase": 147000,
+      "msrpMax": 155000
+    },
+    "range": {
+      "epaRangeMiles": 305,
+      "batteryCapacityKwh": 107.8,
+      "efficiencyMPGe": 72,
+      "efficiencyKwhPer100Mi": 46.8
+    },
+    "performance": {
+      "horsepower": 750,
+      "torque": 752,
+      "zeroTo60": 3.4,
+      "topSpeed": 155,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 22,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 5890
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-amg-eqs.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/amg-eqs",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 AMG EQS: 750 HP, 3.4s 0-60. Most powerful AMG EQS with 107.8 kWh battery. 305 mi range."
+    }
+  },
+  // Mercedes-Benz EQS SUV (2024-2026) - 10 vehicles
+  {
+    "id": "2026-mercedes-eqs-suv-450-plus",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "450+",
+    "slug": "2026-mercedes-eqs-suv-450-plus",
+    "pricing": {
+      "msrpBase": 99900,
+      "msrpMax": 105000
+    },
+    "range": {
+      "epaRangeMiles": 390,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 90,
+      "efficiencyKwhPer100Mi": 37.4
+    },
+    "performance": {
+      "horsepower": 355,
+      "torque": 419,
       "zeroTo60": 5.8,
       "topSpeed": 130,
       "drivetrain": "RWD"
     },
     "charging": {
-      "connector": "NACS",
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6100
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQS SUV 450+: 355 HP RWD, 390 mi range. Flagship luxury SUV with 118 kWh battery. Optional 7-seat configuration."
+    }
+  },
+  {
+    "id": "2026-mercedes-eqs-suv-450-4matic",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "450 4MATIC",
+    "slug": "2026-mercedes-eqs-suv-450-4matic",
+    "pricing": {
+      "msrpBase": 102900,
+      "msrpMax": 108000
+    },
+    "range": {
+      "epaRangeMiles": 367,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 87,
+      "efficiencyKwhPer100Mi": 38.7
+    },
+    "performance": {
+      "horsepower": 355,
+      "torque": 590,
+      "zeroTo60": 5.2,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
       "acChargingMaxKw": 11,
       "dcChargingMaxKw": 200,
       "chargingTime10to80Minutes": 31
     },
     "physical": {
       "seatingCapacity": 7,
-      "cargoVolumeCuFt": 74.8,
+      "cargoVolumeCuFt": 23,
       "towingCapacityLbs": 0,
-      "curbWeightLbs": 6195
+      "curbWeightLbs": 6350
     },
     "features": {
       "hasHeatPump": true,
       "hasV2L": false,
       "hasV2H": false,
-      "autopilotLevel": "Drive Pilot (Level 3 autonomous)"
+      "autopilotLevel": "Drive Pilot (Level 3)"
     },
     "meta": {
       "imageUrl": "/images/vehicles/2026-mercedes-eqs-suv.jpg",
       "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
       "availabilityStatus": "Available",
-      "dataSource": "Mercedes-Benz.com official specs, EPA FuelEconomy.gov",
-      "lastVerified": "2025-11-27",
-      "notes": "Mercedes' flagship electric SUV with luxury appointments and advanced technology. 2026 model features native NACS connector. Spacious 7-seat configuration. Drive Pilot offers Level 3 autonomous driving on approved highways. Premium interior with MBUX Hyperscreen optional."
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQS SUV 450 4MATIC: 355 HP AWD, 367 mi range. Dual-motor AWD with 7-seat option. High torque (590 lb-ft)."
+    }
+  },
+  {
+    "id": "2026-mercedes-eqs-suv-580-4matic",
+    "year": 2026,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "580 4MATIC",
+    "slug": "2026-mercedes-eqs-suv-580-4matic",
+    "pricing": {
+      "msrpBase": 123900,
+      "msrpMax": 130000
+    },
+    "range": {
+      "epaRangeMiles": 371,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 89,
+      "efficiencyKwhPer100Mi": 37.8
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 633,
+      "zeroTo60": 4.5,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 7,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6350
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2026-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2026 EQS SUV 580 4MATIC: 536 HP, 4.5s 0-60. Performance SUV with 371 mi range. 7-seat luxury with impressive efficiency."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqs-suv-450-plus",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "450+",
+    "slug": "2025-mercedes-eqs-suv-450-plus",
+    "pricing": {
+      "msrpBase": 106400,
+      "msrpMax": 112000
+    },
+    "range": {
+      "epaRangeMiles": 323,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 86,
+      "efficiencyKwhPer100Mi": 39.2
+    },
+    "performance": {
+      "horsepower": 355,
+      "torque": 419,
+      "zeroTo60": 5.8,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6100
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQS SUV 450+: 355 HP RWD, 323 mi range. 118 kWh battery, luxury 5-seat SUV. MBUX Hyperscreen available."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqs-suv-450-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "450 4MATIC",
+    "slug": "2025-mercedes-eqs-suv-450-4matic",
+    "pricing": {
+      "msrpBase": 109400,
+      "msrpMax": 115000
+    },
+    "range": {
+      "epaRangeMiles": 312,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 83,
+      "efficiencyKwhPer100Mi": 40.6
+    },
+    "performance": {
+      "horsepower": 355,
+      "torque": 590,
+      "zeroTo60": 5.2,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 7,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6350
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQS SUV 450 4MATIC: 355 HP AWD, 312 mi range. 7-seat configuration. Dual-motor AWD with 590 lb-ft torque."
+    }
+  },
+  {
+    "id": "2025-mercedes-eqs-suv-580-4matic",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "580 4MATIC",
+    "slug": "2025-mercedes-eqs-suv-580-4matic",
+    "pricing": {
+      "msrpBase": 129250,
+      "msrpMax": 136000
+    },
+    "range": {
+      "epaRangeMiles": 317,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 85,
+      "efficiencyKwhPer100Mi": 39.6
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 633,
+      "zeroTo60": 4.5,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 7,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6350
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 EQS SUV 580 4MATIC: 536 HP, 4.5s 0-60. Performance SUV with 317 mi range. 7-seat luxury with strong acceleration."
+    }
+  },
+  {
+    "id": "2025-mercedes-maybach-eqs-680-suv",
+    "year": 2025,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "Maybach EQS 680",
+    "slug": "2025-mercedes-maybach-eqs-680-suv",
+    "pricing": {
+      "msrpBase": 200000,
+      "msrpMax": 215000
+    },
+    "range": {
+      "epaRangeMiles": 302,
+      "batteryCapacityKwh": 118,
+      "efficiencyMPGe": 82,
+      "efficiencyKwhPer100Mi": 41.1
+    },
+    "performance": {
+      "horsepower": 649,
+      "torque": 700,
+      "zeroTo60": 4.0,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 4,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6600
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2025-mercedes-maybach-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/maybach-eqs-suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2025 Maybach EQS 680 SUV: 649 HP, ultra-luxury SUV with 4-seat executive configuration. 302 mi range. Maybach-exclusive features and materials."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqs-suv-450-plus",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "450+",
+    "slug": "2024-mercedes-eqs-suv-450-plus",
+    "pricing": {
+      "msrpBase": 106000,
+      "msrpMax": 112000
+    },
+    "range": {
+      "epaRangeMiles": 323,
+      "batteryCapacityKwh": 107.8,
+      "efficiencyMPGe": 85,
+      "efficiencyKwhPer100Mi": 39.6
+    },
+    "performance": {
+      "horsepower": 355,
+      "torque": 419,
+      "zeroTo60": 5.8,
+      "topSpeed": 130,
+      "drivetrain": "RWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 5,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6100
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQS SUV 450+: 355 HP RWD, 323 mi range. 107.8 kWh battery. First year for EQS SUV in US. 5-seat luxury."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqs-suv-450-4matic",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "450 4MATIC",
+    "slug": "2024-mercedes-eqs-suv-450-4matic",
+    "pricing": {
+      "msrpBase": 109000,
+      "msrpMax": 115000
+    },
+    "range": {
+      "epaRangeMiles": 312,
+      "batteryCapacityKwh": 107.8,
+      "efficiencyMPGe": 82,
+      "efficiencyKwhPer100Mi": 41.1
+    },
+    "performance": {
+      "horsepower": 355,
+      "torque": 590,
+      "zeroTo60": 5.2,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 7,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6350
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQS SUV 450 4MATIC: 355 HP AWD, 312 mi range. 7-seat option. Dual-motor AWD with 107.8 kWh battery."
+    }
+  },
+  {
+    "id": "2024-mercedes-eqs-suv-580-4matic",
+    "year": 2024,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV",
+    "trim": "580 4MATIC",
+    "slug": "2024-mercedes-eqs-suv-580-4matic",
+    "pricing": {
+      "msrpBase": 129000,
+      "msrpMax": 136000
+    },
+    "range": {
+      "epaRangeMiles": 317,
+      "batteryCapacityKwh": 107.8,
+      "efficiencyMPGe": 84,
+      "efficiencyKwhPer100Mi": 40.1
+    },
+    "performance": {
+      "horsepower": 536,
+      "torque": 633,
+      "zeroTo60": 4.5,
+      "topSpeed": 130,
+      "drivetrain": "AWD"
+    },
+    "charging": {
+      "connector": "CCS1",
+      "acChargingMaxKw": 11,
+      "dcChargingMaxKw": 200,
+      "chargingTime10to80Minutes": 31
+    },
+    "physical": {
+      "seatingCapacity": 7,
+      "cargoVolumeCuFt": 23,
+      "towingCapacityLbs": 0,
+      "curbWeightLbs": 6350
+    },
+    "features": {
+      "hasHeatPump": true,
+      "hasV2L": false,
+      "hasV2H": false,
+      "autopilotLevel": "Drive Pilot (Level 3)"
+    },
+    "meta": {
+      "imageUrl": "/images/vehicles/2024-mercedes-eqs-suv.jpg",
+      "manufacturerUrl": "https://www.mbusa.com/en/vehicles/class/eqs/suv",
+      "availabilityStatus": "Available",
+      "dataSource": "Mercedes-Benz USA, Car and Driver, Motor Trend",
+      "lastVerified": "2025-12-01",
+      "notes": "2024 EQS SUV 580 4MATIC: 536 HP, 4.5s 0-60. Performance SUV with 317 mi range. 7-seat configuration with 107.8 kWh battery."
     }
   },
   {
@@ -3600,6 +5542,217 @@ export const vehicles: Vehicle[] = [
     "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 62.2, "towingCapacityLbs": 2700, "curbWeightLbs": 5061 },
     "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
     "meta": { "imageUrl": "/images/vehicles/2024-audi-q4-etron.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q4-e-tron.html", "availabilityStatus": "Available", "dataSource": "AudiUSA.com, InsideEVs", "lastVerified": "2025-11-29", "notes": "Q4 e-tron 55 quattro AWD. 82 kWh battery, 335 hp, 265 mi range. 175 kW DC fast charging." }
+  },
+  // Additional Audi vehicles (2024-2026) - 14 vehicles
+  {
+    "id": "2026-audi-q4-etron-45-rwd",
+    "year": 2026,
+    "make": "Audi",
+    "model": "Q4 e-tron",
+    "trim": "45",
+    "slug": "2026-audi-q4-etron-45-rwd",
+    "pricing": { "msrpBase": 50000, "msrpMax": 54000 },
+    "range": { "epaRangeMiles": 288, "batteryCapacityKwh": 77, "efficiencyMPGe": 112, "efficiencyKwhPer100Mi": 30.1 },
+    "performance": { "horsepower": 282, "torque": 339, "zeroTo60": 6.2, "topSpeed": 112, "drivetrain": "RWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 175, "chargingTime10to80Minutes": 28 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 62.2, "towingCapacityLbs": 2200, "curbWeightLbs": 4900 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
+    "meta": { "imageUrl": "/images/vehicles/2026-audi-q4-etron.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q4-e-tron.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2026 Q4 e-tron 45: RWD with 282 HP, 288 mi range. 77 kWh battery, excellent efficiency at 112 MPGe." }
+  },
+  {
+    "id": "2026-audi-q4-etron-55-awd",
+    "year": 2026,
+    "make": "Audi",
+    "model": "Q4 e-tron",
+    "trim": "55 quattro",
+    "slug": "2026-audi-q4-etron-55-awd",
+    "pricing": { "msrpBase": 54000, "msrpMax": 58000 },
+    "range": { "epaRangeMiles": 258, "batteryCapacityKwh": 77, "efficiencyMPGe": 104, "efficiencyKwhPer100Mi": 32.4 },
+    "performance": { "horsepower": 335, "torque": 339, "zeroTo60": 5.0, "topSpeed": 112, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 175, "chargingTime10to80Minutes": 28 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 62.2, "towingCapacityLbs": 2700, "curbWeightLbs": 5061 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
+    "meta": { "imageUrl": "/images/vehicles/2026-audi-q4-etron.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q4-e-tron.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2026 Q4 e-tron 55 quattro: AWD with 335 HP, 5.0s 0-60. 258 mi range with dual-motor AWD." }
+  },
+  {
+    "id": "2025-audi-q4-etron-45-rwd",
+    "year": 2025,
+    "make": "Audi",
+    "model": "Q4 e-tron",
+    "trim": "45",
+    "slug": "2025-audi-q4-etron-45-rwd",
+    "pricing": { "msrpBase": 49800, "msrpMax": 54000 },
+    "range": { "epaRangeMiles": 288, "batteryCapacityKwh": 77, "efficiencyMPGe": 112, "efficiencyKwhPer100Mi": 30.1 },
+    "performance": { "horsepower": 282, "torque": 339, "zeroTo60": 6.2, "topSpeed": 112, "drivetrain": "RWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 175, "chargingTime10to80Minutes": 28 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 62.2, "towingCapacityLbs": 2200, "curbWeightLbs": 4900 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
+    "meta": { "imageUrl": "/images/vehicles/2025-audi-q4-etron.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q4-e-tron.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2025 Q4 e-tron 45: RWD with 282 HP, 288 mi range. 77 kWh battery, 175 kW DC fast charging." }
+  },
+  {
+    "id": "2025-audi-q4-etron-55-awd",
+    "year": 2025,
+    "make": "Audi",
+    "model": "Q4 e-tron",
+    "trim": "55 quattro",
+    "slug": "2025-audi-q4-etron-55-awd",
+    "pricing": { "msrpBase": 54000, "msrpMax": 58000 },
+    "range": { "epaRangeMiles": 258, "batteryCapacityKwh": 77, "efficiencyMPGe": 104, "efficiencyKwhPer100Mi": 32.4 },
+    "performance": { "horsepower": 335, "torque": 339, "zeroTo60": 5.0, "topSpeed": 112, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 175, "chargingTime10to80Minutes": 28 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 62.2, "towingCapacityLbs": 2700, "curbWeightLbs": 5061 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
+    "meta": { "imageUrl": "/images/vehicles/2025-audi-q4-etron.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q4-e-tron.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2025 Q4 e-tron 55 quattro: AWD with 335 HP, 5.0s 0-60. 258 mi range with dual-motor AWD." }
+  },
+  {
+    "id": "2025-audi-etron-gt-s",
+    "year": 2025,
+    "make": "Audi",
+    "model": "e-tron GT",
+    "trim": "S e-tron GT",
+    "slug": "2025-audi-etron-gt-s",
+    "pricing": { "msrpBase": 105000, "msrpMax": 115000 },
+    "range": { "epaRangeMiles": 300, "batteryCapacityKwh": 97, "efficiencyMPGe": 90, "efficiencyKwhPer100Mi": 37.4 },
+    "performance": { "horsepower": 671, "torque": 546, "zeroTo60": 3.4, "topSpeed": 152, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 320, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 4, "cargoVolumeCuFt": 13, "towingCapacityLbs": 0, "curbWeightLbs": 5070 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Driver Assistance" },
+    "meta": { "imageUrl": "/images/vehicles/2025-audi-etron-gt.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/e-tron-gt.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2025 e-tron GT S: 671 HP, 3.4s 0-60. Updated with 97 kWh battery, 320 kW charging (18 min 10-80%). 300 mi range." }
+  },
+  {
+    "id": "2025-audi-rs-etron-gt",
+    "year": 2025,
+    "make": "Audi",
+    "model": "e-tron GT",
+    "trim": "RS e-tron GT",
+    "slug": "2025-audi-rs-etron-gt",
+    "pricing": { "msrpBase": 140000, "msrpMax": 150000 },
+    "range": { "epaRangeMiles": 294, "batteryCapacityKwh": 97, "efficiencyMPGe": 87, "efficiencyKwhPer100Mi": 38.7 },
+    "performance": { "horsepower": 845, "torque": 638, "zeroTo60": 2.8, "topSpeed": 155, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 320, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 4, "cargoVolumeCuFt": 13, "towingCapacityLbs": 0, "curbWeightLbs": 5100 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Driver Assistance" },
+    "meta": { "imageUrl": "/images/vehicles/2025-audi-rs-etron-gt.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/e-tron-gt.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2025 RS e-tron GT: 845 HP, 2.8s 0-60. Performance variant with 97 kWh battery, 294 mi range. 320 kW fast charging." }
+  },
+  {
+    "id": "2025-audi-rs-etron-gt-performance",
+    "year": 2025,
+    "make": "Audi",
+    "model": "e-tron GT",
+    "trim": "RS e-tron GT Performance",
+    "slug": "2025-audi-rs-etron-gt-performance",
+    "pricing": { "msrpBase": 155000, "msrpMax": 165000 },
+    "range": { "epaRangeMiles": 278, "batteryCapacityKwh": 97, "efficiencyMPGe": 83, "efficiencyKwhPer100Mi": 40.6 },
+    "performance": { "horsepower": 912, "torque": 701, "zeroTo60": 2.5, "topSpeed": 155, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 320, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 4, "cargoVolumeCuFt": 13, "towingCapacityLbs": 0, "curbWeightLbs": 5169 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Driver Assistance" },
+    "meta": { "imageUrl": "/images/vehicles/2025-audi-rs-etron-gt-performance.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/e-tron-gt.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2025 RS e-tron GT Performance: 912 HP, 2.5s 0-60 (2.1s tested). Flagship performance sedan. 97 kWh battery, 278 mi range." }
+  },
+  {
+    "id": "2026-audi-etron-gt-s",
+    "year": 2026,
+    "make": "Audi",
+    "model": "e-tron GT",
+    "trim": "S e-tron GT",
+    "slug": "2026-audi-etron-gt-s",
+    "pricing": { "msrpBase": 107000, "msrpMax": 117000 },
+    "range": { "epaRangeMiles": 300, "batteryCapacityKwh": 97, "efficiencyMPGe": 90, "efficiencyKwhPer100Mi": 37.4 },
+    "performance": { "horsepower": 671, "torque": 546, "zeroTo60": 3.4, "topSpeed": 152, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 320, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 4, "cargoVolumeCuFt": 13, "towingCapacityLbs": 0, "curbWeightLbs": 5070 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Driver Assistance" },
+    "meta": { "imageUrl": "/images/vehicles/2026-audi-etron-gt.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/e-tron-gt.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2026 e-tron GT S: Minor updates. All-wheel steering now standard. 671 HP, 3.4s 0-60. 300 mi range with 97 kWh battery." }
+  },
+  {
+    "id": "2026-audi-rs-etron-gt",
+    "year": 2026,
+    "make": "Audi",
+    "model": "e-tron GT",
+    "trim": "RS e-tron GT",
+    "slug": "2026-audi-rs-etron-gt",
+    "pricing": { "msrpBase": 142000, "msrpMax": 152000 },
+    "range": { "epaRangeMiles": 294, "batteryCapacityKwh": 97, "efficiencyMPGe": 87, "efficiencyKwhPer100Mi": 38.7 },
+    "performance": { "horsepower": 845, "torque": 638, "zeroTo60": 2.8, "topSpeed": 155, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 320, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 4, "cargoVolumeCuFt": 13, "towingCapacityLbs": 0, "curbWeightLbs": 5100 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Driver Assistance" },
+    "meta": { "imageUrl": "/images/vehicles/2026-audi-rs-etron-gt.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/e-tron-gt.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2026 RS e-tron GT: 21-inch wheels now standard. 845 HP, 2.8s 0-60. 294 mi range. All-wheel steering standard." }
+  },
+  {
+    "id": "2024-audi-etron-gt",
+    "year": 2024,
+    "make": "Audi",
+    "model": "e-tron GT",
+    "trim": "e-tron GT",
+    "slug": "2024-audi-etron-gt",
+    "pricing": { "msrpBase": 103895, "msrpMax": 110000 },
+    "range": { "epaRangeMiles": 249, "batteryCapacityKwh": 83.7, "efficiencyMPGe": 82, "efficiencyKwhPer100Mi": 41.1 },
+    "performance": { "horsepower": 522, "torque": 472, "zeroTo60": 3.9, "topSpeed": 152, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 270, "chargingTime10to80Minutes": 22 },
+    "physical": { "seatingCapacity": 4, "cargoVolumeCuFt": 13, "towingCapacityLbs": 0, "curbWeightLbs": 5060 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Driver Assistance" },
+    "meta": { "imageUrl": "/images/vehicles/2024-audi-etron-gt.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/e-tron-gt.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2024 e-tron GT: 522 HP, 3.9s 0-60. 83.7 kWh battery, 249 mi range. 270 kW DC fast charging." }
+  },
+  {
+    "id": "2024-audi-rs-etron-gt",
+    "year": 2024,
+    "make": "Audi",
+    "model": "e-tron GT",
+    "trim": "RS e-tron GT",
+    "slug": "2024-audi-rs-etron-gt",
+    "pricing": { "msrpBase": 143000, "msrpMax": 150000 },
+    "range": { "epaRangeMiles": 249, "batteryCapacityKwh": 83.7, "efficiencyMPGe": 82, "efficiencyKwhPer100Mi": 41.1 },
+    "performance": { "horsepower": 637, "torque": 612, "zeroTo60": 2.9, "topSpeed": 155, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 270, "chargingTime10to80Minutes": 22 },
+    "physical": { "seatingCapacity": 4, "cargoVolumeCuFt": 13, "towingCapacityLbs": 0, "curbWeightLbs": 5150 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Driver Assistance" },
+    "meta": { "imageUrl": "/images/vehicles/2024-audi-rs-etron-gt.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/e-tron-gt.html", "availabilityStatus": "Available", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2024 RS e-tron GT: 637 HP, 2.9s 0-60. Performance sedan with 83.7 kWh battery, 249 mi range. 270 kW charging." }
+  },
+  {
+    "id": "2024-audi-q8-etron-suv",
+    "year": 2024,
+    "make": "Audi",
+    "model": "Q8 e-tron",
+    "trim": "Premium Plus",
+    "slug": "2024-audi-q8-etron-suv",
+    "pricing": { "msrpBase": 74400, "msrpMax": 82000 },
+    "range": { "epaRangeMiles": 285, "batteryCapacityKwh": 106, "efficiencyMPGe": 85, "efficiencyKwhPer100Mi": 39.6 },
+    "performance": { "horsepower": 402, "torque": 490, "zeroTo60": 5.4, "topSpeed": 124, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 170, "chargingTime10to80Minutes": 31 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 28.5, "towingCapacityLbs": 4000, "curbWeightLbs": 5962 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
+    "meta": { "imageUrl": "/images/vehicles/2024-audi-q8-etron.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q8-e-tron.html", "availabilityStatus": "Discontinued", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2024 Q8 e-tron SUV: 402 HP, 285 mi range. 106 kWh battery (114 kWh gross). Discontinued February 2025. 170 kW charging." }
+  },
+  {
+    "id": "2024-audi-q8-etron-sportback",
+    "year": 2024,
+    "make": "Audi",
+    "model": "Q8 e-tron Sportback",
+    "trim": "Premium Plus",
+    "slug": "2024-audi-q8-etron-sportback",
+    "pricing": { "msrpBase": 77800, "msrpMax": 85000 },
+    "range": { "epaRangeMiles": 296, "batteryCapacityKwh": 106, "efficiencyMPGe": 88, "efficiencyKwhPer100Mi": 38.3 },
+    "performance": { "horsepower": 402, "torque": 490, "zeroTo60": 5.4, "topSpeed": 124, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 170, "chargingTime10to80Minutes": 31 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 27.2, "towingCapacityLbs": 4000, "curbWeightLbs": 5962 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
+    "meta": { "imageUrl": "/images/vehicles/2024-audi-q8-etron-sportback.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q8-e-tron.html", "availabilityStatus": "Discontinued", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2024 Q8 e-tron Sportback: Sloped roofline, 296 mi range (300 with Ultra package). 402 HP. Discontinued February 2025." }
+  },
+  {
+    "id": "2024-audi-sq8-etron",
+    "year": 2024,
+    "make": "Audi",
+    "model": "SQ8 e-tron",
+    "trim": "Prestige",
+    "slug": "2024-audi-sq8-etron",
+    "pricing": { "msrpBase": 88000, "msrpMax": 95000 },
+    "range": { "epaRangeMiles": 253, "batteryCapacityKwh": 106, "efficiencyMPGe": 78, "efficiencyKwhPer100Mi": 43.2 },
+    "performance": { "horsepower": 496, "torque": 717, "zeroTo60": 4.5, "topSpeed": 130, "drivetrain": "AWD" },
+    "charging": { "connector": "CCS1", "acChargingMaxKw": 11, "dcChargingMaxKw": 170, "chargingTime10to80Minutes": 31 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 28.5, "towingCapacityLbs": 4000, "curbWeightLbs": 6100 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Audi Pre Sense, Adaptive Cruise" },
+    "meta": { "imageUrl": "/images/vehicles/2024-audi-sq8-etron.jpg", "manufacturerUrl": "https://www.audiusa.com/us/web/en/models/q8-e-tron.html", "availabilityStatus": "Discontinued", "dataSource": "Car and Driver, Motor Trend, Audi USA", "lastVerified": "2025-12-01", "notes": "2024 SQ8 e-tron: Performance SUV with 496 HP, 4.5s 0-60. Three motors (one front, two rear). 253 mi range. Discontinued February 2025." }
   },
   {
     "id": "2025-porsche-taycan-base",

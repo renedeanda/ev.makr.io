@@ -80,6 +80,26 @@
 - Power: 299-671 HP
 - Notable: 2026 Polestar 3 with 800V architecture, 350 kW charging, native NACS
 
+**Mercedes-Benz (40 vehicles)**
+- EQE Sedan: 10 vehicles (2024-2026)
+- EQE SUV: 10 vehicles (2024-2026)
+- EQS Sedan: 10 vehicles (2024-2026)
+- EQS SUV: 10 vehicles (2024-2026, including Maybach EQS 680)
+- Range: 220-390 miles
+- Power: 315-912 HP (AMG variants)
+- Price: $64,950-$215,000
+- Notable: Drive Pilot Level 3 autonomy, 118 kWh battery in 2025-2026 EQS, 200-320 kW charging
+
+**Audi (15 vehicles)**
+- Q4 e-tron: 5 vehicles (2024-2026) - 45 RWD and 55 quattro AWD
+- e-tron GT: 8 vehicles (2024-2026) - S, RS, RS Performance trims
+- Q8 e-tron: 2 vehicles (2024) - SUV and Sportback
+- SQ8 e-tron: 1 vehicle (2024) - Discontinued Feb 2025
+- Range: 249-300 miles (e-tron GT), 258-288 miles (Q4 e-tron)
+- Power: 282-912 HP
+- Price: $49,800-$165,000
+- Notable: 2025 e-tron GT with 97 kWh battery, 320 kW charging (18 min 10-80%), 912 HP RS Performance
+
 ---
 
 ## Technical Infrastructure
@@ -94,13 +114,13 @@
 
 ### Sitemap Coverage ✅
 - ✅ Static pages (home, vehicles, guides, about)
-- ✅ 35 vehicle model pages (brand/model combinations)
-- ✅ 208+ individual vehicle detail pages
+- ✅ 48 vehicle model pages (brand/model combinations)
+- ✅ 263+ individual vehicle detail pages
 - ✅ 9 guide pages with proper lastModified dates
 
 ### Build System
 - **Platform**: Next.js 16.0.5 with Turbopack
-- **SSG**: 264 static pages generated
+- **SSG**: 321 static pages generated
 - **TypeScript**: Type-safe vehicle data models
 - **Performance**: ~8s build time
 
@@ -143,12 +163,10 @@
 ## Future Priorities
 
 ### Brands Needing Comprehensive Data
-1. **Mercedes-Benz** - EQE, EQS sedans and SUVs
-2. **Chevrolet** - Blazer EV, Equinox EV, Silverado EV expansion
-3. **Genesis** - Electrified GV70, GV60, G80
-4. **Audi** - e-tron, Q4 e-tron expansion
-5. **Rivian** - R1T, R1S comprehensive trim coverage
-6. **Porsche** - Taycan all variants
+1. **Chevrolet** - Blazer EV expansion (additional trims), Equinox EV, Silverado EV
+2. **Genesis** - Electrified GV70, GV60, G80
+3. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion)
+4. **Porsche** - Taycan all variants (currently 1 vehicle)
 
 ### Feature Enhancements
 - [ ] Vehicle comparison tool (side-by-side specs)
@@ -170,11 +188,11 @@
 ## Data Quality Metrics
 
 ### Current Stats (as of Dec 2025)
-- **Total Vehicles**: 208+
+- **Total Vehicles**: 263+
 - **Total Brands**: 15+
 - **Model Years**: 2024-2026
 - **Guides**: 9 comprehensive guides
-- **Static Pages**: 264 pages generated
+- **Static Pages**: 321 pages generated
 - **Data Freshness**: All vehicles verified within last 30 days
 
 ### Quality Indicators
@@ -249,8 +267,10 @@ Build: [X] pages generated (up from [Y])
 - ✅ Added comprehensive BMW i4 & iX data (18 vehicles)
 - ✅ Added comprehensive Lucid Air data (8 vehicles)
 - ✅ Added comprehensive Polestar 2 & 3 data (11 vehicles)
+- ✅ Added comprehensive Mercedes-Benz EQE & EQS data (40 vehicles: sedans and SUVs)
+- ✅ Added comprehensive Audi data (15 vehicles: Q4 e-tron, e-tron GT, Q8 e-tron, SQ8 e-tron)
 - ✅ Verified SEO optimization across all pages
-- ✅ Verified sitemap includes all 264 pages
+- ✅ Sitemap now includes 321 pages (up from 264)
 
 ### November 2025
 - Added comprehensive Kia data (13 vehicles)
