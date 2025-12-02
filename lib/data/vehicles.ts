@@ -5136,7 +5136,7 @@ export const vehicles: Vehicle[] = [
     "charging": { "connector": "CCS1", "acChargingMaxKw": 19.2, "dcChargingMaxKw": 300, "chargingTime10to80Minutes": 24 },
     "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.4, "towingCapacityLbs": 0, "curbWeightLbs": 5200 },
     "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "DreamDrive Pro (Level 2+ ADAS)" },
-    "meta": { "imageUrl": "/images/vehicles/2022-lucid-air-dream-edition-range.jpg", "manufacturerUrl": "https://lucidmotors.com/air", "availabilityStatus": "Limited", "dataSource": "LucidMotors.com, Car and Driver, Wikipedia", "lastVerified": "2025-12-02", "notes": "2022 Lucid Air Dream Edition Range: First production year. 520 mi range - record-breaking at launch. 933 HP dual-motor AWD. Limited production." }
+    "meta": { "imageUrl": "/images/vehicles/2022-lucid-air-dream-edition-range.jpg", "manufacturerUrl": "https://lucidmotors.com/air", "availabilityStatus": "Discontinued", "dataSource": "LucidMotors.com, Car and Driver, Wikipedia", "lastVerified": "2025-12-02", "notes": "2022 Lucid Air Dream Edition Range: First production year. 520 mi range - record-breaking at launch. 933 HP dual-motor AWD. Limited production - now discontinued." }
   },
   {
     "id": "2022-lucid-air-dream-edition-performance",
@@ -5151,7 +5151,7 @@ export const vehicles: Vehicle[] = [
     "charging": { "connector": "CCS1", "acChargingMaxKw": 19.2, "dcChargingMaxKw": 300, "chargingTime10to80Minutes": 24 },
     "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.4, "towingCapacityLbs": 0, "curbWeightLbs": 5200 },
     "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "DreamDrive Pro (Level 2+ ADAS)" },
-    "meta": { "imageUrl": "/images/vehicles/2022-lucid-air-dream-edition-performance.jpg", "manufacturerUrl": "https://lucidmotors.com/air", "availabilityStatus": "Limited", "dataSource": "LucidMotors.com, Car and Driver, Wikipedia", "lastVerified": "2025-12-02", "notes": "2022 Lucid Air Dream Edition Performance: 1111 HP - most powerful luxury sedan at launch. 0-60 in 2.5s, 471 mi range. Limited production." }
+    "meta": { "imageUrl": "/images/vehicles/2022-lucid-air-dream-edition-performance.jpg", "manufacturerUrl": "https://lucidmotors.com/air", "availabilityStatus": "Discontinued", "dataSource": "LucidMotors.com, Car and Driver, Wikipedia", "lastVerified": "2025-12-02", "notes": "2022 Lucid Air Dream Edition Performance: 1111 HP - most powerful luxury sedan at launch. 0-60 in 2.5s, 471 mi range. Limited production - now discontinued." }
   },
   {
     "id": "2022-lucid-air-grand-touring",
