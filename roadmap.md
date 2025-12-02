@@ -103,12 +103,13 @@
 - Price: $49,800-$165,000
 - Notable: 2025 e-tron GT with 97 kWh battery, 320 kW charging (18 min 10-80%), 912 HP RS Performance
 
-**Porsche (12 vehicles - 2024 only, more years planned)**
+**Porsche (22 vehicles)**
 - Taycan: 11 vehicles for 2024 (Base RWD, 4, 4S, GTS, Turbo, Turbo S, plus Cross Turismo and Sport Turismo variants)
-- Range: 220-246 miles (2024 models)
-- Power: 402-750 HP
-- Price: $92,550-$207,500
-- Notable: 2024 lineup with 270 kW DC fast charging, Performance Battery (93 kWh). 2025+ models with 320 kW charging and 97 kWh battery coming
+- Taycan: 10 vehicles for 2025-2026 (Base RWD, 4S, GTS, Turbo, Turbo S sedans + Cross Turismo variants)
+- Range: 220-318 miles (2024-2026 models)
+- Power: 402-764 HP (up to 938 HP with launch control on Turbo S)
+- Price: $92,550-$215,000
+- Notable: 2024 lineup with 270 kW DC fast charging, 93 kWh battery. 2025-2026 models upgraded to 320 kW charging, 97 kWh Performance Battery Plus, 18 min 10-80% charging
 
 **Chevrolet (14 vehicles)**
 - Blazer EV: 3 vehicles (2024-2025) - 2LT, RS, SS
@@ -118,6 +119,15 @@
 - Power: 210-754 HP
 - Price: $33,600-$100,000
 - Notable: Silverado EV with record 492 mi range, V2H capability, 350 kW DC fast charging. Equinox EV most affordable at $33,600. Native NACS on 2025+
+
+**Genesis (10 vehicles)**
+- GV60: 4 vehicles (2024-2025) - Advanced AWD, Performance AWD
+- Electrified GV70: 2 vehicles (2024-2025) - Advanced
+- Electrified G80: 2 vehicles (2024-2025) - Advanced
+- Range: 235-282 miles
+- Power: 314-429 HP (483 HP in GV60 boost mode)
+- Price: $52,000-$79,500
+- Notable: 800V architecture enables ultra-fast charging (10-80% in 18 min on GV60 and GV70). Shares platform with Hyundai IONIQ 5 and Kia EV6. Flagship G80 sedan with 87.2 kWh battery, 282 mi range. Premium luxury features.
 
 ---
 
@@ -182,13 +192,11 @@
 ## Future Priorities
 
 ### Brands Needing Comprehensive Data
-1. **Porsche** - Taycan 2025-2026 models (currently have 2024 complete, 1 x 2025 Base model)
-2. **Genesis** - Electrified GV70, GV60, G80 - expand to 2024-2025 models (currently only 2 x 2026 models)
-3. **Hyundai** - IONIQ 6 sedan (currently only have IONIQ 5, missing IONIQ 6 across all years)
-4. **Cadillac** - Lyriq expansion (currently only 2 vehicles: 2024, 2026 - missing 2025, other trims)
-5. **Nissan** - Ariya expansion (currently only 1 x 2024 model - missing other trims and years)
-6. **Honda** - Prologue expansion (currently only 1 x 2026 model - missing other trims and years)
-7. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion to 2026)
+1. **Hyundai** - IONIQ 6 sedan (currently only have IONIQ 5, missing IONIQ 6 across all years)
+2. **Cadillac** - Lyriq expansion (currently only 2 vehicles: 2024, 2026 - missing 2025, other trims)
+3. **Nissan** - Ariya expansion (currently only 1 x 2024 model - missing other trims and years)
+4. **Honda** - Prologue expansion (currently only 1 x 2026 model - missing other trims and years)
+5. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion to 2026)
 
 ### Feature Enhancements
 - [ ] Vehicle comparison tool (side-by-side specs)
@@ -291,7 +299,8 @@ Build: [X] pages generated (up from [Y])
 - ✅ Added comprehensive Polestar 2 & 3 data (11 vehicles)
 - ✅ Added comprehensive Mercedes-Benz EQE & EQS data (40 vehicles: sedans and SUVs)
 - ✅ Added comprehensive Audi data (15 vehicles: Q4 e-tron, e-tron GT, Q8 e-tron, SQ8 e-tron)
-- ✅ Added Porsche Taycan 2024 comprehensive lineup (11 vehicles: all sedan, Cross Turismo, and Sport Turismo variants)
+- ✅ Added comprehensive Porsche Taycan data (22 vehicles: 2024-2026 all sedan, Cross Turismo, and Sport Turismo variants)
+- ✅ Added comprehensive Genesis data (10 vehicles: GV60, Electrified GV70, Electrified G80 across 2024-2025)
 - ✅ Expanded Chevrolet data (14 vehicles total: Blazer EV expanded with RS/SS trims, Silverado EV added with 5 trims across 2024-2026)
 - ✅ Verified SEO optimization across all pages
 - ✅ Sitemap now includes 321 pages (up from 264)
