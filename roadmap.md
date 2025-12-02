@@ -103,6 +103,22 @@
 - Price: $49,800-$165,000
 - Notable: 2025 e-tron GT with 97 kWh battery, 320 kW charging (18 min 10-80%), 912 HP RS Performance
 
+**Porsche (12 vehicles - 2024 only, more years planned)**
+- Taycan: 11 vehicles for 2024 (Base RWD, 4, 4S, GTS, Turbo, Turbo S, plus Cross Turismo and Sport Turismo variants)
+- Range: 220-246 miles (2024 models)
+- Power: 402-750 HP
+- Price: $92,550-$207,500
+- Notable: 2024 lineup with 270 kW DC fast charging, Performance Battery (93 kWh). 2025+ models with 320 kW charging and 97 kWh battery coming
+
+**Chevrolet (14 vehicles)**
+- Blazer EV: 3 vehicles (2024-2025) - 2LT, RS, SS
+- Equinox EV: 6 vehicles (2025-2026) - LT FWD/AWD, RS FWD/AWD, 2LT
+- Silverado EV: 5 vehicles (2024-2026) - WT, WT Standard, WT Max, RST, Trail Boss
+- Range: 282-492 miles (Silverado WT Max: 492 mi - highest EV truck range)
+- Power: 210-754 HP
+- Price: $33,600-$100,000
+- Notable: Silverado EV with record 492 mi range, V2H capability, 350 kW DC fast charging. Equinox EV most affordable at $33,600. Native NACS on 2025+
+
 ---
 
 ## Technical Infrastructure
@@ -166,10 +182,10 @@
 ## Future Priorities
 
 ### Brands Needing Comprehensive Data
-1. **Chevrolet** - Blazer EV expansion (additional trims), Equinox EV, Silverado EV
-2. **Genesis** - Electrified GV70, GV60, G80
-3. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion)
-4. **Porsche** - Taycan all variants (currently 1 vehicle)
+1. **Porsche** - Taycan 2025-2026 models (currently have 2024 complete, 1 x 2025 model)
+2. **Genesis** - Electrified GV70, GV60, G80 - expand to 2024-2025 models
+3. **Rivian** - R1T, R1S (already 16 vehicles, consider expansion to 2026)
+4. **Cadillac** - Lyriq all variants (limited data currently)
 
 ### Feature Enhancements
 - [ ] Vehicle comparison tool (side-by-side specs)
@@ -272,6 +288,8 @@ Build: [X] pages generated (up from [Y])
 - ✅ Added comprehensive Polestar 2 & 3 data (11 vehicles)
 - ✅ Added comprehensive Mercedes-Benz EQE & EQS data (40 vehicles: sedans and SUVs)
 - ✅ Added comprehensive Audi data (15 vehicles: Q4 e-tron, e-tron GT, Q8 e-tron, SQ8 e-tron)
+- ✅ Added Porsche Taycan 2024 comprehensive lineup (11 vehicles: all sedan, Cross Turismo, and Sport Turismo variants)
+- ✅ Expanded Chevrolet data (14 vehicles total: Blazer EV expanded with RS/SS trims, Silverado EV added with 5 trims across 2024-2026)
 - ✅ Verified SEO optimization across all pages
 - ✅ Sitemap now includes 321 pages (up from 264)
 
