@@ -2363,6 +2363,36 @@ export const vehicles: Vehicle[] = [
     }
   },
   {
+    "id": "2026-genesis-gv60-performance",
+    "year": 2026,
+    "make": "Genesis",
+    "model": "GV60",
+    "trim": "Performance AWD",
+    "slug": "2026-genesis-gv60-performance",
+    "pricing": { "msrpBase": 69000, "msrpMax": 74000 },
+    "range": { "epaRangeMiles": 235, "batteryCapacityKwh": 77.4, "efficiencyMPGe": 90, "efficiencyKwhPer100Mi": 37.4 },
+    "performance": { "horsepower": 429, "torque": 446, "zeroTo60": 3.7, "topSpeed": 146, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 240, "chargingTime10to80Minutes": 18 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 52.7, "towingCapacityLbs": 0, "curbWeightLbs": 4680 },
+    "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-genesis-gv60-performance.jpg", "manufacturerUrl": "https://www.genesis.com/us/en/models/gv60.html", "availabilityStatus": "Available", "dataSource": "Genesis.com, EPA", "lastVerified": "2025-12-02", "notes": "2026 GV60 Performance: 429 HP AWD (483 HP boost mode), 235 mi range. Native NACS, sport-tuned suspension, 0-60 in 3.7s." }
+  },
+  {
+    "id": "2026-genesis-g80-electrified",
+    "year": 2026,
+    "make": "Genesis",
+    "model": "Electrified G80",
+    "trim": "Advanced",
+    "slug": "2026-genesis-g80-electrified",
+    "pricing": { "msrpBase": 75000, "msrpMax": 80000 },
+    "range": { "epaRangeMiles": 282, "batteryCapacityKwh": 87.2, "efficiencyMPGe": 97, "efficiencyKwhPer100Mi": 34.8 },
+    "performance": { "horsepower": 365, "torque": 516, "zeroTo60": 4.9, "topSpeed": 145, "drivetrain": "AWD" },
+    "charging": { "connector": "NACS", "acChargingMaxKw": 10.9, "dcChargingMaxKw": 225, "chargingTime10to80Minutes": 22 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 13.1, "towingCapacityLbs": 0, "curbWeightLbs": 5180 },
+    "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "Highway Driving Assist 2" },
+    "meta": { "imageUrl": "/images/vehicles/2026-genesis-g80-electrified.jpg", "manufacturerUrl": "https://www.genesis.com/us/en/models/g80-electrified.html", "availabilityStatus": "Available", "dataSource": "Genesis.com, EPA", "lastVerified": "2025-12-02", "notes": "2026 Electrified G80: 365 HP AWD flagship sedan, 282 mi range. Native NACS, 87.2 kWh battery, premium luxury features." }
+  },
+  {
     "id": "2026-honda-prologue-elite",
     "year": 2026,
     "make": "Honda",
