@@ -65,13 +65,16 @@
 - Power: 282-650 HP
 - Notable: 2026 models have native NACS
 
-**Lucid (8 vehicles)**
-- Air: 4 trims x 2 years (2025-2026)
-- Pure (419-420 mi), Touring (406 mi), Grand Touring (512 mi), Sapphire (427 mi, 1234 HP)
-- Range: 406-512 miles
+**Lucid (23 vehicles)**
+- Air: 4 trims x 5 years (2022-2026) - 19 vehicles total
+  - 2022: Dream Edition Range, Dream Edition Performance, Grand Touring
+  - 2023-2026: Pure, Touring, Grand Touring, Sapphire
+- Gravity: 2 trims x 2 years (2025-2026) - 4 vehicles total
+  - Touring (337 mi, 560 HP), Grand Touring (450 mi, 828 HP)
+- Range: 337-520 miles (Air up to 520 mi, Gravity up to 450 mi)
 - Power: 430-1234 HP
 - Price: $69,900-$254,000
-- Notable: Most efficient EV sedan (146 MPGe), longest range (512 mi), 0-60 in 1.9s (Sapphire)
+- Notable: Complete production history 2022-2026, most efficient EV sedan (146 MPGe), longest range sedan (516-520 mi), first luxury SUV with 450 mi range, 400 kW DC fast charging on Gravity
 
 **Polestar (11 vehicles)**
 - Polestar 2: 4 vehicles (2024-2025)
@@ -265,7 +268,7 @@ Build: [X] pages generated (up from [Y])
 - ✅ Corrected NACS historical timeline
 - ✅ Fixed Subaru Solterra app name (Subaru Connect)
 - ✅ Added comprehensive BMW i4 & iX data (18 vehicles)
-- ✅ Added comprehensive Lucid Air data (8 vehicles)
+- ✅ Added comprehensive Lucid data (23 vehicles: Air 2022-2026 full production history + Gravity SUV 2025-2026)
 - ✅ Added comprehensive Polestar 2 & 3 data (11 vehicles)
 - ✅ Added comprehensive Mercedes-Benz EQE & EQS data (40 vehicles: sedans and SUVs)
 - ✅ Added comprehensive Audi data (15 vehicles: Q4 e-tron, e-tron GT, Q8 e-tron, SQ8 e-tron)
