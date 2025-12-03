@@ -221,17 +221,22 @@
 
 ---
 
+## Excluded Brands
+
+The following brands/models are intentionally **NOT tracked** in our database:
+
+- **Acura ZDX**: Excluded from tracking
+- **Mazda MX-30**: Excluded from tracking
+- **Jaguar I-PACE**: Excluded from tracking
+- **Fisker Ocean**: Excluded from tracking (brand discontinued)
+
+---
+
 ## Future Priorities
 
 ### Brands Needing Comprehensive Data
 All priority brands have been completed! Consider adding:
 - Tesla (Model S, Model X, Model Y, Cybertruck)
-- Acura (ZDX)
-- Mazda (MX-30, future EVs)
-- Volvo (C40 Recharge, XC40 Recharge)
-- Jaguar (I-PACE)
-- Fisker (Ocean, if still available)
-- Lexus (RZ, UX 300e)
 
 ### Feature Enhancements
 - [ ] Vehicle comparison tool (side-by-side specs)
@@ -337,13 +342,17 @@ Build: [X] pages generated (up from [Y])
 - ✅ Added comprehensive Porsche Taycan data (22 vehicles: 2024-2026 all sedan, Cross Turismo, and Sport Turismo variants)
 - ✅ Added comprehensive Genesis data (12 vehicles: GV60, Electrified GV70, Electrified G80 expanded to 2024-2026)
 - ✅ Expanded Chevrolet data (14 vehicles total: Blazer EV expanded with RS/SS trims, Silverado EV added with 5 trims across 2024-2026)
-- ✅ Expanded Hyundai data (40 vehicles total: IONIQ 5 expanded to 22 vehicles, added complete IONIQ 6 lineup with 18 vehicles across 2024-2026)
+- ✅ Expanded Hyundai data (45 vehicles total: IONIQ 5 expanded to 22 vehicles, complete IONIQ 6 lineup with 18 vehicles, added IONIQ 9 with 5 trims for 2026)
+- ✅ Expanded Kia data (44 vehicles total: EV6, EV9, EV4, and added Niro EV with 8 vehicles across 2019-2026)
+- ✅ Added comprehensive Lexus RZ data (8 vehicles across 2023-2026; NOTE: UX 300e excluded as not sold in US)
+- ✅ Added comprehensive Volvo data (28 vehicles total: XC40 Recharge, C40 Recharge, EC40, EX30, EX90)
 - ✅ Added comprehensive Cadillac Lyriq data (9 vehicles across 2024-2026)
 - ✅ Added comprehensive Honda Prologue data (12 vehicles across 2024-2026)
 - ✅ Added comprehensive Nissan Ariya data (13 vehicles across 2024-2026)
 - ✅ Updated Rivian data (16 vehicles: R1T and R1S with correct year ranges and metadata)
+- ✅ Documented excluded brands: Acura ZDX, Mazda MX-30, Jaguar I-PACE, Fisker Ocean
 - ✅ Verified SEO optimization across all pages
-- ✅ Sitemap now includes 321 pages (up from 264)
+- ✅ Sitemap now includes 321+ pages
 
 ### November 2025
 - Added comprehensive Kia data (13 vehicles)
