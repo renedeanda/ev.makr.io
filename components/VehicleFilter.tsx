@@ -139,14 +139,11 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
             <div className="relative inline-block">
               <button
                 onClick={() => setShowSortDropdown(!showSortDropdown)}
-                className="inline-flex items-center justify-between bg-white border-2 border-gray-border rounded-lg px-4 py-3 text-base font-semibold text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all sm:min-w-[200px]"
+                className="inline-flex items-center gap-2 bg-white border-2 border-gray-border rounded-lg px-4 py-3 text-base font-semibold text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all sm:min-w-[200px]"
               >
-                <div className="flex items-center gap-2">
-                  {currentSortOption && <currentSortOption.icon size={18} className="text-primary" />}
-                  <span className="hidden sm:inline">{currentSortOption?.label}</span>
-                  <span className="sm:hidden">Sort</span>
-                </div>
-                <ArrowUpDown size={18} className="text-slate-light ml-2" />
+                {currentSortOption && <currentSortOption.icon size={18} className="text-primary" />}
+                <span className="hidden sm:inline">{currentSortOption?.label}</span>
+                <span className="sm:hidden">Sort</span>
               </button>
 
               {/* Dropdown Menu */}
@@ -159,7 +156,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
                   />
 
                   {/* Dropdown content */}
-                  <div className="absolute left-0 sm:right-0 sm:left-auto mt-2 w-64 bg-white border-2 border-gray-border rounded-lg shadow-lg z-20 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                  <div className="absolute right-0 mt-2 w-64 max-w-[calc(100vw-2rem)] bg-white border-2 border-gray-border rounded-lg shadow-lg z-20 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
                     {sortOptions.map((option) => {
                       const Icon = option.icon;
                       const isSelected = sortBy === option.value;
