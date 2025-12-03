@@ -142,7 +142,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
                   id="sort-select"
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as SortOption)}
-                  className="appearance-none bg-white border-2 border-gray-border rounded-lg px-4 py-2.5 pr-10 text-sm font-medium text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer shadow-sm"
+                  className="appearance-none bg-white border-2 border-gray-border rounded-lg px-4 py-3 pr-10 text-base font-semibold text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer"
                 >
                   {sortOptions.map((option) => (
                     <option key={option.value} value={option.value}>
@@ -151,7 +151,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
                   ))}
                 </select>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <ArrowUpDown size={16} className="text-slate-light" />
+                  <ArrowUpDown size={18} className="text-slate-light" />
                 </div>
               </div>
             </div>
