@@ -55,6 +55,13 @@ export default function CompareClient() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {allModels
+                .sort((a, b) => {
+                  // Sort by brand first, then by model
+                  if (a.make !== b.make) {
+                    return a.make.localeCompare(b.make);
+                  }
+                  return a.model.localeCompare(b.model);
+                })
                 .filter(m => !selectedModels.find(sm => sm.slug === m.slug))
                 .map((model) => (
                   <button

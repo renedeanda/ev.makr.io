@@ -225,38 +225,38 @@ export default function RangeEstimatorClient() {
               <Mountain size={18} className="text-primary" />
               Terrain Type
             </label>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-2 sm:gap-3">
               <button
                 onClick={() => setTerrain("flat")}
-                className={`p-4 rounded-lg border-2 transition-all ${
+                className={`p-3 sm:p-4 rounded-lg border-2 transition-all ${
                   terrain === "flat"
                     ? "border-primary bg-primary/10"
                     : "border-gray-border hover:border-primary/50"
                 }`}
               >
-                <p className="font-semibold text-slate mb-1">Flat</p>
+                <p className="font-semibold text-slate mb-1 text-sm sm:text-base">Flat</p>
                 <p className="text-xs text-slate-light">No impact</p>
               </button>
               <button
                 onClick={() => setTerrain("hilly")}
-                className={`p-4 rounded-lg border-2 transition-all ${
+                className={`p-3 sm:p-4 rounded-lg border-2 transition-all ${
                   terrain === "hilly"
                     ? "border-primary bg-primary/10"
                     : "border-gray-border hover:border-primary/50"
                 }`}
               >
-                <p className="font-semibold text-slate mb-1">Hilly</p>
+                <p className="font-semibold text-slate mb-1 text-sm sm:text-base">Hilly</p>
                 <p className="text-xs text-slate-light">-10%</p>
               </button>
               <button
                 onClick={() => setTerrain("mountainous")}
-                className={`p-4 rounded-lg border-2 transition-all ${
+                className={`p-3 sm:p-4 rounded-lg border-2 transition-all ${
                   terrain === "mountainous"
                     ? "border-primary bg-primary/10"
                     : "border-gray-border hover:border-primary/50"
                 }`}
               >
-                <p className="font-semibold text-slate mb-1">Mountains</p>
+                <p className="font-semibold text-slate mb-1 text-sm sm:text-base">Mountain</p>
                 <p className="text-xs text-slate-light">-20%</p>
               </button>
             </div>
@@ -268,38 +268,38 @@ export default function RangeEstimatorClient() {
               <TrendingUp size={18} className="text-primary" />
               Driving Style
             </label>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-2 sm:gap-3">
               <button
                 onClick={() => setDrivingStyle("eco")}
-                className={`p-4 rounded-lg border-2 transition-all ${
+                className={`p-3 sm:p-4 rounded-lg border-2 transition-all ${
                   drivingStyle === "eco"
                     ? "border-eco-green bg-eco-green/10"
                     : "border-gray-border hover:border-eco-green/50"
                 }`}
               >
-                <p className="font-semibold text-slate mb-1">Eco</p>
-                <p className="text-xs text-slate-light">+10% range</p>
+                <p className="font-semibold text-slate mb-1 text-sm sm:text-base">Eco</p>
+                <p className="text-xs text-slate-light">+10%</p>
               </button>
               <button
                 onClick={() => setDrivingStyle("normal")}
-                className={`p-4 rounded-lg border-2 transition-all ${
+                className={`p-3 sm:p-4 rounded-lg border-2 transition-all ${
                   drivingStyle === "normal"
                     ? "border-primary bg-primary/10"
                     : "border-gray-border hover:border-primary/50"
                 }`}
               >
-                <p className="font-semibold text-slate mb-1">Normal</p>
+                <p className="font-semibold text-slate mb-1 text-sm sm:text-base">Normal</p>
                 <p className="text-xs text-slate-light">Standard</p>
               </button>
               <button
                 onClick={() => setDrivingStyle("aggressive")}
-                className={`p-4 rounded-lg border-2 transition-all ${
+                className={`p-3 sm:p-4 rounded-lg border-2 transition-all ${
                   drivingStyle === "aggressive"
                     ? "border-primary bg-primary/10"
                     : "border-gray-border hover:border-primary/50"
                 }`}
               >
-                <p className="font-semibold text-slate mb-1">Aggressive</p>
+                <p className="font-semibold text-slate mb-1 text-sm sm:text-base">Sport</p>
                 <p className="text-xs text-slate-light">-15%</p>
               </button>
             </div>
