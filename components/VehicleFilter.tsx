@@ -3,12 +3,22 @@
 import { useState } from "react";
 import ModelCard from "@/components/ModelCard";
 import { VehicleModel } from "@/lib/data";
-import { SlidersHorizontal, X } from "lucide-react";
+import { SlidersHorizontal, X, ArrowUpDown, ArrowDownAZ, ArrowUpAZ, DollarSign, Zap } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 interface VehicleFilterProps {
   models: VehicleModel[];
 }
+
+type SortOption =
+  | 'brand-asc'
+  | 'brand-desc'
+  | 'model-asc'
+  | 'model-desc'
+  | 'price-asc'
+  | 'price-desc'
+  | 'range-desc'
+  | 'range-asc';
 
 export default function VehicleFilter({ models }: VehicleFilterProps) {
   // Get unique values for filters
@@ -24,6 +34,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
   const [selectedConnectors, setSelectedConnectors] = useState<string[]>([]);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 150000]);
   const [showFilters, setShowFilters] = useState(false);
+  const [sortBy, setSortBy] = useState<SortOption>('brand-asc');
   
   // Apply filters
   const filteredModels = models.filter((model) => {
@@ -31,12 +42,50 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
     const matchesYear = selectedYears.length === 0 || selectedYears.some(year => model.years.includes(year));
     const matchesConnector = selectedConnectors.length === 0 || selectedConnectors.some(connector => model.connectors.includes(connector));
     const matchesPrice = model.priceRange.min <= priceRange[1] && model.priceRange.max >= priceRange[0];
-    
+
     return matchesMake && matchesYear && matchesConnector && matchesPrice;
   });
-  
-  const modelCount = filteredModels.length;
-  
+
+  // Apply sorting
+  const sortedModels = [...filteredModels].sort((a, b) => {
+    switch (sortBy) {
+      case 'brand-asc':
+        return a.make.localeCompare(b.make) || a.model.localeCompare(b.model);
+      case 'brand-desc':
+        return b.make.localeCompare(a.make) || b.model.localeCompare(a.model);
+      case 'model-asc':
+        return a.model.localeCompare(b.model);
+      case 'model-desc':
+        return b.model.localeCompare(a.model);
+      case 'price-asc':
+        return a.priceRange.min - b.priceRange.min;
+      case 'price-desc':
+        return b.priceRange.max - a.priceRange.max;
+      case 'range-desc':
+        return b.rangeMax - a.rangeMax;
+      case 'range-asc':
+        return a.rangeMin - b.rangeMin;
+      default:
+        return 0;
+    }
+  });
+
+  const modelCount = sortedModels.length;
+
+  // Sort options
+  const sortOptions = [
+    { value: 'brand-asc' as SortOption, label: 'Brand (A-Z)', icon: ArrowDownAZ },
+    { value: 'brand-desc' as SortOption, label: 'Brand (Z-A)', icon: ArrowUpAZ },
+    { value: 'model-asc' as SortOption, label: 'Model (A-Z)', icon: ArrowDownAZ },
+    { value: 'model-desc' as SortOption, label: 'Model (Z-A)', icon: ArrowUpAZ },
+    { value: 'price-asc' as SortOption, label: 'Price (Low to High)', icon: DollarSign },
+    { value: 'price-desc' as SortOption, label: 'Price (High to Low)', icon: DollarSign },
+    { value: 'range-desc' as SortOption, label: 'Range (Longest First)', icon: Zap },
+    { value: 'range-asc' as SortOption, label: 'Range (Shortest First)', icon: Zap },
+  ];
+
+  const currentSortOption = sortOptions.find(opt => opt.value === sortBy);
+
   // Filter helpers
   const toggleMake = (make: string) => {
     setSelectedMakes(prev =>
@@ -69,25 +118,49 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
     <>
       {/* Filters */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex items-center justify-between mb-6">
-          <Button
-            onClick={() => setShowFilters(!showFilters)}
-            variant="outline"
-            size="md"
-          >
-            <SlidersHorizontal className="mr-2" size={18} />
-            Filters
-            {hasActiveFilters && (
-              <span className="ml-2 bg-primary text-white rounded-full px-2 py-0.5 text-xs">
-                Active
-              </span>
-            )}
-          </Button>
-          
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+          <div className="flex items-center gap-3">
+            <Button
+              onClick={() => setShowFilters(!showFilters)}
+              variant="outline"
+              size="md"
+            >
+              <SlidersHorizontal className="mr-2" size={18} />
+              Filters
+              {hasActiveFilters && (
+                <span className="ml-2 bg-primary text-white rounded-full px-2 py-0.5 text-xs">
+                  Active
+                </span>
+              )}
+            </Button>
+
+            {/* Sort Dropdown */}
+            <div className="relative inline-block">
+              <label htmlFor="sort-select" className="sr-only">Sort by</label>
+              <div className="relative">
+                <select
+                  id="sort-select"
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as SortOption)}
+                  className="appearance-none bg-white border-2 border-gray-border rounded-lg px-4 py-2.5 pr-10 text-sm font-medium text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer shadow-sm"
+                >
+                  {sortOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                  <ArrowUpDown size={16} className="text-slate-light" />
+                </div>
+              </div>
+            </div>
+          </div>
+
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
-              className="text-sm text-slate-light hover:text-slate flex items-center gap-1"
+              className="text-sm text-slate-light hover:text-slate flex items-center gap-1 transition-colors"
             >
               <X size={16} />
               Clear All Filters
@@ -208,7 +281,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredModels.map((model) => (
+            {sortedModels.map((model) => (
               <ModelCard key={model.slug} model={model} />
             ))}
           </div>
