@@ -56,7 +56,6 @@ export default function CompareClient() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {allModels
                 .filter(m => !selectedModels.find(sm => sm.slug === m.slug))
-                .slice(0, 12)
                 .map((model) => (
                   <button
                     key={model.slug}

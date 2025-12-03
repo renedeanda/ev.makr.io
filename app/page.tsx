@@ -197,7 +197,7 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Link href="/guides">
+            <Link href="/guides/understanding-charging-levels">
               <Card variant="hover" className="p-6 text-center">
                 <div className="bg-eco-green/10 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Zap className="text-eco-green" size={28} />
