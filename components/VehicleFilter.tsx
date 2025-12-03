@@ -3,12 +3,22 @@
 import { useState } from "react";
 import ModelCard from "@/components/ModelCard";
 import { VehicleModel } from "@/lib/data";
-import { SlidersHorizontal, X } from "lucide-react";
+import { SlidersHorizontal, X, ArrowUpDown, ArrowDownAZ, ArrowUpAZ, DollarSign, Zap } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 interface VehicleFilterProps {
   models: VehicleModel[];
 }
+
+type SortOption =
+  | 'brand-asc'
+  | 'brand-desc'
+  | 'model-asc'
+  | 'model-desc'
+  | 'price-asc'
+  | 'price-desc'
+  | 'range-desc'
+  | 'range-asc';
 
 export default function VehicleFilter({ models }: VehicleFilterProps) {
   // Get unique values for filters
@@ -24,6 +34,8 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
   const [selectedConnectors, setSelectedConnectors] = useState<string[]>([]);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 150000]);
   const [showFilters, setShowFilters] = useState(false);
+  const [sortBy, setSortBy] = useState<SortOption>('brand-asc');
+  const [showSortDropdown, setShowSortDropdown] = useState(false);
   
   // Apply filters
   const filteredModels = models.filter((model) => {
@@ -31,12 +43,50 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
     const matchesYear = selectedYears.length === 0 || selectedYears.some(year => model.years.includes(year));
     const matchesConnector = selectedConnectors.length === 0 || selectedConnectors.some(connector => model.connectors.includes(connector));
     const matchesPrice = model.priceRange.min <= priceRange[1] && model.priceRange.max >= priceRange[0];
-    
+
     return matchesMake && matchesYear && matchesConnector && matchesPrice;
   });
-  
-  const modelCount = filteredModels.length;
-  
+
+  // Apply sorting
+  const sortedModels = [...filteredModels].sort((a, b) => {
+    switch (sortBy) {
+      case 'brand-asc':
+        return a.make.localeCompare(b.make) || a.model.localeCompare(b.model);
+      case 'brand-desc':
+        return b.make.localeCompare(a.make) || b.model.localeCompare(a.model);
+      case 'model-asc':
+        return a.model.localeCompare(b.model);
+      case 'model-desc':
+        return b.model.localeCompare(a.model);
+      case 'price-asc':
+        return a.priceRange.min - b.priceRange.min;
+      case 'price-desc':
+        return b.priceRange.max - a.priceRange.max;
+      case 'range-desc':
+        return b.rangeMax - a.rangeMax;
+      case 'range-asc':
+        return a.rangeMin - b.rangeMin;
+      default:
+        return 0;
+    }
+  });
+
+  const modelCount = sortedModels.length;
+
+  // Sort options
+  const sortOptions = [
+    { value: 'brand-asc' as SortOption, label: 'Brand (A-Z)', icon: ArrowDownAZ },
+    { value: 'brand-desc' as SortOption, label: 'Brand (Z-A)', icon: ArrowUpAZ },
+    { value: 'model-asc' as SortOption, label: 'Model (A-Z)', icon: ArrowDownAZ },
+    { value: 'model-desc' as SortOption, label: 'Model (Z-A)', icon: ArrowUpAZ },
+    { value: 'price-asc' as SortOption, label: 'Price (Low to High)', icon: DollarSign },
+    { value: 'price-desc' as SortOption, label: 'Price (High to Low)', icon: DollarSign },
+    { value: 'range-desc' as SortOption, label: 'Range (Longest First)', icon: Zap },
+    { value: 'range-asc' as SortOption, label: 'Range (Shortest First)', icon: Zap },
+  ];
+
+  const currentSortOption = sortOptions.find(opt => opt.value === sortBy);
+
   // Filter helpers
   const toggleMake = (make: string) => {
     setSelectedMakes(prev =>
@@ -69,25 +119,75 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
     <>
       {/* Filters */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex items-center justify-between mb-6">
-          <Button
-            onClick={() => setShowFilters(!showFilters)}
-            variant="outline"
-            size="md"
-          >
-            <SlidersHorizontal className="mr-2" size={18} />
-            Filters
-            {hasActiveFilters && (
-              <span className="ml-2 bg-primary text-white rounded-full px-2 py-0.5 text-xs">
-                Active
-              </span>
-            )}
-          </Button>
-          
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+          <div className="flex items-center gap-3">
+            <Button
+              onClick={() => setShowFilters(!showFilters)}
+              variant="outline"
+              size="md"
+            >
+              <SlidersHorizontal className="mr-2" size={18} />
+              Filters
+              {hasActiveFilters && (
+                <span className="ml-2 bg-primary text-white rounded-full px-2 py-0.5 text-xs">
+                  Active
+                </span>
+              )}
+            </Button>
+
+            {/* Sort Dropdown */}
+            <div className="relative inline-block">
+              <button
+                onClick={() => setShowSortDropdown(!showSortDropdown)}
+                className="inline-flex items-center gap-2 bg-white border-2 border-gray-border rounded-lg px-4 py-3 text-base font-semibold text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all sm:min-w-[200px]"
+              >
+                {currentSortOption && <currentSortOption.icon size={18} className="text-primary" />}
+                <span className="hidden sm:inline">{currentSortOption?.label}</span>
+                <span className="sm:hidden">Sort</span>
+              </button>
+
+              {/* Dropdown Menu */}
+              {showSortDropdown && (
+                <>
+                  {/* Backdrop for mobile */}
+                  <div
+                    className="fixed inset-0 z-10"
+                    onClick={() => setShowSortDropdown(false)}
+                  />
+
+                  {/* Dropdown content */}
+                  <div className="absolute left-0 sm:right-0 sm:left-auto mt-2 w-56 sm:w-64 max-w-[calc(100vw-4rem)] bg-white border-2 border-gray-border rounded-lg shadow-lg z-20 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                    {sortOptions.map((option) => {
+                      const Icon = option.icon;
+                      const isSelected = sortBy === option.value;
+                      return (
+                        <button
+                          key={option.value}
+                          onClick={() => {
+                            setSortBy(option.value);
+                            setShowSortDropdown(false);
+                          }}
+                          className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${
+                            isSelected
+                              ? 'bg-primary/10 text-primary font-semibold'
+                              : 'text-slate hover:bg-gray-bg'
+                          }`}
+                        >
+                          <Icon size={18} className={isSelected ? 'text-primary' : 'text-slate-light'} />
+                          <span className="text-base font-medium">{option.label}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+
           {hasActiveFilters && (
             <button
               onClick={clearFilters}
-              className="text-sm text-slate-light hover:text-slate flex items-center gap-1"
+              className="text-sm text-slate-light hover:text-slate flex items-center gap-1 transition-colors"
             >
               <X size={16} />
               Clear All Filters
@@ -102,29 +202,45 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
               <div>
                 <h3 className="font-semibold text-slate mb-3 flex items-center justify-between">
                   Make
-                  <span className="text-xs text-slate-light font-normal">Scroll ↕</span>
+                  {selectedMakes.length > 0 && (
+                    <span className="text-xs bg-primary text-white rounded-full px-2 py-0.5 font-normal">
+                      {selectedMakes.length}
+                    </span>
+                  )}
                 </h3>
-                <div className="space-y-2 max-h-48 overflow-y-auto border border-gray-border rounded-lg p-3 bg-white shadow-sm">
-                  {makes.map((make) => (
-                    <label key={make} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
-                      <input
-                        type="checkbox"
-                        checked={selectedMakes.includes(make)}
-                        onChange={() => toggleMake(make)}
-                        className="rounded border-gray-border text-primary focus:ring-primary"
-                      />
-                      <span className="text-sm text-slate">{make}</span>
-                    </label>
-                  ))}
-                  <div className="text-center pt-2 text-xs text-slate-light border-t border-gray-border">
-                    ↑ Scroll for more ↓
+                <div className="relative">
+                  {/* Top fade gradient */}
+                  <div className="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-white to-transparent pointer-events-none z-10 rounded-t-lg" />
+
+                  <div className="space-y-2 max-h-48 overflow-y-auto border border-gray-border rounded-lg p-3 bg-white shadow-sm scrollbar-thin scrollbar-thumb-gray-border scrollbar-track-transparent">
+                    {makes.map((make) => (
+                      <label key={make} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
+                        <input
+                          type="checkbox"
+                          checked={selectedMakes.includes(make)}
+                          onChange={() => toggleMake(make)}
+                          className="rounded border-gray-border text-primary focus:ring-primary"
+                        />
+                        <span className="text-sm text-slate">{make}</span>
+                      </label>
+                    ))}
                   </div>
+
+                  {/* Bottom fade gradient */}
+                  <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white to-transparent pointer-events-none z-10 rounded-b-lg" />
                 </div>
               </div>
               
               {/* Year Filter */}
               <div>
-                <h3 className="font-semibold text-slate mb-3">Model Year</h3>
+                <h3 className="font-semibold text-slate mb-3 flex items-center justify-between">
+                  Model Year
+                  {selectedYears.length > 0 && (
+                    <span className="text-xs bg-primary text-white rounded-full px-2 py-0.5 font-normal">
+                      {selectedYears.length}
+                    </span>
+                  )}
+                </h3>
                 <div className="space-y-2 border border-gray-border rounded-lg p-3 bg-white shadow-sm">
                   {allYears.map((year) => (
                     <label key={year} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
@@ -142,7 +258,14 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
 
               {/* Connector Filter */}
               <div>
-                <h3 className="font-semibold text-slate mb-3">Connector Type</h3>
+                <h3 className="font-semibold text-slate mb-3 flex items-center justify-between">
+                  Connector Type
+                  {selectedConnectors.length > 0 && (
+                    <span className="text-xs bg-primary text-white rounded-full px-2 py-0.5 font-normal">
+                      {selectedConnectors.length}
+                    </span>
+                  )}
+                </h3>
                 <div className="space-y-2 border border-gray-border rounded-lg p-3 bg-white shadow-sm">
                   {connectors.map((connector) => (
                     <label key={connector} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
@@ -208,7 +331,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredModels.map((model) => (
+            {sortedModels.map((model) => (
               <ModelCard key={model.slug} model={model} />
             ))}
           </div>
