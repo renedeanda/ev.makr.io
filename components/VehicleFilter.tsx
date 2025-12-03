@@ -156,7 +156,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
                   />
 
                   {/* Dropdown content */}
-                  <div className="absolute right-0 mt-2 w-64 max-w-[calc(100vw-2rem)] bg-white border-2 border-gray-border rounded-lg shadow-lg z-20 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                  <div className="absolute left-0 sm:right-0 sm:left-auto mt-2 w-64 max-w-[calc(100vw-2rem)] bg-white border-2 border-gray-border rounded-lg shadow-lg z-20 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
                     {sortOptions.map((option) => {
                       const Icon = option.icon;
                       const isSelected = sortBy === option.value;
