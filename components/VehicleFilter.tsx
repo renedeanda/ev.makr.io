@@ -35,6 +35,7 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 150000]);
   const [showFilters, setShowFilters] = useState(false);
   const [sortBy, setSortBy] = useState<SortOption>('brand-asc');
+  const [showSortDropdown, setShowSortDropdown] = useState(false);
   
   // Apply filters
   const filteredModels = models.filter((model) => {
@@ -136,24 +137,53 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
 
             {/* Sort Dropdown */}
             <div className="relative inline-block">
-              <label htmlFor="sort-select" className="sr-only">Sort by</label>
-              <div className="relative">
-                <select
-                  id="sort-select"
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as SortOption)}
-                  className="appearance-none bg-white border-2 border-gray-border rounded-lg px-4 py-3 pr-10 text-base font-semibold text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer"
-                >
-                  {sortOptions.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <ArrowUpDown size={18} className="text-slate-light" />
+              <button
+                onClick={() => setShowSortDropdown(!showSortDropdown)}
+                className="inline-flex items-center justify-between bg-white border-2 border-gray-border rounded-lg px-4 py-3 text-base font-semibold text-slate hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all sm:min-w-[200px]"
+              >
+                <div className="flex items-center gap-2">
+                  {currentSortOption && <currentSortOption.icon size={18} className="text-primary" />}
+                  <span className="hidden sm:inline">{currentSortOption?.label}</span>
+                  <span className="sm:hidden">Sort</span>
                 </div>
-              </div>
+                <ArrowUpDown size={18} className="text-slate-light ml-2" />
+              </button>
+
+              {/* Dropdown Menu */}
+              {showSortDropdown && (
+                <>
+                  {/* Backdrop for mobile */}
+                  <div
+                    className="fixed inset-0 z-10"
+                    onClick={() => setShowSortDropdown(false)}
+                  />
+
+                  {/* Dropdown content */}
+                  <div className="absolute left-0 sm:right-0 sm:left-auto mt-2 w-64 bg-white border-2 border-gray-border rounded-lg shadow-lg z-20 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                    {sortOptions.map((option) => {
+                      const Icon = option.icon;
+                      const isSelected = sortBy === option.value;
+                      return (
+                        <button
+                          key={option.value}
+                          onClick={() => {
+                            setSortBy(option.value);
+                            setShowSortDropdown(false);
+                          }}
+                          className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${
+                            isSelected
+                              ? 'bg-primary/10 text-primary font-semibold'
+                              : 'text-slate hover:bg-gray-bg'
+                          }`}
+                        >
+                          <Icon size={18} className={isSelected ? 'text-primary' : 'text-slate-light'} />
+                          <span className="text-base font-medium">{option.label}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
             </div>
           </div>
 
