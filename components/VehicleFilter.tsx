@@ -202,29 +202,45 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
               <div>
                 <h3 className="font-semibold text-slate mb-3 flex items-center justify-between">
                   Make
-                  <span className="text-xs text-slate-light font-normal">Scroll ↕</span>
+                  {selectedMakes.length > 0 && (
+                    <span className="text-xs bg-primary text-white rounded-full px-2 py-0.5 font-normal">
+                      {selectedMakes.length}
+                    </span>
+                  )}
                 </h3>
-                <div className="space-y-2 max-h-48 overflow-y-auto border border-gray-border rounded-lg p-3 bg-white shadow-sm">
-                  {makes.map((make) => (
-                    <label key={make} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
-                      <input
-                        type="checkbox"
-                        checked={selectedMakes.includes(make)}
-                        onChange={() => toggleMake(make)}
-                        className="rounded border-gray-border text-primary focus:ring-primary"
-                      />
-                      <span className="text-sm text-slate">{make}</span>
-                    </label>
-                  ))}
-                  <div className="text-center pt-2 text-xs text-slate-light border-t border-gray-border">
-                    ↑ Scroll for more ↓
+                <div className="relative">
+                  {/* Top fade gradient */}
+                  <div className="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-white to-transparent pointer-events-none z-10 rounded-t-lg" />
+
+                  <div className="space-y-2 max-h-48 overflow-y-auto border border-gray-border rounded-lg p-3 bg-white shadow-sm scrollbar-thin scrollbar-thumb-gray-border scrollbar-track-transparent">
+                    {makes.map((make) => (
+                      <label key={make} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
+                        <input
+                          type="checkbox"
+                          checked={selectedMakes.includes(make)}
+                          onChange={() => toggleMake(make)}
+                          className="rounded border-gray-border text-primary focus:ring-primary"
+                        />
+                        <span className="text-sm text-slate">{make}</span>
+                      </label>
+                    ))}
                   </div>
+
+                  {/* Bottom fade gradient */}
+                  <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white to-transparent pointer-events-none z-10 rounded-b-lg" />
                 </div>
               </div>
               
               {/* Year Filter */}
               <div>
-                <h3 className="font-semibold text-slate mb-3">Model Year</h3>
+                <h3 className="font-semibold text-slate mb-3 flex items-center justify-between">
+                  Model Year
+                  {selectedYears.length > 0 && (
+                    <span className="text-xs bg-primary text-white rounded-full px-2 py-0.5 font-normal">
+                      {selectedYears.length}
+                    </span>
+                  )}
+                </h3>
                 <div className="space-y-2 border border-gray-border rounded-lg p-3 bg-white shadow-sm">
                   {allYears.map((year) => (
                     <label key={year} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
@@ -242,7 +258,14 @@ export default function VehicleFilter({ models }: VehicleFilterProps) {
 
               {/* Connector Filter */}
               <div>
-                <h3 className="font-semibold text-slate mb-3">Connector Type</h3>
+                <h3 className="font-semibold text-slate mb-3 flex items-center justify-between">
+                  Connector Type
+                  {selectedConnectors.length > 0 && (
+                    <span className="text-xs bg-primary text-white rounded-full px-2 py-0.5 font-normal">
+                      {selectedConnectors.length}
+                    </span>
+                  )}
+                </h3>
                 <div className="space-y-2 border border-gray-border rounded-lg p-3 bg-white shadow-sm">
                   {connectors.map((connector) => (
                     <label key={connector} className="flex items-center gap-2 cursor-pointer hover:bg-gray-bg p-1 rounded transition-colors">
