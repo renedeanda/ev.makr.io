@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import PageViewTracker from "@/components/PageViewTracker";
 
 export const metadata: Metadata = {
   title: "ev.makr.io - Educational Resource for New EV Owners",
@@ -56,6 +59,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <GoogleAnalytics />
+        <Suspense fallback={null}>
+          <PageViewTracker />
+        </Suspense>
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Footer />
