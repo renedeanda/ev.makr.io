@@ -7850,7 +7850,7 @@ export const vehicles: Vehicle[] = [
     "range": { "epaRangeMiles": 280, "batteryCapacityKwh": 74.7, "efficiencyMPGe": 100, "efficiencyKwhPer100Mi": 33.8 },
     "performance": { "horsepower": 375, "torque": 376, "zeroTo60": 4.4, "topSpeed": 118, "drivetrain": "AWD" },
     "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 28 },
-    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.2, "towingCapacityLbs": 3500, "curbWeightLbs": 4600, "groundClearanceIn": 8.3 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.2, "towingCapacityLbs": 3500, "curbWeightLbs": 4600 },
     "features": { "hasHeatPump": true, "hasV2L": false, "hasV2H": false, "autopilotLevel": "EyeSight with Lane Centering" },
     "meta": { "imageUrl": "/images/vehicles/2026-subaru-trailseeker.jpg", "manufacturerUrl": "https://www.subaru.com/electric", "availabilityStatus": "Announced", "dataSource": "Subaru.com Press Release, December 4, 2025", "lastVerified": "2025-12-04", "notes": "NEW 2026 Subaru Trailseeker Premium: All-electric SUV, 375 hp, 280 mi range, 0-60 in 4.4 sec. Features X-MODE Dual-Mode, 14-inch touchscreen, heated seats, 18-inch wheels. NACS charging, 3,500 lb towing, 8.3-inch ground clearance." }
   },
@@ -7865,7 +7865,7 @@ export const vehicles: Vehicle[] = [
     "range": { "epaRangeMiles": 280, "batteryCapacityKwh": 74.7, "efficiencyMPGe": 100, "efficiencyKwhPer100Mi": 33.8 },
     "performance": { "horsepower": 375, "torque": 376, "zeroTo60": 4.4, "topSpeed": 118, "drivetrain": "AWD" },
     "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 28 },
-    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.2, "towingCapacityLbs": 3500, "curbWeightLbs": 4600, "groundClearanceIn": 8.3 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.2, "towingCapacityLbs": 3500, "curbWeightLbs": 4600 },
     "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "EyeSight with Lane Centering" },
     "meta": { "imageUrl": "/images/vehicles/2026-subaru-trailseeker.jpg", "manufacturerUrl": "https://www.subaru.com/electric", "availabilityStatus": "Announced", "dataSource": "Subaru.com Press Release, December 4, 2025", "lastVerified": "2025-12-04", "notes": "NEW 2026 Subaru Trailseeker Limited: Adds Harman Kardon speaker system, panoramic view monitor, 20-inch wheels, heated rear seats, leather-wrapped steering wheel, hands-free power gate, digital key, 120V AC outlet. All Premium features included." }
   },
@@ -7880,7 +7880,7 @@ export const vehicles: Vehicle[] = [
     "range": { "epaRangeMiles": 280, "batteryCapacityKwh": 74.7, "efficiencyMPGe": 100, "efficiencyKwhPer100Mi": 33.8 },
     "performance": { "horsepower": 375, "torque": 376, "zeroTo60": 4.4, "topSpeed": 118, "drivetrain": "AWD" },
     "charging": { "connector": "NACS", "acChargingMaxKw": 11, "dcChargingMaxKw": 150, "chargingTime10to80Minutes": 28 },
-    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.2, "towingCapacityLbs": 3500, "curbWeightLbs": 4600, "groundClearanceIn": 8.3 },
+    "physical": { "seatingCapacity": 5, "cargoVolumeCuFt": 32.2, "towingCapacityLbs": 3500, "curbWeightLbs": 4600 },
     "features": { "hasHeatPump": true, "hasV2L": true, "hasV2H": false, "autopilotLevel": "EyeSight with Lane Centering" },
     "meta": { "imageUrl": "/images/vehicles/2026-subaru-trailseeker.jpg", "manufacturerUrl": "https://www.subaru.com/electric", "availabilityStatus": "Announced", "dataSource": "Subaru.com Press Release, December 4, 2025", "lastVerified": "2025-12-04", "notes": "NEW 2026 Subaru Trailseeker Touring: Top-tier trim with gloss black hood accent, panoramic glass roof with motorized shade, ventilated front seats with radiant leg warmers. Optional two-tone paint and leather upholstery available. All Limited features included." }
   },
